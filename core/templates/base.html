@@ -1,0 +1,128 @@
+{% load i18n static %}
+{% static 'css/pygments_default.css' as light_pygments_css %}
+{% static 'css/pygments_monokai.css' as dark_pygments_css %}
+{% get_current_language as LANG_CODE %}
+<!DOCTYPE html>
+<html lang="{{ LANG_CODE }}"
+      dir="ltr"
+      x-data="{'darkTheme' : $persist(false), 'openLanguageModal' : false, }"
+      x-bind:data-theme="darkTheme ? 'dark' : 'light' ">
+  <head>
+
+    <!-- Title -->
+    <title>
+      {% block head_title %}{{ page_title }}{% endblock %}
+    </title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% url 'favicon' %}" />
+
+    <!-- Basic Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {% block meta_robots %}
+      <meta name="robots" content="all" />
+      <meta name="revisit-after" content="7 days" />
+    {% endblock meta_robots %}
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ request.build_absolute_uri }}" />
+
+    <!-- Description (override per template if possible) -->
+    <meta name="description" content="{{ page_description }}" />
+
+    <!-- Mobile/App Meta -->
+    <meta name="application-name" content="{{ page_title }}" />
+    <meta name="apple-mobile-web-app-title" content="{{ page_title }}" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- OG Defaults -->
+    <meta property="og:locale" content="{{ LANG_CODE }}" />
+    <meta property="og:site_name" content="{{ request.site.brand_name }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ page_title }}" />
+    <meta property="og:description" content="{{ page_description }}" />
+    <meta property="og:url" content="{{ request.build_absolute_uri }}" />
+
+    {% block og_image_meta_tags %}
+      {% if request.path_info == "/" and request.site.home_screenshot %}
+      <meta property="og:image" content="{{ request.site.home_screenshot.url }}" />
+      <meta property="og:image:alt" content="{{ page_title }}" />
+      <meta name="twitter:image" content="{{ request.site.home_screenshot.url }}" />
+      {% endif %}
+    {% endblock og_image_meta_tags %}
+
+    <!-- Twitter Defaults -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ page_title }}" />
+    <meta name="twitter:description" content="{{ page_description }}" />
+    <meta name="twitter:url" content="{{ request.build_absolute_uri }}" />
+
+    <!-- Global Structured Data -->
+    <script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "{{ request.build_absolute_uri }}",
+      "name": "{{ request.site.brand_name }}",
+      "description": "{{ request.site.description }}",
+      "inLanguage": "{{ LANG_CODE }}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ request.site.brand_name }}"
+      }
+    }
+    </script>
+
+    {% if request.site.google_tag_id and request.env_is_prod and not request.user.is_staff %}
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ request.site.google_tag_id }}"></script>
+      <script nonce="{{ request.csp_nonce }}">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{ request.site.google_tag_id }}');
+      </script>
+    {% endif %}
+
+    {% block extra_meta %}{% endblock %}
+
+    <!-- css -->
+    <link href="{% static 'css/bootstrap-grid.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/bootstrap-icons.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/base.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet" />
+    <link href="{% static request.site.picocss_static_file %}" rel="stylesheet" />
+    <template x-if="darkTheme"><link href="{{ dark_pygments_css }}" rel="stylesheet" /></template>
+    <template x-if="!darkTheme"><link href="{{ light_pygments_css }}" rel="stylesheet" /></template>
+    {% block extra_css %}{% endblock %}
+  </head>
+  <body class="container" hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>
+    <header>
+      {% include "core_partials/messages.html" %}
+      {% include "core_partials/navbar.html" %}
+    </header>
+      {% block before_content %}{% endblock %}
+      {% block content %}{% endblock %}
+      {% block after_content %}{% endblock %}
+
+    <!-- modals -->
+    <section>
+      {% include "snippets/language_modal.html" %}
+      {% block extra_modals %}{% endblock %}
+    </section>
+    <footer>
+      {% include "core_partials/footer.html" %}
+    </footer>
+    {% block extra_body %}
+    {% endblock extra_body %}
+    <!-- js -->
+    <script defer src="{% static 'js/htmx.js' %}" nonce="{{ request.csp_nonce }}"></script>
+    <script defer src="{% static 'js/alpine_persist.js' %}" nonce="{{ request.csp_nonce }}"></script>
+    <script defer src="{% static 'js/alpine.js' %}" nonce="{{ request.csp_nonce }}"></script>
+    <script defer src="{% static 'js/base.js' %}" nonce="{{ request.csp_nonce }}"></script>
+    {% block extra_js %}{% endblock %}
+  </body>
+</html>
