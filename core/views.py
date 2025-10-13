@@ -28,6 +28,16 @@ class PrivacyView(TemplateView):
         return cxt
 
 
+class ContactView(TemplateView):
+    http_method_names = ["get"]
+    template_name = "core/contact.html"
+
+    def get_context_data(self, **kwargs) -> dict[str, Any]:
+        cxt = super().get_context_data(**kwargs)
+        cxt["page_title"] = _("Contact")
+        return cxt
+
+
 class TermsView(TemplateView):
     http_method_names = ["get"]
     template_name = "core/terms.html"
