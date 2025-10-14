@@ -10,7 +10,17 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/dev/ref/settings/
 """
 
+from copy import copy
 from pathlib import Path
+
+from django.utils.translation import gettext_lazy as _
+from environs import Env
+
+# Read .env file
+
+env = Env()
+env.read_env()
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,12 +30,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/dev/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-^x)n4_#pma_a6^s^t%x-lul-qu@^&gd#-#^lnjtdbr@*0psv_p"
+SECRET_KEY = env("SECRET_KEY")
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env.bool("DEBUG")
 
-ALLOWED_HOSTS = []
+HTTPS = env.bool("HTTPS")
+
+ALLOWED_HOSTS = ["khadijarecipes.com", "127.0.0.1"]
+
+INTERNAL_IPS = ["127.0.0.1"]
 
 
 # Application definition
@@ -44,6 +57,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -114,8 +128,95 @@ USE_I18N = True
 
 USE_TZ = True
 
+LANGUAGES = [
+    ("de", _("German")),
+    ("en", _("English")),
+    ("es", _("Spanish")),
+    ("fr", _("French")),
+    ("it", _("Italian")),
+]
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/dev/howto/static-files/
+LANGUAGE_CODES = [items[0] for items in LANGUAGES]
+LANGUAGE_CODES_WITHOUT_DEFAULT = copy(LANGUAGE_CODES)
+LANGUAGE_CODES_WITHOUT_DEFAULT.remove(LANGUAGE_CODE)
 
-STATIC_URL = "static/"
+LOCALE_PATHS = [BASE_DIR / "locale"]
+
+
+# Append slash
+APPEND_SLASH = False
+
+# Uploads
+
+DATA_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024  # 10MB
+DATA_UPLOAD_MAX_NUMBER_FIELDS = 25_000
+
+
+ADMINS = [
+    ("Rami Boutassghount", "ramiboutas@protonmail.com"),
+]
+
+# Email
+EMAIL_BACKEND = env("EMAIL_BACKEND")
+EMAIL_HOST = env("EMAIL_HOST")
+EMAIL_HOST_USER = env("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
+EMAIL_PORT = env("EMAIL_PORT")
+DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL")
+
+
+# https
+if HTTPS:
+    # https in production
+    SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+    SECURE_HSTS_SECONDS = 31_536_000  # 31536000 # usual: 31536000 (1 year)
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_SSL_REDIRECT = True
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SECURE_HSTS_PRELOAD = True
+
+# Media and static files (S3)
+AWS_S3_ACCESS_KEY_ID = env("AWS_S3_ACCESS_KEY_ID")
+AWS_S3_SECRET_ACCESS_KEY = env("AWS_S3_SECRET_ACCESS_KEY")
+AWS_STORAGE_BUCKET_NAME = env("AWS_STORAGE_BUCKET_NAME")
+AWS_S3_ENDPOINT_URL = env("AWS_S3_ENDPOINT_URL")
+AWS_S3_REGION_NAME = env("AWS_S3_REGION_NAME")
+AWS_S3_SIGNATURE_VERSION = env("AWS_S3_SIGNATURE_VERSION")
+
+S3_BASE_URL = f"{AWS_S3_ENDPOINT_URL}/{AWS_STORAGE_BUCKET_NAME}/"
+MEDIA_URL = S3_BASE_URL + "media/"
+
+STATIC_HOST = env("STATIC_HOST", "")
+STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_URL = STATIC_HOST + "/static/"
+
+STORAGES = {
+    "default": {
+        "BACKEND": "storages.backends.s3boto3.S3Boto3Storage",
+        "OPTIONS": {
+            "gzip": False,
+            "default_acl": "public-read",
+            "location": "media",
+            "querystring_auth": False,
+            "object_parameters": {
+                "CacheControl": "max-age=86400, public",
+            },
+        },
+    },
+    "private": {
+        "BACKEND": "storages.backends.s3boto3.S3Boto3Storage",
+        "OPTIONS": {
+            "gzip": False,
+            "default_acl": "private",
+            "location": "private",
+            "querystring_auth": True,
+        },
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
+    },
+}
+
+
+WHITENOISE_MAX_AGE = 0 if DEBUG else 31_536_000
