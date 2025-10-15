@@ -36,7 +36,11 @@ DEBUG = env.bool("DEBUG")
 
 HTTPS = env.bool("HTTPS")
 
-ALLOWED_HOSTS = ["khadijarecipes.com", "127.0.0.1"]
+ALLOWED_HOSTS = [
+    "next.khadijarecipes.com",
+    "khadijarecipes.com",
+    "127.0.0.1",
+]
 
 INTERNAL_IPS = ["127.0.0.1"]
 
