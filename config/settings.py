@@ -163,9 +163,9 @@ DATA_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024  # 10MB
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 25_000
 
 
-ADMINS = [
-    ("Rami Boutassghount", "ramiboutas@protonmail.com"),
-]
+# Errors and Admins
+SERVER_EMAIL = env("SERVER_EMAIL")
+ADMINS = [("Rami Boutassghount", "ramiboutas@protonmail.com")]
 
 # Email
 EMAIL_BACKEND = env("EMAIL_BACKEND")
