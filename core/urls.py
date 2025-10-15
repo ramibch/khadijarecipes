@@ -5,7 +5,6 @@ from django.urls import path
 
 from .sitemaps import get_sitemaps
 from .views import (
-    ContactView,
     HomeView,
     PrivacyView,
     RobotTxtView,
@@ -28,10 +27,7 @@ urlpatterns = [
     path("~/p", PrivacyView.as_view(), name="privacy"),
     path("~/t", TermsView.as_view(), name="terms"),
     # Home
-    path("💬", ContactView.as_view(), name="contact"),
     path("", HomeView.as_view(), name="home"),
 ]
 
 
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -7,7 +7,10 @@ requires-python = ">=3.13"
 dependencies = [
     "boto3>=1.40.52",
     "django>=6.0a1",
+    "django-browser-reload>=1.21.0",
+    "django-debug-toolbar>=6.0.0",
     "django-storages>=1.14.6",
+    "django-watchfiles>=1.4.0",
     "environs>=14.3.0",
     "ipdb>=0.13.13",
     "pillow>=11.3.0",
