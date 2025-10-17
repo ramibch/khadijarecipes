@@ -42,6 +42,10 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
 ]
 
+ALLOWED_HOSTS = [h for h in env.list("ALLOWED_HOSTS", delimiter=";") if h != ""]
+
+WEBSITE_URL = env("WEBSITE_URL")
+
 INTERNAL_IPS = ["127.0.0.1"]
 
 
@@ -61,6 +65,7 @@ INSTALLED_APPS = [
     # own apps
     "core",
     "recipes",
+    "products",
 ]
 
 MIDDLEWARE = [
