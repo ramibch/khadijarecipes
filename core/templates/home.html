@@ -2,7 +2,7 @@
 {% load i18n static %}
 {% block content %}
   <section class="text-center my-5">
-    <h1 class="text-center fs-4 my-5">
+    <h1 class="text-center fs-3 my-5">
       {% translate "Add a sweet touch to your afternoon tea with traditional Moroccan sweets" %}
     </h1>
     <p class="fs-4">🍰☕🍪</p>
@@ -14,9 +14,9 @@
         <header>
           <h3 class="text-center">{{ product.title }}</h3>
         </header>
-        {% with pi=product.productimage_set.first %}
-          {% if pi %}
-            <center>
+        <center>
+          {% with pi=product.productimage_set.first %}
+            {% if pi %}
               <a href="{{ product.url }}">
                 <img loading="lazy"
                      x-data="{ isHovered: false }"
@@ -28,14 +28,14 @@
                      src="{{ pi.image_400.url }}"
                      alt="{{ pi.alt }}">
               </a>
-              <a href="{{ product.whatsapp_order_url }}"
-                 class="w-100 "
-                 role="button"
-                 rel="nofollow"
-                 target="_blank"><i class="bi bi-whatsapp"></i> {% translate "Order Product" %}</a>
-            </center>
-          {% endif %}
-        {% endwith %}
+            {% endif %}
+          {% endwith %}
+          <a href="{{ product.whatsapp_order_url }}"
+             class="w-100 "
+             role="button"
+             rel="nofollow"
+             target="_blank"><i class="bi bi-whatsapp"></i> {% translate "Order Product" %}</a>
+        </center>
       </article>
     {% endfor %}
   </section>
