@@ -7,20 +7,25 @@ from django.views.decorators.cache import cache_control
 from django.views.decorators.http import require_GET
 from django.views.generic import TemplateView
 
+from core.models import Faq
+from products.models import Product
+
 
 class HomeView(TemplateView):
     http_method_names = ["get"]
-    template_name = "core/home.html"
+    template_name = "home.html"
 
     def get_context_data(self, **kwargs) -> dict[str, Any]:
         cxt = super().get_context_data(**kwargs)
         cxt["page_title"] = _("Tasty recipes make from Bern")
+        cxt["products"] = Product.objects.all()
+        cxt["faqs"] = Faq.objects.filter(is_active=True)
         return cxt
 
 
 class PrivacyView(TemplateView):
     http_method_names = ["get"]
-    template_name = "core/privacy.html"
+    template_name = "privacy.html"
 
     def get_context_data(self, **kwargs) -> dict[str, Any]:
         cxt = super().get_context_data(**kwargs)
@@ -30,7 +35,7 @@ class PrivacyView(TemplateView):
 
 class TermsView(TemplateView):
     http_method_names = ["get"]
-    template_name = "core/terms.html"
+    template_name = "terms.html"
 
     def get_context_data(self, **kwargs) -> dict[str, Any]:
         cxt = super().get_context_data(**kwargs)
@@ -41,7 +46,7 @@ class TermsView(TemplateView):
 class RobotTxtView(TemplateView):
     http_method_names = ["get"]
     content_type = "text/plain"
-    template_name = "core/robots.txt"
+    template_name = "robots.txt"
 
 
 @require_GET
@@ -58,14 +63,14 @@ def favicon_view(request) -> HttpResponse:
 
 def error_404(request, exception):
     cxt = {"page_title": _("Page Not found")}
-    return render(request, "core/error.html", cxt, status=404)
+    return render(request, "error.html", cxt, status=404)
 
 
 def error_403(request, exception):
     cxt = {"page_title": _("Request blocked")}
-    return render(request, "core/error.html", cxt, status=403)
+    return render(request, "error.html", cxt, status=403)
 
 
 def error_500(request):
     cxt = {"page_title": _("Server Error")}
-    return render(request, "core/error.html", cxt, status=500)
+    return render(request, "error.html", cxt, status=500)

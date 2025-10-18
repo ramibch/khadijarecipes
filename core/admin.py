@@ -1,8 +1,9 @@
 from django.contrib import admin
 
-from core.models import DummyModel
-
-# Register your models here.
+from core.models import Faq
 
 
-admin.site.register(DummyModel)
+@admin.register(Faq)
+class FaqAdmin(admin.ModelAdmin):
+    fields = ("question_de", "answer_de")
+    list_display = ("question", "answer", "created_at")

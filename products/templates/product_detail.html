@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block extra_css %}
+  <style>
+/* Carousel container */
+.carousel {
+  position: relative;
+}
+
+/* Images container */
+.carousel-images {
+  height: auto; /* let height adjust to image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Each image */
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease-in-out, visibility 0.6s;
+}
+
+.carousel-image.active {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  z-index: 1;
+}
+
+.carousel-image img {
+  width: 100%;
+  height: auto; /* maintain aspect ratio */
+  object-fit: contain; /* show entire image */
+}
+
+/* Thumbnails */
+.carousel-thumbs {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.carousel-thumbs button {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.carousel-thumbs button img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.carousel-thumbs button:hover {
+  border: 2px solid #007bff;
+}
+
+
+table {
+  width: 100%;
+  margin-top: 1rem;
+}
+td.indent {
+  padding-left: 1rem;
+  color: var(--muted-color);
+}
+.text-muted {
+  color: var(--muted-color);
+  display: block;
+  margin-top: 0.5rem;
+}
+  </style>
+{% endblock extra_css %}
+
+{% block content %}
+  <section class="row">
+    <div class="col-md-6">
+      <!-- Image Carousel -->
+      <div class="carousel"
+           x-data="{ active: 0, total: {{ product.productimage_set.count }}, start() { setInterval(() => { this.active = (this.active + 1) % this.total; }, 2000); } }"
+           x-init="start()">
+        <div class="carousel-images">
+          {% for img in product.productimage_set.all %}
+            <div class="carousel-image"
+                 :class="{ 'active': active === {{ forloop.counter0 }} }">
+              <img src="{{ img.image_600.url }}" alt="{{ img.alt_text }}">
+            </div>
+          {% endfor %}
+        </div>
+        <div class="carousel-thumbs">
+          {% for img in product.productimage_set.all %}
+            <button @click="active = {{ forloop.counter0 }}">
+              <img src="{{ img.image_200.url }}" alt="{{ img.alt_text }}">
+            </button>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h1 class="text-center">{{ page_title }}</h1>
+      <p>{{ product.description|linebreaks }}</p>
+      <center>
+        <a href="{{ product.whatsapp_order_url }}"
+           role="button"
+           rel="nofollow"
+           target="_blank"><i class="bi bi-whatsapp"></i> {% translate "Order Product" %}</a>
+      </center>
+    </div>
+  </section>
+  <section class="my-5">
+    <h2>{% translate "Nutrition Table" %}</h2>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">{% translate "Nutrient" %}</th>
+          <th scope="col">{% translate "Per 100g" %}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{% translate "Energy" %}</td>
+          <td>{{ product.calories|floatformat:1 }} kcal</td>
+        </tr>
+        <tr>
+          <td>{% translate "Total Fat" %}</td>
+          <td>{{ product.total_fat|floatformat:1 }} g</td>
+        </tr>
+        <tr>
+          <td class="indent">{% translate "Saturated Fat" %}</td>
+          <td>{{ product.saturated_fat|floatformat:1 }} g</td>
+        </tr>
+        <tr>
+          <td>{% translate "Carbohydrates" %}</td>
+          <td>{{ product.total_carbo|floatformat:1 }} g</td>
+        </tr>
+        <tr>
+          <td class="indent">{% translate "Sugars" %}</td>
+          <td>{{ product.sugar|floatformat:1 }} g</td>
+        </tr>
+        <tr>
+          <td>{% translate "Protein" %}</td>
+          <td>{{ product.protein|floatformat:1 }} g</td>
+        </tr>
+        <tr>
+          <td>{% translate "Salt" %}</td>
+          <td>{{ product.salt|floatformat:2 }} g</td>
+        </tr>
+      </tbody>
+    </table>
+    <small class="text-muted">{% translate "Values are approximate and based on 100 g of product." %}</small>
+  </section>
+  {% include "snippets/faqs.html" %}
+{% endblock content %}

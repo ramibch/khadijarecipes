@@ -1,8 +1,21 @@
-# Create your models here.
+import urllib
+from io import BytesIO
+
+from django.conf import settings
+from django.core.files.base import ContentFile
 from django.db import models
 from django.urls import reverse_lazy
+from django.utils.translation import gettext_lazy as _
+from PIL import Image
 
 from config.db import CustomModel, PageModel
+
+
+class ProductType(models.TextChoices):
+    MIXED_PLATTERS = "mixed_pastries", _("Mixed platters")
+    SWEET_PLATTERS = "sweet_pastries", _("Sweet platters")
+    HONEY_PLATTERS = "honey_pastries", _("Honey platters")
+    COOKIES = "cookies", _("Cookies")
 
 
 class Product(PageModel):
@@ -18,23 +31,77 @@ class Product(PageModel):
     sugar = models.DecimalField(max_digits=3, decimal_places=1)
     protein = models.DecimalField(max_digits=3, decimal_places=1)
     salt = models.DecimalField(max_digits=3, decimal_places=2)
+    product_type = models.CharField(max_length=32, choices=ProductType)
 
     def save(self, *args, **kwargs):
         self.calories = 9 * self.total_fat + 4 * (self.total_carbo + self.protein)
         return super().save(*args, **kwargs)
 
     def get_absolute_url(self):
-        return reverse_lazy("product_detail", args=(self.slug))
+        return reverse_lazy("product_detail", args=(self.slug,))
 
+    @property
     def description(self):
         return self.get_localized_value("description") or self.description_de
+
+    @property
+    def whatsapp_order_url(self):
+        text = _("Hi") + " Khadija\n\n"
+        text += _("I am interested in this product") + "\n\n"
+        text += self.title
+        return f"{settings.WHATSAPP_URL}?text={urllib.parse.quote_plus(text)}"
 
 
 class ProductImage(CustomModel):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     image = models.ImageField(upload_to="product-images/")
-    alt_img_de = models.CharField(max_length=256)
-    alt_img_en = models.CharField(max_length=256, null=True, blank=True)
-    alt_img_fr = models.CharField(max_length=256, null=True, blank=True)
-    alt_img_es = models.CharField(max_length=256, null=True, blank=True)
-    alt_img_it = models.CharField(max_length=256, null=True, blank=True)
+    image_800 = models.ImageField(upload_to="product-images/", null=True, blank=True)
+    image_600 = models.ImageField(upload_to="product-images/", null=True, blank=True)
+    image_400 = models.ImageField(upload_to="product-images/", null=True, blank=True)
+    image_200 = models.ImageField(upload_to="product-images/", null=True, blank=True)
+    alt_de = models.CharField(max_length=256)
+    alt_en = models.CharField(max_length=256, null=True, blank=True)
+    alt_fr = models.CharField(max_length=256, null=True, blank=True)
+    alt_es = models.CharField(max_length=256, null=True, blank=True)
+    alt_it = models.CharField(max_length=256, null=True, blank=True)
+
+    def description(self):
+        return self.get_localized_value("alt") or self.alt_de
+
+    def save(self, *args, **kwargs):
+        # Save initially so we have self.image stored
+        if not self.pk or not self.image:
+            super().save(*args, **kwargs)
+
+        if self.image:
+            # Open image safely (works on S3 and local)
+            self.image.open()
+            img = Image.open(self.image)
+            img = img.convert("RGB")
+
+            sizes = [800, 600, 400, 200]
+
+            for width in sizes:
+                field = getattr(self, f"image_{width}")
+                if field and field.name:
+                    continue
+
+                aspect_ratio = img.height / img.width
+                height = int(width * aspect_ratio)
+                resized = img.resize((width, height), Image.LANCZOS)
+
+                buffer = BytesIO()
+                resized.save(buffer, format="WEBP", optimize=True, quality=85)
+                buffer.seek(0)
+
+                base_name = self.image.name.rsplit(".", 1)[0]
+                filename = f"{base_name}_{width}.webp"
+
+                getattr(self, f"image_{width}").save(
+                    filename, ContentFile(buffer.read()), save=False
+                )
+
+            # Important: close file handle
+            self.image.close()
+
+        super().save(*args, **kwargs)

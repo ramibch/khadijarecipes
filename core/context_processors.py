@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.utils.translation import get_language
 
 
@@ -14,8 +15,8 @@ def links(request):
     lang = get_language()
     return {
         "request": request,
-        "whatsapp_url": "https://wa.me/+41772363205",
-        "telegram_url": "https://t.me/khadijarecipes",
-        "instagram_url": "https://www.instagram.com/khadijarecipes/",
+        "whatsapp_url": settings.WHATSAPP_URL,
+        "telegram_url": settings.TELEGRAM_URL,
+        "instagram_url": settings.INSTAGRAM_URL,
         "temp_blog_url": f"https://khadijarecipes.com/{lang}/blog/",
     }

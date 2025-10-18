@@ -1,0 +1,16 @@
+{% load i18n %}
+{% if faqs %}
+  <section>
+    <h2 class="text-center">{% translate "FAQs" %}</h2>
+    {% for faq in faqs %}
+      <article class="offset-md-2 col-md-8">
+        <details x-data="{ isExpanded: false }">
+          <summary x-on:click="isExpanded = !isExpanded">
+            <strong>{{ faq.question }}</strong>
+          </summary>
+          <p x-cloak x-show="isExpanded">{{ faq.answer|linebreaks }}</p>
+        </details>
+      </article>
+    {% endfor %}
+  </section>
+{% endif %}

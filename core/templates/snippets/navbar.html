@@ -1,0 +1,28 @@
+{% load i18n %}
+<nav class="navbar"
+     x-data="{ open: false }"
+     x-on:click.outside="open = false">
+  <menu>
+    <li>
+      <strong>
+        <a href="{% url "home" %}">{{ brand_emoji }} {{ brand_name }}</a>
+      </strong>
+    </li>
+  </menu>
+  <button class="hamburger outline"
+          aria-label="Toggle menu"
+          @click="open = !open">
+    <i x-bind:class="open? 'bi bi-x-lg' : 'bi bi-list'"></i>
+  </button>
+  <menu class="nav-links" :class="{ 'open': open }" x-cloak>
+    <!--
+    <li><a class="contrast" href="{% url 'recipe_list' %}"> {% translate 'Recipes' %} </a></li>
+    -->
+    <li>
+      <a role="button"
+         rel="nofollow"
+         target="_blank"
+         href="{{ whatsapp_url }}"><i class="bi bi-whatsapp"></i> {% translate "Contact" %}</a>
+    </li>
+  </menu>
+</nav>

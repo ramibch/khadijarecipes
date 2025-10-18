@@ -3,10 +3,10 @@
   <center class="mt-4">
     <p>
         {% if request.path_info != "/" %}
-            <a href="{% url 'home' %}"> {% trans "Home" %} </a> ✨
+            <a href="{% url 'home' %}"> {% translate "Home" %} </a> ✨
             {% endif %}
-        <a href="{% url 'privacy' %}"> {% trans "Privacy Policy" %} </a> ✨
-        <a href="{% url 'terms' %}"> {% trans "Terms and Condidions" %} </a>
+        <a href="{% url 'privacy' %}"> {% translate "Privacy Policy" %} </a> ✨
+        <a href="{% url 'terms' %}"> {% translate "Terms and Condidions" %} </a>
     </p>
     <p>
       <a href="{{ instagram_url }}" rel="nofollow" target="_blank"><i class="bi bi-instagram fs-2"></i></a>

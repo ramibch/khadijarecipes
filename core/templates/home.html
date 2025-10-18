@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load i18n static %}
+{% block content %}
+  <section class="text-center my-5">
+    <h1 class="text-center fs-4 my-5">
+      {% translate "Add a sweet touch to your afternoon tea with traditional Moroccan sweets" %}
+    </h1>
+    <p class="fs-4">🍰☕🍪</p>
+  </section>
+  <section class="row">
+    <h2 class="text-center">{% translate "Platters" %}</h2>
+    {% for product in products %}
+      <article class="col-xl-3 col-lg-4 col-md-6">
+        <header>
+          <h3 class="text-center">{{ product.title }}</h3>
+        </header>
+        {% with pi=product.productimage_set.first %}
+          {% if pi %}
+            <center>
+              <a href="{{ product.url }}">
+                <img loading="lazy"
+                     x-data="{ isHovered: false }"
+                     x-bind:class="isHovered ? 'w-100 animate__animated animate__pulse' : 'w-100 ' "
+                     x-on:mouseenter="isHovered = true;"
+                     x-on:mouseleave="isHovered = false;"
+                     height="{{ pi.image_400.height }}"
+                     width="{{ pi.image_400.width }}"
+                     src="{{ pi.image_400.url }}"
+                     alt="{{ pi.alt }}">
+              </a>
+              <a href="{{ product.whatsapp_order_url }}"
+                 class="w-100 "
+                 role="button"
+                 rel="nofollow"
+                 target="_blank"><i class="bi bi-whatsapp"></i> {% translate "Order Product" %}</a>
+            </center>
+          {% endif %}
+        {% endwith %}
+      </article>
+    {% endfor %}
+  </section>
+  {% include "snippets/faqs.html" %}
+{% endblock content %}

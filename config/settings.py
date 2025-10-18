@@ -44,7 +44,6 @@ ALLOWED_HOSTS = [
 
 ALLOWED_HOSTS = [h for h in env.list("ALLOWED_HOSTS", delimiter=";") if h != ""]
 
-WEBSITE_URL = env("WEBSITE_URL")
 
 INTERNAL_IPS = ["127.0.0.1"]
 
@@ -70,9 +69,10 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -236,3 +236,10 @@ STORAGES = {
 
 
 WHITENOISE_MAX_AGE = 0 if DEBUG else 31_536_000
+
+
+# Links
+WEBSITE_URL = env("WEBSITE_URL")
+WHATSAPP_URL = "https://wa.me/+41772363205"
+TELEGRAM_URL = "https://t.me/khadijarecipes"
+INSTAGRAM_URL = "https://www.instagram.com/khadijarecipes/"

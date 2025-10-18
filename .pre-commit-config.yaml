@@ -1,0 +1,75 @@
+default_language_version:
+  python: python3.13
+  node: 22.14.0
+
+repos:
+  - repo: local
+    hooks:
+      - id: django-check
+        name: Run Django Check
+        entry: uv run manage.py check
+        language: system
+        pass_filenames: false
+        types: [python]
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: debug-statements
+      - id: check-merge-conflict
+      - id: check-case-conflict
+      - id: check-ast
+      - id: check-json
+      - id: check-toml
+      - id: check-xml
+      - id: check-yaml
+  - repo: https://github.com/pre-commit/sync-pre-commit-deps
+    rev: v0.0.3
+    hooks:
+      - id: sync-pre-commit-deps
+  - repo: https://github.com/psf/black-pre-commit-mirror
+    rev: 25.1.0
+    hooks:
+      - id: black
+        exclude: \.py-tpl$
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    # Ruff version.
+    rev: v0.11.6
+    hooks:
+      # Run the linter.
+      - id: ruff
+        args: [--fix]
+      # Run the formatter.
+      - id: ruff-format
+
+  - repo: https://github.com/sirwart/ripsecrets
+    rev: v0.1.9
+    hooks:
+      - id: ripsecrets
+
+  - repo: https://github.com/adamchainz/djade-pre-commit
+    rev: "1.4.0"
+    hooks:
+      - id: djade
+        args: [--target-version, "5.2"]
+        exclude: '\.tex$'
+  - repo: https://github.com/adamchainz/django-upgrade
+    rev: "1.24.0"
+    hooks:
+      - id: django-upgrade
+        args: [--target-version, "5.2"]
+  - repo: https://github.com/oxipng/oxipng
+    rev: v9.1.5
+    hooks:
+      - id: oxipng
+        args: ["-o", "4", "--strip", "safe", "--alpha"]
+  - repo: https://github.com/ramibch/webp-pre-commit
+    rev: "0.1.0"
+    hooks:
+      - id: convert-to-webp
+        name: Convert images to WebP
+        description: This hook converts image files to WebP format.
+        entry: webp-hook
+        language: python
+        files: \.(png|jpg|jpeg|gif|bmp|tiff)$

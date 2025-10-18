@@ -5,62 +5,82 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Product',
+            name="Product",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('updated_at', models.DateTimeField(auto_now=True)),
-                ('title_de', models.CharField(max_length=256)),
-                ('title_en', models.CharField(blank=True, max_length=256, null=True)),
-                ('title_fr', models.CharField(blank=True, max_length=256, null=True)),
-                ('title_es', models.CharField(blank=True, max_length=256, null=True)),
-                ('title_it', models.CharField(blank=True, max_length=256, null=True)),
-                ('slug_de', models.SlugField(max_length=256)),
-                ('slug_en', models.SlugField(blank=True, max_length=256, null=True)),
-                ('slug_fr', models.SlugField(blank=True, max_length=256, null=True)),
-                ('slug_es', models.SlugField(blank=True, max_length=256, null=True)),
-                ('slug_it', models.SlugField(blank=True, max_length=256, null=True)),
-                ('description_de', models.TextField()),
-                ('description_en', models.TextField(blank=True, null=True)),
-                ('description_fr', models.TextField(blank=True, null=True)),
-                ('description_es', models.TextField(blank=True, null=True)),
-                ('description_it', models.TextField(blank=True, null=True)),
-                ('calories', models.DecimalField(decimal_places=1, max_digits=4)),
-                ('total_fat', models.DecimalField(decimal_places=1, max_digits=3)),
-                ('saturated_fat', models.DecimalField(decimal_places=1, max_digits=3)),
-                ('total_carbo', models.DecimalField(decimal_places=1, max_digits=3)),
-                ('sugar', models.DecimalField(decimal_places=1, max_digits=3)),
-                ('protein', models.DecimalField(decimal_places=1, max_digits=3)),
-                ('salt', models.DecimalField(decimal_places=2, max_digits=3)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("updated_at", models.DateTimeField(auto_now=True)),
+                ("title_de", models.CharField(max_length=256)),
+                ("title_en", models.CharField(blank=True, max_length=256, null=True)),
+                ("title_fr", models.CharField(blank=True, max_length=256, null=True)),
+                ("title_es", models.CharField(blank=True, max_length=256, null=True)),
+                ("title_it", models.CharField(blank=True, max_length=256, null=True)),
+                ("slug_de", models.SlugField(max_length=256)),
+                ("slug_en", models.SlugField(blank=True, max_length=256, null=True)),
+                ("slug_fr", models.SlugField(blank=True, max_length=256, null=True)),
+                ("slug_es", models.SlugField(blank=True, max_length=256, null=True)),
+                ("slug_it", models.SlugField(blank=True, max_length=256, null=True)),
+                ("description_de", models.TextField()),
+                ("description_en", models.TextField(blank=True, null=True)),
+                ("description_fr", models.TextField(blank=True, null=True)),
+                ("description_es", models.TextField(blank=True, null=True)),
+                ("description_it", models.TextField(blank=True, null=True)),
+                ("calories", models.DecimalField(decimal_places=1, max_digits=4)),
+                ("total_fat", models.DecimalField(decimal_places=1, max_digits=3)),
+                ("saturated_fat", models.DecimalField(decimal_places=1, max_digits=3)),
+                ("total_carbo", models.DecimalField(decimal_places=1, max_digits=3)),
+                ("sugar", models.DecimalField(decimal_places=1, max_digits=3)),
+                ("protein", models.DecimalField(decimal_places=1, max_digits=3)),
+                ("salt", models.DecimalField(decimal_places=2, max_digits=3)),
             ],
             options={
-                'abstract': False,
+                "abstract": False,
             },
         ),
         migrations.CreateModel(
-            name='ProductImage',
+            name="ProductImage",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('updated_at', models.DateTimeField(auto_now=True)),
-                ('image', models.ImageField(upload_to='product-images/')),
-                ('alt_img_de', models.CharField(max_length=256)),
-                ('alt_img_en', models.CharField(blank=True, max_length=256, null=True)),
-                ('alt_img_fr', models.CharField(blank=True, max_length=256, null=True)),
-                ('alt_img_es', models.CharField(blank=True, max_length=256, null=True)),
-                ('alt_img_it', models.CharField(blank=True, max_length=256, null=True)),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='products.product')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("updated_at", models.DateTimeField(auto_now=True)),
+                ("image", models.ImageField(upload_to="product-images/")),
+                ("alt_img_de", models.CharField(max_length=256)),
+                ("alt_img_en", models.CharField(blank=True, max_length=256, null=True)),
+                ("alt_img_fr", models.CharField(blank=True, max_length=256, null=True)),
+                ("alt_img_es", models.CharField(blank=True, max_length=256, null=True)),
+                ("alt_img_it", models.CharField(blank=True, max_length=256, null=True)),
+                (
+                    "product",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="products.product",
+                    ),
+                ),
             ],
             options={
-                'abstract': False,
+                "abstract": False,
             },
         ),
     ]
