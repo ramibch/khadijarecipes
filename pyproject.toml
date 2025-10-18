@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "boto3>=1.40.52",
+    "deepl>=1.23.0",
     "djade>=1.6.0",
     "django>=6.0a1",
     "django-browser-reload>=1.21.0",
@@ -17,6 +18,7 @@ dependencies = [
     "gunicorn>=23.0.0",
     "ipdb>=0.13.13",
     "pillow>=11.3.0",
+    "polib>=1.2.0",
     "pre-commit>=4.3.0",
     "pyclean>=3.1.0",
     "whitenoise[brotli]>=6.11.0",

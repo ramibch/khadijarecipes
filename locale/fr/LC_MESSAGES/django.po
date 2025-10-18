@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-18 13:41+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: config/settings.py:148
+msgid "German"
+msgstr "Allemand"
+
+#: config/settings.py:149
+msgid "English"
+msgstr "Anglais"
+
+#: config/settings.py:150
+msgid "Spanish"
+msgstr "Espagnol"
+
+#: config/settings.py:151
+msgid "French"
+msgstr "Français"
+
+#: config/settings.py:152
+msgid "Italian"
+msgstr "Italien"
+
+#: core/templates/base.html:43
+msgid "Photo of Khadija"
+msgstr "Photo de Khadija"
+
+#: core/templates/home.html:6
+msgid ""
+"Add a sweet touch to your afternoon tea with traditional Moroccan sweets"
+msgstr ""
+"Ajoute une touche sucrée à ton thé de l'après-midi avec des sucreries "
+"marocaines traditionnelles."
+
+#: core/templates/home.html:11
+msgid "Platters"
+msgstr "Plateaux"
+
+#: core/templates/home.html:35 products/templates/product_detail.html:116
+msgid "Order Product"
+msgstr "Commander un produit"
+
+#: core/templates/snippets/faqs.html:4
+msgid "FAQs"
+msgstr "FAQs"
+
+#: core/templates/snippets/footer.html:6
+msgid "Home"
+msgstr "Accueil"
+
+#: core/templates/snippets/footer.html:8 core/views.py:32
+msgid "Privacy Policy"
+msgstr "Politique de confidentialité"
+
+#: core/templates/snippets/footer.html:9
+msgid "Terms and Condidions"
+msgstr "Termes et conditions"
+
+#: core/templates/snippets/navbar.html:19
+msgid "Recipes"
+msgstr "Recettes"
+
+#: core/templates/snippets/navbar.html:25
+msgid "Contact"
+msgstr "Contact"
+
+#: core/views.py:20
+msgid "Tasty recipes make from Bern"
+msgstr "Des recettes savoureuses faites à partir de Berne"
+
+#: core/views.py:42
+msgid "Terms and Conditions"
+msgstr "Conditions générales d'utilisation"
+
+#: core/views.py:65
+msgid "Page Not found"
+msgstr "Page non trouvée"
+
+#: core/views.py:70
+msgid "Request blocked"
+msgstr "Demande bloquée"
+
+#: core/views.py:75
+msgid "Server Error"
+msgstr "Erreur du serveur"
+
+#: products/models.py:15
+msgid "Mixed platters"
+msgstr "Plateaux mixtes"
+
+#: products/models.py:16
+msgid "Sweet platters"
+msgstr "Plateaux sucrés"
+
+#: products/models.py:17
+msgid "Honey platters"
+msgstr "Plateaux de miel"
+
+#: products/models.py:18
+msgid "Cookies"
+msgstr "Cookies"
+
+#: products/models.py:49
+msgid "Hi"
+msgstr "Bonjour"
+
+#: products/models.py:50
+msgid "I am interested in this product"
+msgstr "Ce produit m'intéresse"
+
+#: products/templates/product_detail.html:121
+msgid "Nutrition Table"
+msgstr "Tableau de nutrition"
+
+#: products/templates/product_detail.html:125
+msgid "Nutrient"
+msgstr "Nutriments"
+
+#: products/templates/product_detail.html:126
+msgid "Per 100g"
+msgstr "Par 100g"
+
+#: products/templates/product_detail.html:131
+msgid "Energy"
+msgstr "L'énergie"
+
+#: products/templates/product_detail.html:135
+msgid "Total Fat"
+msgstr "Matières grasses totales"
+
+#: products/templates/product_detail.html:139
+msgid "Saturated Fat"
+msgstr "Graisses saturées"
+
+#: products/templates/product_detail.html:143
+msgid "Carbohydrates"
+msgstr "Glucides"
+
+#: products/templates/product_detail.html:147
+msgid "Sugars"
+msgstr "Sucres"
+
+#: products/templates/product_detail.html:151
+msgid "Protein"
+msgstr "Protéines"
+
+#: products/templates/product_detail.html:155
+msgid "Salt"
+msgstr "Sel"
+
+#: products/templates/product_detail.html:160
+msgid "Values are approximate and based on 100 g of product."
+msgstr "Les valeurs sont approximatives et basées sur 100 g de produit."
+
+#: recipes/templates/recipes/recipe_list.html:8
+msgid "Comming Soon"
+msgstr "Bientôt disponible"
+
+#: recipes/templates/recipes/recipe_list.html:11
+msgid "Check my recipes here"
+msgstr "Consulte mes recettes ici"
