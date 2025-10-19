@@ -7,7 +7,7 @@ from .models import Ingredient, Recipe, RecipeIngredient, RecipeStep, Unit
 class RecipeIngredientInline(admin.TabularInline):
     model = RecipeIngredient
     extra = 1
-    fields = ["quantity", "ingredient", "unit"]
+    fields = ["quantity", "unit", "ingredient"]
     verbose_name = _("Ingredient")
     verbose_name_plural = _("Ingredients")
 
@@ -48,7 +48,7 @@ class IngredientAdmin(admin.ModelAdmin):
     readonly_fields = ["created_at", "updated_at"]
 
     fieldsets = (
-        (_("German"), {"fields": ("name_de",)}),
+        (_("German"), {"fields": ("name_de", "name_plural_de")}),
         (
             _("Advanced Options - Other Languages"),
             {
@@ -58,6 +58,10 @@ class IngredientAdmin(admin.ModelAdmin):
                     "name_fr",
                     "name_es",
                     "name_it",
+                    "name_plural_en",
+                    "name_plural_fr",
+                    "name_plural_es",
+                    "name_plural_it",
                 ),
             },
         ),
@@ -71,7 +75,7 @@ class IngredientAdmin(admin.ModelAdmin):
 @admin.register(Unit)
 class UnitAdmin(admin.ModelAdmin):
     list_display = ["name_de", "abbreviation", "created_at"]
-    search_fields = ["name_de"]
+    search_fields = ["name_de", "name_plural_de"]
     readonly_fields = ["created_at", "updated_at"]
 
     fieldsets = (
@@ -80,6 +84,7 @@ class UnitAdmin(admin.ModelAdmin):
             {
                 "fields": (
                     "name_de",
+                    "name_plural_de",
                     "abbreviation",
                 )
             },
