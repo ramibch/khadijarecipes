@@ -8,16 +8,25 @@ from config.db import CustomModel, PageModel
 class Unit(CustomModel):
     """Model for measurement units"""
 
+    abbreviation = models.CharField(max_length=10, blank=True)
     name_de = models.CharField(max_length=50)
     name_en = models.CharField(max_length=50, null=True, blank=True)
     name_fr = models.CharField(max_length=50, null=True, blank=True)
     name_es = models.CharField(max_length=50, null=True, blank=True)
     name_it = models.CharField(max_length=50, null=True, blank=True)
-    abbreviation = models.CharField(max_length=10, blank=True)
+    name_plural_de = models.CharField(max_length=100)
+    name_plural_en = models.CharField(max_length=100, null=True, blank=True)
+    name_plural_fr = models.CharField(max_length=100, null=True, blank=True)
+    name_plural_es = models.CharField(max_length=100, null=True, blank=True)
+    name_plural_it = models.CharField(max_length=100, null=True, blank=True)
 
     @property
     def name(self):
         return self.get_localized_value("name") or self.name_de
+
+    @property
+    def name_plural(self):
+        return self.get_localized_value("name_plural") or self.name_plural_de
 
     def __str__(self):
         return self.name
@@ -36,10 +45,19 @@ class Ingredient(CustomModel):
     name_fr = models.CharField(max_length=100, null=True, blank=True)
     name_es = models.CharField(max_length=100, null=True, blank=True)
     name_it = models.CharField(max_length=100, null=True, blank=True)
+    name_plural_de = models.CharField(max_length=100)
+    name_plural_en = models.CharField(max_length=100, null=True, blank=True)
+    name_plural_fr = models.CharField(max_length=100, null=True, blank=True)
+    name_plural_es = models.CharField(max_length=100, null=True, blank=True)
+    name_plural_it = models.CharField(max_length=100, null=True, blank=True)
 
     @property
     def name(self):
         return self.get_localized_value("name") or self.name_de
+
+    @property
+    def name_plural(self):
+        return self.get_localized_value("name_plural") or self.name_plural_de
 
     def __str__(self):
         return self.name
@@ -177,14 +195,39 @@ class RecipeIngredient(CustomModel):
         verbose_name=_("Unit"),
     )
 
-    def __str__(self):
-        parts = []
-        if self.quantity:
-            parts.append(str(self.quantity).replace(".00", ""))
-        if self.unit:
-            parts.append(self.unit.abbreviation or self.unit.name)
+    def get_display_unit(self):
+        """Return localized singular or plural unit name."""
+        if not self.unit:
+            return None
+        if self.quantity and self.quantity != 1:
+            return self.unit.name_plural
+        return self.unit.name
 
-        parts.append(self.ingredient.name)
+    def get_display_ingredient(self):
+        """Return localized singular or plural ingredient name."""
+        if self.quantity and self.quantity != 1:
+            return self.ingredient.name_plural
+        return self.ingredient.name
+
+    def __str__(self):
+        """Human-readable representation like '2 cups flour' or '1 egg'."""
+        parts = []
+
+        # Quantity
+        if self.quantity is not None:
+            parts.append(str(self.quantity).replace(".00", ""))
+
+        # Unit
+        if self.unit:
+            # Prefer abbreviation if present
+            if self.unit.abbreviation:
+                parts.append(self.unit.abbreviation)
+            else:
+                parts.append(self.get_display_unit())
+
+        # Ingredient name (singular/plural)
+        parts.append(self.get_display_ingredient())
+
         return " ".join(parts)
 
     class Meta:
