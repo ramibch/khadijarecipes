@@ -8,19 +8,11 @@ from config.db import CustomModel, PageModel
 class Unit(CustomModel):
     """Model for measurement units"""
 
-    name_de = models.CharField(max_length=50, verbose_name=_("Name (German)"))
-    name_en = models.CharField(
-        max_length=50, verbose_name=_("Name (English)"), null=True, blank=True
-    )
-    name_fr = models.CharField(
-        max_length=50, verbose_name=_("Name (French)"), null=True, blank=True
-    )
-    name_es = models.CharField(
-        max_length=50, verbose_name=_("Name (Spanish)"), null=True, blank=True
-    )
-    name_it = models.CharField(
-        max_length=50, verbose_name=_("Name (Italian)"), null=True, blank=True
-    )
+    name_de = models.CharField(max_length=50)
+    name_en = models.CharField(max_length=50, null=True, blank=True)
+    name_fr = models.CharField(max_length=50, null=True, blank=True)
+    name_es = models.CharField(max_length=50, null=True, blank=True)
+    name_it = models.CharField(max_length=50, null=True, blank=True)
     abbreviation = models.CharField(max_length=10, blank=True)
 
     @property
@@ -39,19 +31,11 @@ class Unit(CustomModel):
 class Ingredient(CustomModel):
     """Model for ingredients that can be reused across recipes"""
 
-    name_de = models.CharField(max_length=100, verbose_name=_("Name (German)"))
-    name_en = models.CharField(
-        max_length=100, verbose_name=_("Name (English)"), null=True, blank=True
-    )
-    name_fr = models.CharField(
-        max_length=100, verbose_name=_("Name (French)"), null=True, blank=True
-    )
-    name_es = models.CharField(
-        max_length=100, verbose_name=_("Name (Spanish)"), null=True, blank=True
-    )
-    name_it = models.CharField(
-        max_length=100, verbose_name=_("Name (Italian)"), null=True, blank=True
-    )
+    name_de = models.CharField(max_length=100)
+    name_en = models.CharField(max_length=100, null=True, blank=True)
+    name_fr = models.CharField(max_length=100, null=True, blank=True)
+    name_es = models.CharField(max_length=100, null=True, blank=True)
+    name_it = models.CharField(max_length=100, null=True, blank=True)
 
     @property
     def name(self):
@@ -66,50 +50,42 @@ class Ingredient(CustomModel):
         verbose_name_plural = _("Ingredients")
 
 
+class RecipeDifficulty(models.TextChoices):
+    EASY = "easy", _("Easy")
+    MEDIUM = "medium", _("Medium")
+    HARD = "hard", _("Hard")
+
+
+class RecipeCategory(models.TextChoices):
+    APPETIZER = "appetizer", _("Appetizer")
+    MAIN = "main", _("Main Course")
+    DESEART = "dessert", _("Dessert")
+    SNACK = "snack", _("Snack")
+    BEVERAGE = "beverage", _("Beverage")
+    BREAD = "bread", _("Bread")
+
+
 class Recipe(PageModel):
     """Main recipe model"""
 
-    DIFFICULTY_LEVELS = [
-        ("easy", _("Easy")),
-        ("medium", _("Medium")),
-        ("hard", _("Hard")),
-    ]
-
-    CATEGORIES = [
-        ("appetizer", _("Appetizer")),
-        ("main", _("Main Course")),
-        ("dessert", _("Dessert")),
-        ("snack", _("Snack")),
-        ("beverage", _("Beverage")),
-        ("bread", _("Bread")),
-    ]
-
-    # Introduction in multiple languages
-    introduction_de = models.TextField(
-        blank=True, verbose_name=_("Introduction (German)")
-    )
-    introduction_en = models.TextField(
-        blank=True, verbose_name=_("Introduction (English)")
-    )
-    introduction_fr = models.TextField(
-        blank=True, verbose_name=_("Introduction (French)")
-    )
-    introduction_es = models.TextField(
-        blank=True, verbose_name=_("Introduction (Spanish)")
-    )
-    introduction_it = models.TextField(
-        blank=True, verbose_name=_("Introduction (Italian)")
-    )
+    introduction_de = models.TextField()
+    introduction_en = models.TextField(null=True, blank=True)
+    introduction_fr = models.TextField(null=True, blank=True)
+    introduction_es = models.TextField(null=True, blank=True)
+    introduction_it = models.TextField(null=True, blank=True)
 
     # Metadata
     difficulty = models.CharField(
         max_length=10,
-        choices=DIFFICULTY_LEVELS,
-        default="medium",
+        choices=RecipeDifficulty,
+        default=RecipeDifficulty.MEDIUM,
         verbose_name=_("Difficulty Level"),
     )
     category = models.CharField(
-        max_length=20, choices=CATEGORIES, default="main", verbose_name=_("Category")
+        max_length=20,
+        choices=RecipeCategory,
+        default=RecipeCategory.MAIN,
+        verbose_name=_("Category"),
     )
 
     # Timing
@@ -126,19 +102,25 @@ class Recipe(PageModel):
         verbose_name=_("Cooking Time"),
     )
 
-    # Servings
-    servings = models.PositiveIntegerField(default=1, verbose_name=_("Servings"))
-
     # Images
     main_image = models.ImageField(
-        upload_to="recipes/main/", null=True, blank=True, verbose_name=_("Main Image")
+        upload_to="recipes/main/",
+        null=True,
+        blank=True,
+        verbose_name=_("Main Image"),
     )
-
-    # Publication
-    date_published = models.DateField(
-        null=True, blank=True, verbose_name=_("Date Published")
+    ingredients_image = models.ImageField(
+        upload_to="recipes/ingredients/",
+        null=True,
+        blank=True,
+        verbose_name=_("Ingredients Image"),
     )
-    is_published = models.BooleanField(default=False, verbose_name=_("Is Published"))
+    prep_image = models.ImageField(
+        upload_to="recipes/preparation/",
+        null=True,
+        blank=True,
+        verbose_name=_("Preparation Image"),
+    )
 
     @property
     def introduction(self):
@@ -176,7 +158,9 @@ class RecipeIngredient(CustomModel):
         verbose_name=_("Recipe"),
     )
     ingredient = models.ForeignKey(
-        Ingredient, on_delete=models.CASCADE, verbose_name=_("Ingredient")
+        Ingredient,
+        on_delete=models.CASCADE,
+        verbose_name=_("Ingredient"),
     )
     quantity = models.DecimalField(
         max_digits=10,
@@ -186,29 +170,25 @@ class RecipeIngredient(CustomModel):
         verbose_name=_("Quantity"),
     )
     unit = models.ForeignKey(
-        Unit, on_delete=models.SET_NULL, null=True, blank=True, verbose_name=_("Unit")
-    )
-    unit_text = models.CharField(
-        max_length=50,
+        Unit,
+        on_delete=models.SET_NULL,
+        null=True,
         blank=True,
-        help_text=_("Custom unit if not in predefined units"),
-        verbose_name=_("Custom Unit"),
+        verbose_name=_("Unit"),
     )
-    order = models.PositiveIntegerField(default=0, verbose_name=_("Order"))
 
     def __str__(self):
         parts = []
         if self.quantity:
-            parts.append(str(self.quantity))
+            parts.append(str(self.quantity).replace(".00", ""))
         if self.unit:
             parts.append(self.unit.abbreviation or self.unit.name)
-        elif self.unit_text:
-            parts.append(self.unit_text)
+
         parts.append(self.ingredient.name)
         return " ".join(parts)
 
     class Meta:
-        ordering = ["order", "id"]
+        ordering = ["id"]
         unique_together = ["recipe", "ingredient"]
         verbose_name = _("Recipe Ingredient")
         verbose_name_plural = _("Recipe Ingredients")
@@ -217,23 +197,13 @@ class RecipeIngredient(CustomModel):
 class RecipeStep(CustomModel):
     """Step-by-step instructions for a recipe"""
 
-    recipe = models.ForeignKey(
-        Recipe, on_delete=models.CASCADE, related_name="steps", verbose_name=_("Recipe")
-    )
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name="steps")
     step_number = models.PositiveIntegerField(verbose_name=_("Step Number"))
-    instruction_de = models.TextField(verbose_name=_("Instruction (German)"))
-    instruction_en = models.TextField(
-        blank=True, verbose_name=_("Instruction (English)")
-    )
-    instruction_fr = models.TextField(
-        blank=True, verbose_name=_("Instruction (French)")
-    )
-    instruction_es = models.TextField(
-        blank=True, verbose_name=_("Instruction (Spanish)")
-    )
-    instruction_it = models.TextField(
-        blank=True, verbose_name=_("Instruction (Italian)")
-    )
+    instruction_de = models.TextField()
+    instruction_en = models.TextField(blank=True)
+    instruction_fr = models.TextField(blank=True)
+    instruction_es = models.TextField(blank=True)
+    instruction_it = models.TextField(blank=True)
 
     @property
     def instruction(self):

@@ -1,291 +1,45 @@
 {% extends "base.html" %}
 {% load i18n %}
-{% block extra_css %}
-  <style>
-.recipe-meta {
-  display: flex;
-  gap: 1rem;
-  margin: 1rem 0;
-  flex-wrap: wrap;
-}
-
-.meta-badge {
-  background: var(--secondary-color);
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  color: var(--text-color);
-}
-
-.difficulty-easy {
-  background: #d4edda;
-  color: #155724;
-}
-
-.difficulty-medium {
-  background: #fff3cd;
-  color: #856404;
-}
-
-.difficulty-hard {
-  background: #f8d7da;
-  color: #721c24;
-}
-
-.time-info {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  margin: 2rem 0;
-}
-
-.time-card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  border: 1px solid var(--border-color);
-}
-
-.time-value {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--primary-color);
-  margin-bottom: 0.5rem;
-}
-
-.time-label {
-  font-size: 0.9rem;
-  color: var(--muted-color);
-  text-transform: uppercase;
-}
-
-.ingredients-list {
-  list-style: none;
-  padding: 0;
-  background: var(--light-bg);
-  border-radius: 8px;
-  padding: 1.5rem;
-}
-
-.ingredient-item {
-  padding: 0.75rem 0;
-  border-bottom: 1px solid var(--border-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.ingredient-item:last-child {
-  border-bottom: none;
-}
-
-.ingredient-name {
-  flex-grow: 1;
-}
-
-.ingredient-quantity {
-  font-weight: bold;
-  color: var(--text-color);
-  margin-left: 1rem;
-  min-width: 80px;
-  text-align: right;
-}
-
-.steps-list {
-  list-style: none;
-  counter-reset: step-counter;
-  padding: 0;
-}
-
-.step-item {
-  counter-increment: step-counter;
-  margin-bottom: 1.5rem;
-  padding: 1.5rem;
-  background: var(--light-bg);
-  border-radius: 8px;
-  border-left: 4px solid var(--primary-color);
-}
-
-.step-item::before {
-  content: counter(step-counter);
-  background: var(--primary-color);
-  color: white;
-  font-weight: bold;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.step-instruction {
-  margin-left: 45px;
-}
-
-.section-title {
-  color: var(--primary-color);
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--primary-color);
-}
-
-/* Carousel styles from product template */
-.carousel {
-  position: relative;
-}
-
-.carousel-images {
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.6s ease-in-out, visibility 0.6s;
-}
-
-.carousel-image.active {
-  opacity: 1;
-  visibility: visible;
-  position: relative;
-  z-index: 1;
-}
-
-.carousel-image img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-.carousel-thumbs {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  gap: 5px;
-}
-
-.carousel-thumbs button {
-  border: none;
-  padding: 0;
-  background: transparent;
-  cursor: pointer;
-}
-
-.carousel-thumbs button img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-}
-
-.carousel-thumbs button:hover {
-  border: 2px solid var(--primary-color);
-}
-  </style>
-{% endblock extra_css %}
-
 {% block content %}
-  <section class="row">
-    <div class="col-md-6">
-      <!-- Recipe Image Carousel -->
-      {% if recipe.images.all %}
-        <div class="carousel"
-             x-data="{ active: 0, total: {{ recipe.images.count }}, start() { setInterval(() => { this.active = (this.active + 1) % this.total; }, 2000); } }"
-             x-init="start()">
-          <div class="carousel-images">
-            {% for img in recipe.images.all %}
-              <div class="carousel-image"
-                   :class="{ 'active': active === {{ forloop.counter0 }} }">
-                <img src="{{ img.image.url }}" alt="{{ img.caption }}">
-              </div>
-            {% endfor %}
-          </div>
-          <div class="carousel-thumbs">
-            {% for img in recipe.images.all %}
-              <button @click="active = {{ forloop.counter0 }}">
-                <img src="{{ img.image.url }}" alt="{{ img.caption }}">
-              </button>
-            {% endfor %}
-          </div>
-        </div>
-      {% elif recipe.main_image %}
-        <!-- Single main image -->
-        <div class="carousel">
-          <div class="carousel-images">
-            <div class="carousel-image active">
-              <img src="{{ recipe.main_image.url }}" alt="{{ recipe.title }}">
-            </div>
-          </div>
-        </div>
-      {% endif %}
+  <section class="text-center">
+    <h1>{{ recipe.title }}</h1>
+    {% if recipe.introduction %}<p>{{ recipe.introduction|linebreaks }}</p>{% endif %}
+  </section>
+  {% if recipe.main_image %}
+    <section class="row">
+      <img class="offset-md-4 col-md-4"
+           src="{{ recipe.main_image.url }}"
+           alt="{{ recipe.title }}">
+    </section>
+  {% endif %}
+  <section class="row my-5">
+    <div {% if recipe.ingredients_image %} class="col-md-6" {% else %}  class="offset-md-2 col-md-8"{% endif %}>
+      <h2>{% translate "Ingredients" %}</h2>
+      <ul>
+        {% for ingredient in recipe.ingredients.all %}<li>{{ ingredient }}</li>{% endfor %}
+      </ul>
     </div>
-    <div class="col-md-6">
-      <h1 class="text-center">{{ recipe.title }}</h1>
-      <div class="recipe-meta">
-        <span class="meta-badge difficulty-{{ recipe.difficulty }}">{{ recipe.get_difficulty_display }}</span>
-        <span class="meta-badge">{{ recipe.get_category_display }}</span>
-        <span class="meta-badge">{{ recipe.servings }} {% translate "Portions" %}</span>
+    {% if recipe.ingredients_image %}
+      <div class="col-md-6">
+        <img src="{{ recipe.ingredients_image.url }}"
+             class="w-100"
+             alt="{% translate 'Recipe ingredients' %} | {{ recipe.title }}">
       </div>
-      {% if recipe.introduction %}<div class="recipe-intro">{{ recipe.introduction|linebreaks }}</div>{% endif %}
-      <div class="time-info">
-        {% if recipe.prep_time %}
-          <div class="time-card">
-            <div class="time-value">{{ recipe.prep_time }} min</div>
-            <div class="time-label">{% translate "Preparation" %}</div>
-          </div>
-        {% endif %}
-        {% if recipe.cook_time %}
-          <div class="time-card">
-            <div class="time-value">{{ recipe.cook_time }} min</div>
-            <div class="time-label">{% translate "Cooking" %}</div>
-          </div>
-        {% endif %}
-        {% if recipe.total_time %}
-          <div class="time-card">
-            <div class="time-value">{{ recipe.total_time }} min</div>
-            <div class="time-label">{% translate "Total Time" %}</div>
-          </div>
-        {% endif %}
+    {% endif %}
+  </section>
+  <section class="row my-5">
+    {% if recipe.prep_image %}
+      <div class="col-md-6">
+        <img src="{{ recipe.prep_image.url }}"
+             class="w-100"
+             alt="{% translate 'Recipe Preparation' %} | {{ recipe.title }}">
       </div>
+    {% endif %}
+    <div {% if recipe.prep_image %} class="col-md-6" {% else %}  class="offset-md-2 col-md-8"{% endif %}>
+      <h2>{% translate "Preparation" %}</h2>
+      <ol>
+        {% for step in recipe.steps.all %}<li>{{ step.instruction }}</li>{% endfor %}
+      </ol>
     </div>
   </section>
-  <section class="my-5">
-    <h2 class="section-title">{% translate "Ingredients" %}</h2>
-    <ul class="ingredients-list">
-      {% for ingredient in recipe.ingredients.all %}
-        <li class="ingredient-item">
-          <span class="ingredient-name">{{ ingredient.ingredient.name }}</span>
-          <span class="ingredient-quantity">
-            {% if ingredient.quantity %}{{ ingredient.quantity }}{% endif %}
-            {% if ingredient.unit %}{{ ingredient.unit.abbreviation }}{% endif %}
-            {% if ingredient.unit_text %}{{ ingredient.unit_text }}{% endif %}
-          </span>
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
-  <section class="my-5">
-    <h2 class="section-title">{% translate "Preparation" %}</h2>
-    <ol class="steps-list">
-      {% for step in recipe.steps.all %}
-        <li class="step-item">
-          <div class="step-instruction">{{ step.instruction|linebreaks }}</div>
-        </li>
-      {% endfor %}
-    </ol>
-  </section>
-  <footer class="text-center mt-5 pt-3 border-top text-muted">
-    <small>{% translate "Recipe created on" %} {{ recipe.created_at|date:"d.m.Y" }}</small>
-  </footer>
 {% endblock content %}

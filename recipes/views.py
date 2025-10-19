@@ -13,6 +13,10 @@ from .models import Recipe
 class RecipeListView(ListView):
     template_name = "recipes/recipe_list.html"
     model = Recipe
+    context_object_name = "recipes"
+
+    def get_queryset(self):
+        return super().get_queryset().exclude(main_image="")
 
 
 class RecipeDetailView(DetailView):
@@ -33,7 +37,5 @@ class RecipeDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["page_title"] = self.object.title
-        context["page_description"] = (
-            self.object.introduction[:300] if self.object.introduction else ""
-        )
+        context["page_description"] = self.object.introduction[:300]
         return context

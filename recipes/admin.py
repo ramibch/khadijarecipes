@@ -7,13 +7,12 @@ from .models import Ingredient, Recipe, RecipeIngredient, RecipeStep, Unit
 class RecipeIngredientInline(admin.TabularInline):
     model = RecipeIngredient
     extra = 1
-    fields = ["ingredient", "quantity", "unit", "unit_text", "order"]
-    ordering = ["order"]
+    fields = ["quantity", "ingredient", "unit"]
     verbose_name = _("Ingredient")
     verbose_name_plural = _("Ingredients")
 
 
-class RecipeStepInline(admin.StackedInline):
+class RecipeStepInline(admin.TabularInline):
     model = RecipeStep
     extra = 1
     fields = ["step_number", "instruction_de"]
@@ -24,83 +23,21 @@ class RecipeStepInline(admin.StackedInline):
 
 @admin.register(Recipe)
 class RecipeAdmin(admin.ModelAdmin):
-    list_display = ["title_de", "category", "difficulty", "is_published", "created_at"]
-    list_filter = ["category", "difficulty", "is_published", "created_at"]
+    list_display = ["title_de", "category", "difficulty", "created_at"]
+    list_filter = ["category", "difficulty", "created_at"]
     search_fields = ["title_de", "introduction_de"]
     readonly_fields = ["created_at", "updated_at"]
     inlines = [RecipeIngredientInline, RecipeStepInline]
-
-    fieldsets = (
-        (
-            _("Basic Information (German)"),
-            {
-                "fields": (
-                    "title_de",
-                    "slug_de",
-                )
-            },
-        ),
-        (_("Content (German)"), {"fields": ("introduction_de",)}),
-        (
-            _("Metadata"),
-            {
-                "fields": (
-                    ("category", "difficulty"),
-                    ("prep_time", "cook_time"),
-                    "servings",
-                    "main_image",
-                )
-            },
-        ),
-        (
-            _("Publication"),
-            {
-                "fields": (
-                    "is_published",
-                    "date_published",
-                )
-            },
-        ),
-        (
-            _("Advanced Options - Titles"),
-            {
-                "classes": ("collapse",),
-                "fields": (
-                    "title_en",
-                    "title_fr",
-                    "title_es",
-                    "title_it",
-                ),
-            },
-        ),
-        (
-            _("Advanced Options - Slugs"),
-            {
-                "classes": ("collapse",),
-                "fields": (
-                    "slug_en",
-                    "slug_fr",
-                    "slug_es",
-                    "slug_it",
-                ),
-            },
-        ),
-        (
-            _("Advanced Options - Introductions"),
-            {
-                "classes": ("collapse",),
-                "fields": (
-                    "introduction_en",
-                    "introduction_fr",
-                    "introduction_es",
-                    "introduction_it",
-                ),
-            },
-        ),
-        (
-            _("Timestamps"),
-            {"fields": ("created_at", "updated_at"), "classes": ("collapse",)},
-        ),
+    fields = (
+        "title_de",
+        "introduction_de",
+        "main_image",
+        "ingredients_image",
+        "prep_image",
+        "category",
+        "difficulty",
+        "prep_time",
+        "cook_time",
     )
 
 
@@ -168,28 +105,10 @@ class UnitAdmin(admin.ModelAdmin):
 
 @admin.register(RecipeIngredient)
 class RecipeIngredientAdmin(admin.ModelAdmin):
-    list_display = ["recipe", "ingredient", "quantity", "unit", "order"]
+    list_display = ["recipe", "ingredient", "quantity", "unit"]
     list_filter = ["recipe", "unit"]
     search_fields = ["recipe__title_de", "ingredient__name_de"]
     readonly_fields = ["created_at", "updated_at"]
-
-    fieldsets = (
-        (
-            _("Basic Information"),
-            {
-                "fields": (
-                    "recipe",
-                    "ingredient",
-                    ("quantity", "unit", "unit_text"),
-                    "order",
-                )
-            },
-        ),
-        (
-            _("Timestamps"),
-            {"fields": ("created_at", "updated_at"), "classes": ("collapse",)},
-        ),
-    )
 
 
 @admin.register(RecipeStep)
