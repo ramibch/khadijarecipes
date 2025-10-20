@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     # own apps
     "core",
     "recipes",
+    "products",
 ]
 
 MIDDLEWARE = [
