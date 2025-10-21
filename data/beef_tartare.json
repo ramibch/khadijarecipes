@@ -1,0 +1,329 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 14,
+    "fields": {
+      "title_de": "Rindstatar mit Trüffel",
+      "title_en": "Beef Tartare with Truffle",
+      "title_fr": "Tartare de bœuf à la truffe",
+      "title_es": "Tartar de ternera con trufa",
+      "title_it": "Tartare di manzo con tartufo",
+      "slug_de": "rindstatar-mit-trueffel",
+      "slug_en": "beef-tartare-with-truffle",
+      "slug_fr": "tartare-de-boeuf-a-la-truffe",
+      "slug_es": "tartar-de-ternera-con-trufa",
+      "slug_it": "tartare-di-manzo-con-tartufo",
+      "introduction_de": "Feines Rindstatar mit Trüffel - ein klassisches Gericht aus hochwertigem Rinderfilet, verfeinert mit Kapern, Sardellen und einer würzigen Sauce, gekrönt mit frischem Trüffel.",
+      "introduction_en": "Fine beef tartare with truffle - a classic dish made from high-quality beef fillet, refined with capers, anchovies and a spicy sauce, topped with fresh truffle.",
+      "introduction_fr": "Tartare de bœuf fin à la truffe - un plat classique à base de filet de bœuf de qualité, raffiné avec des câpres, des anchois et une sauce épicée, surmonté de truffe fraîche.",
+      "introduction_es": "Tartar de ternera fino con trufa - un plato clásico hecho con filete de ternera de alta calidad, refinado con alcaparras, anchoas y una salsa picante, coronado con trufa fresca.",
+      "introduction_it": "Tartare di manzo fine con tartufo - un piatto classico a base di filetto di manzo di alta qualità, raffinato con capperi, acciughe e una salsa piccante, coronato con tartufo fresco.",
+      "difficulty": "hard",
+      "category": "main",
+      "prep_time": 30,
+      "cook_time": null,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 106,
+    "fields": {
+      "recipe_id": 14,
+      "ingredient_id": 75,
+      "quantity": "300.00",
+      "unit_id": 1,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 107,
+    "fields": {
+      "recipe_id": 14,
+      "ingredient_id": 30,
+      "quantity": "1.00",
+      "unit_id": 6,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 108,
+    "fields": {
+      "recipe_id": 14,
+      "ingredient_id": 76,
+      "quantity": "1.00",
+      "unit_id": 8,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 109,
+    "fields": {
+      "recipe_id": 14,
+      "ingredient_id": 77,
+      "quantity": "1.00",
+      "unit_id": 8,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 110,
+    "fields": {
+      "recipe_id": 14,
+      "ingredient_id": 9,
+      "quantity": "1.00",
+      "unit_id": 8,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 111,
+    "fields": {
+      "recipe_id": 14,
+      "ingredient_id": 78,
+      "quantity": "2.00",
+      "unit_id": 5,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 112,
+    "fields": {
+      "recipe_id": 14,
+      "ingredient_id": 79,
+      "quantity": "2.00",
+      "unit_id": 6,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 113,
+    "fields": {
+      "recipe_id": 14,
+      "ingredient_id": 31,
+      "quantity": "2.00",
+      "unit_id": 8,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 114,
+    "fields": {
+      "recipe_id": 14,
+      "ingredient_id": 80,
+      "quantity": "1.00",
+      "unit_id": 6,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 115,
+    "fields": {
+      "recipe_id": 14,
+      "ingredient_id": 6,
+      "quantity": "1.00",
+      "unit_id": 6,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 116,
+    "fields": {
+      "recipe_id": 14,
+      "ingredient_id": 81,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 117,
+    "fields": {
+      "recipe_id": 14,
+      "ingredient_id": 83,
+      "quantity": "1.00",
+      "unit_id": 8,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 118,
+    "fields": {
+      "recipe_id": 14,
+      "ingredient_id": 3,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 119,
+    "fields": {
+      "recipe_id": 14,
+      "ingredient_id": 19,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 120,
+    "fields": {
+      "recipe_id": 14,
+      "ingredient_id": 84,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 80,
+    "fields": {
+      "recipe_id": 14,
+      "step_number": 1,
+      "instruction_de": "Das Rinderfilet waschen und gründlich trocken tupfen. Rinderfilet sorgfältig von Haut und Sehnen befreien und in dünne Scheiben schneiden.",
+      "instruction_en": "Wash the beef fillet and pat dry thoroughly. Carefully remove skin and tendons from beef fillet and cut into thin slices.",
+      "instruction_fr": "Laver le filet de bœuf et le sécher soigneusement. Retirer soigneusement la peau et les tendons du filet de bœuf et le couper en fines tranches.",
+      "instruction_es": "Lavar el filete de ternera y secar bien. Retirar cuidadosamente la piel y los tendones del filete de ternera y cortar en rodajas finas.",
+      "instruction_it": "Lavare il filetto di manzo e asciugare accuratamente. Rimuovere attentamente la pelle e i tendini dal filetto di manzo e tagliare a fette sottili.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 81,
+    "fields": {
+      "recipe_id": 14,
+      "step_number": 2,
+      "instruction_de": "Anschließend mit dem Messer durch Hacken fein zerlegen.",
+      "instruction_en": "Then finely chop with a knife.",
+      "instruction_fr": "Ensuite, hacher finement avec un couteau.",
+      "instruction_es": "Luego picar finamente con un cuchillo.",
+      "instruction_it": "Poi tritare finemente con un coltello.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 82,
+    "fields": {
+      "recipe_id": 14,
+      "step_number": 3,
+      "instruction_de": "Schalotten schälen und sehr fein hacken. Essiggurken, Sardellen und Kapern ebenfalls fein schneiden.",
+      "instruction_en": "Peel the shallots and chop them very finely. Pickles, anchovies and capers also finely chop.",
+      "instruction_fr": "Éplucher les échalotes et les hacher très finement. Cornichons, anchois et câpres également hacher finement.",
+      "instruction_es": "Pelar los chalotes y picarlos muy finamente. Pepinillos, anchoas y alcaparras también picar finamente.",
+      "instruction_it": "Sbucciare gli scalogni e tritarli molto finemente. Cetriolini, acciughe e capperi anche tritare finemente.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 83,
+    "fields": {
+      "recipe_id": 14,
+      "step_number": 4,
+      "instruction_de": "In einem Schüssel Olivenöl, Senf, Tabasco, Ketchup, Worcestersauce und Eigelb gut verrühren.",
+      "instruction_en": "In a bowl mix olive oil, mustard, Tabasco, ketchup, Worcestershire sauce and egg yolk well.",
+      "instruction_fr": "Dans un bol, mélanger bien l'huile d'olive, la moutarde, le Tabasco, le ketchup, la sauce Worcestershire et le jaune d'œuf.",
+      "instruction_es": "En un bol mezclar bien el aceite de oliva, la mostaza, el Tabasco, el ketchup, la salsa Worcestershire y la yema de huevo.",
+      "instruction_it": "In una ciotola mescolare bien l'olio d'oliva, la senape, il Tabasco, il ketchup, la salsa Worcestershire e il tuorlo d'uovo.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 84,
+    "fields": {
+      "recipe_id": 14,
+      "step_number": 5,
+      "instruction_de": "Alle Zutaten mit Fleisch zusammen gut durchmischen. Mit Salz, Pfeffer, Muskat und Zitronenabrieb abschmecken.",
+      "instruction_en": "Mix all ingredients with meat together well. Season with salt, pepper, nutmeg and lemon zest.",
+      "instruction_fr": "Mélanger tous les ingrédients avec la viande. Assaisonner avec sel, poivre, muscade et zeste de citron.",
+      "instruction_es": "Mezclar todos los ingredientes con la carne. Sazonar con sal, pimienta, nuez moscada y ralladura de limón.",
+      "instruction_it": "Mescolare tutti gli ingredienti con la carne. Condire con sale, pepe, noce moscada e scorza di limone.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 85,
+    "fields": {
+      "recipe_id": 14,
+      "step_number": 6,
+      "instruction_de": "Das vorbereitete Rindstatar mit einem Ring anrichten. Rindstatar mit Schwarzbrot, Brioche oder Baguette servieren.",
+      "instruction_en": "Arrange the prepared beef tartare with a ring. Serve beef tartare with brown bread, brioche or baguette.",
+      "instruction_fr": "Dresser le tartare de bœuf préparé avec un anneau. Servir le tartare de bœuf avec du pain noir, brioche ou baguette.",
+      "instruction_es": "Presentar el tartar de ternera preparado con un aro. Servir el tartar de ternera con pan negro, brioche o baguette.",
+      "instruction_it": "Disporre il tartare di manzo preparato con un anello. Servire il tartare di manzo con pane nero, brioche o baguette.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 86,
+    "fields": {
+      "recipe_id": 14,
+      "step_number": 7,
+      "instruction_de": "Brot in einer Bratpfanne von beiden Seiten goldbraun rösten und mit geschälter Knoblauchzehe einreiben.",
+      "instruction_en": "Toast bread on both sides in a frying pan until golden brown and rub with peeled garlic clove.",
+      "instruction_fr": "Faire dorer le pain des deux côtés dans une poêle à frire et le frotter avec une gousse d'ail épluchée.",
+      "instruction_es": "Tostar el pan por ambos lados en una sartén hasta que esté dorado y frotar con un diente de ajo pelado.",
+      "instruction_it": "Tostare il pane su entrambi i lati in una padella fino a doratura e strofinare con uno spicchio d'aglio sbucciato.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 87,
+    "fields": {
+      "recipe_id": 14,
+      "step_number": 8,
+      "instruction_de": "Wer Trüffel mag, kann den Trüffel am Schluss mit einem Trüffelhobel fein über das Beef Tatar hobeln.",
+      "instruction_en": "If you like truffles, you can finely shave the truffle over the beef tartare with a truffle slicer at the end.",
+      "instruction_fr": "Si vous aimez la truffe, vous pouvez la raboter finement sur le tartare de bœuf à l'aide d'un rabot à truffes à la fin.",
+      "instruction_es": "Si te gustan las trufas, puedes rallar finamente la trufa sobre el tartar de ternera con un rallador de trufas al final.",
+      "instruction_it": "Se ti piace il tartufo, puoi grattugiare finemente il tartufo sul tartare di manzo con un affettatrice di tartufi alla fine.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 13,
+    "fields": {
+      "title_de": "Türkisches Fladenbrot",
+      "title_en": "Turkish Pita Bread",
+      "title_fr": "Galettes de pain turques",
+      "title_es": "Pan de pita turco",
+      "title_it": "Pane pita turco",
+      "slug_de": "tuerkisches-fladenbrot",
+      "slug_en": "turkish-pita-bread",
+      "slug_fr": "galettes-de-pain-turques",
+      "slug_es": "pan-de-pita-turco",
+      "slug_it": "pane-pita-turco",
+      "introduction_de": "Traditionelles türkisches Fladenbrot mit weicher Textur und aromatischer Kruste, perfekt für Dips, Sandwiches oder als Beilage zu verschiedenen Gerichten.",
+      "introduction_en": "Traditional Turkish pita bread with soft texture and aromatic crust, perfect for dips, sandwiches or as a side dish for various meals.",
+      "introduction_fr": "Galettes de pain turques traditionnelles à la texture moelleuse et à la croûte aromatique, parfaites pour les trempettes, les sandwichs ou en accompagnement de divers plats.",
+      "introduction_es": "Pan de pita turco tradicional con textura suave y corteza aromática, perfecto para dips, sándwiches o como guarnición para varias comidas.",
+      "introduction_it": "Pane pita turco tradizionale con texture morbida e crosta aromatica, perfetto per salse, panini o come contorno per vari piatti.",
+      "difficulty": "medium",
+      "category": "bread",
+      "prep_time": 25,
+      "cook_time": 13,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 96,
+    "fields": {
+      "recipe_id": 13,
+      "ingredient_id": 89,
+      "quantity": "100.00",
+      "unit_id": 3,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 97,
+    "fields": {
+      "recipe_id": 13,
+      "ingredient_id": 5,
+      "quantity": "150.00",
+      "unit_id": 3,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 98,
+    "fields": {
+      "recipe_id": 13,
+      "ingredient_id": 1,
+      "quantity": "500.00",
+      "unit_id": 1,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 99,
+    "fields": {
+      "recipe_id": 13,
+      "ingredient_id": 10,
+      "quantity": "0.50",
+      "unit_id": 5,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 100,
+    "fields": {
+      "recipe_id": 13,
+      "ingredient_id": 3,
+      "quantity": "1.00",
+      "unit_id": 5,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 101,
+    "fields": {
+      "recipe_id": 13,
+      "ingredient_id": 2,
+      "quantity": "1.00",
+      "unit_id": 6,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 102,
+    "fields": {
+      "recipe_id": 13,
+      "ingredient_id": 6,
+      "quantity": "2.00",
+      "unit_id": 6,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 103,
+    "fields": {
+      "recipe_id": 13,
+      "ingredient_id": 9,
+      "quantity": "1.00",
+      "unit_id": 8,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 104,
+    "fields": {
+      "recipe_id": 13,
+      "ingredient_id": 4,
+      "quantity": "3.00",
+      "unit_id": 6,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 105,
+    "fields": {
+      "recipe_id": 13,
+      "ingredient_id": 20,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 73,
+    "fields": {
+      "recipe_id": 13,
+      "step_number": 1,
+      "instruction_de": "In einen Schüssel die Hefe mit lauwarmem Wasser, Milch, Olivenöl und Zucker glatt rühren, 5 Minuten gehen lassen.",
+      "instruction_en": "In a bowl mix the yeast with lukewarm water, milk, olive oil and sugar until smooth, let stand 5 minutes.",
+      "instruction_fr": "Dans un bol, mélanger la levure avec l'eau tiède, le lait, l'huile d'olive et le sucre jusqu'à obtenir une pâte lisse, laisser lever 5 minutes.",
+      "instruction_es": "En un bol, mezclar la levadura con agua tibia, leche, aceite de oliva y azúcar hasta que quede suave, dejar reposar 5 minutos.",
+      "instruction_it": "In una ciotola mescolare il lievito con acqua tiepida, latte, olio d'oliva e zucchero fino a che non sia liscio, lasciare riposare 5 minuti.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 74,
+    "fields": {
+      "recipe_id": 13,
+      "step_number": 2,
+      "instruction_de": "Mehl nach und nach dazugeben und bis es glatt kneten. Der Teig sollte schön weich und noch leicht klebrig sein, falls der Teig zu klebrig ist, könnt ihr noch etwas mehr Mehl hinzufügen.",
+      "instruction_en": "Add flour gradually and knead until smooth. The dough should be nice and soft and still slightly sticky, if the dough is too sticky you can add a little more flour.",
+      "instruction_fr": "Ajouter la farine petit à petit et pétrir jusqu'à ce que la pâte soit lisse. La pâte doit être bien souple et encore légèrement collante. Si la pâte est trop collante, vous pouvez ajouter un peu plus de farine.",
+      "instruction_es": "Añadir la harina gradualmente y amasar hasta que quede suave. La masa debe ser agradable y suave y todavía ligeramente pegajosa, si la masa está demasiado pegajosa puedes añadir un poco más de harina.",
+      "instruction_it": "Aggiungere la farina gradualmente e impastare fino a che non sia liscia. L'impasto dovrebbe essere bello morbido e ancora leggermente appiccicoso, se l'impasto è troppo appiccicoso puoi aggiungere un po' più di farina.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 75,
+    "fields": {
+      "recipe_id": 13,
+      "step_number": 3,
+      "instruction_de": "Zum Schluss mit den Händen weiter kneten und den Teig zu einer Kugel formen. Mit einem Küchentuch abdecken und 40 Minuten gehen lassen.",
+      "instruction_en": "Finally, continue kneading with your hands and shape the dough into a ball. Cover with a kitchen towel and let rise for 40 minutes.",
+      "instruction_fr": "Pour finir, continuez à pétrir la pâte avec les mains et formez une boule. Couvrir d'un torchon et laisser lever pendant 40 minutes.",
+      "instruction_es": "Finalmente, continúa amasando con las manos y forma la masa en una bola. Cubrir con un paño de cocina y dejar levar durante 40 minutos.",
+      "instruction_it": "Infine, continua a impastare con le mani e forma la pasta a palla. Coprire con un canovaccio e lasciar lievitare per 40 minuti.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 76,
+    "fields": {
+      "recipe_id": 13,
+      "step_number": 4,
+      "instruction_de": "Teig in 4 Stücke schneiden. Dann zu Kügelchens formen. Fladenbrot auf das Backblech geben, mit der Hand vorsichtig den Teig flachdrücken.",
+      "instruction_en": "Cut dough into 4 pieces. Then shape into balls. Place pita bread on baking sheet, gently flatten dough with hand.",
+      "instruction_fr": "Couper la pâte en 4 morceaux. Former ensuite des boulettes. Déposer les galettes sur la plaque de cuisson, aplatir délicatement la pâte avec la main.",
+      "instruction_es": "Cortar la masa en 4 piezas. Luego formar bolitas. Colocar el pan de pita en la bandeja de horno, aplanar suavemente la masa con la mano.",
+      "instruction_it": "Tagliare la pasta in 4 pezzi. Poi formare palline. Mettere il pane pita sulla teglia, appiattire delicatamente la pasta con la mano.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 77,
+    "fields": {
+      "recipe_id": 13,
+      "step_number": 5,
+      "instruction_de": "Mit einem Küchentuch abdecken und 15 Minuten gehen lassen.",
+      "instruction_en": "Cover with a kitchen towel and let rise for 15 minutes.",
+      "instruction_fr": "Couvrir d'un torchon et laisser lever pendant 15 minutes.",
+      "instruction_es": "Cubrir con un paño de cocina y dejar levar durante 15 minutos.",
+      "instruction_it": "Coprire con un canovaccio e lasciar lievitare per 15 minuti.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 78,
+    "fields": {
+      "recipe_id": 13,
+      "step_number": 6,
+      "instruction_de": "Ei mit Joghurt verquirlen und Fladenbrot damit einstreichen. Mit den Fingern kleine Löcher in den Teig drücken und mit Sesam sowie Schwarzkümmel bestreuen.",
+      "instruction_en": "Whisk egg with yogurt and spread on pita bread. Press small holes in the dough with your fingers and sprinkle with sesame seeds and black cumin.",
+      "instruction_fr": "Battre l'œuf avec le yaourt et en badigeonner les galettes. Avec les doigts, faire des petits trous dans la pâte et saupoudrer de sésame et de cumin noir.",
+      "instruction_es": "Batir el huevo con el yogur y untar el pan de pita. Presionar pequeños agujeros en la masa con los dedos y espolvorear con semillas de sésamo y comino negro.",
+      "instruction_it": "Sbattere l'uovo con lo yogurt e spalmare sul pane pita. Premere piccoli fori nella pasta con le dita e cospargere con semi di sesamo e cumino nero.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 79,
+    "fields": {
+      "recipe_id": 13,
+      "step_number": 7,
+      "instruction_de": "Im heißen Ofen 200 Grad 12-13 Minuten backen.",
+      "instruction_en": "Bake in a hot oven 200 degrees for 12-13 minutes.",
+      "instruction_fr": "Cuire à four chaud 200 degrés pendant 12-13 minutes.",
+      "instruction_es": "Hornear en horno caliente a 200 grados durante 12-13 minutos.",
+      "instruction_it": "Cuocere in forno caldo a 200 gradi per 12-13 minuti.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  }
+]

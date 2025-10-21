@@ -1,0 +1,227 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 6,
+    "fields": {
+      "title_de": "Kürbis Curry Suppe",
+      "title_en": "Pumpkin Curry Soup",
+      "title_fr": "Soupe au curry de potiron",
+      "slug_de": "kurbis-curry-suppe",
+      "slug_en": "pumpkin-curry-soup",
+      "slug_fr": "soupe-au-curry-de-potiron",
+      "introduction_de": "Eine cremige Kürbissuppe mit Curry-Note, verfeinert mit Portwein und Madeira - perfekt für kalte Tage. Garniert mit gerösteten Kürbiskernen für den extra Crunch.",
+      "introduction_en": "A creamy pumpkin soup with curry notes, refined with port wine and Madeira - perfect for cold days. Garnished with roasted pumpkin seeds for extra crunch.",
+      "introduction_fr": "Une soupe de potiron crémeuse aux notes de curry, raffinée avec du porto et du madère - parfaite pour les jours froids. Garnie de graines de courge grillées pour un croquant supplémentaire.",
+      "difficulty": "medium",
+      "category": "main",
+      "prep_time": 20,
+      "cook_time": 40
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 42,
+    "fields": {
+      "recipe_id": 6,
+      "ingredient_id": 33,
+      "quantity": "500.00",
+      "unit_id": 1
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 43,
+    "fields": {
+      "recipe_id": 6,
+      "ingredient_id": 34,
+      "quantity": "1.00",
+      "unit_id": 8
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 44,
+    "fields": {
+      "recipe_id": 6,
+      "ingredient_id": 10,
+      "quantity": "150.00",
+      "unit_id": 1
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 45,
+    "fields": {
+      "recipe_id": 6,
+      "ingredient_id": 35,
+      "quantity": "150.00",
+      "unit_id": 3
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 46,
+    "fields": {
+      "recipe_id": 6,
+      "ingredient_id": 36,
+      "quantity": "150.00",
+      "unit_id": 3
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 47,
+    "fields": {
+      "recipe_id": 6,
+      "ingredient_id": 37,
+      "quantity": "1.00",
+      "unit_id": 5
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 48,
+    "fields": {
+      "recipe_id": 6,
+      "ingredient_id": 38,
+      "quantity": "1.00",
+      "unit_id": 5
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 49,
+    "fields": {
+      "recipe_id": 6,
+      "ingredient_id": 39,
+      "quantity": "2.00",
+      "unit_id": 4
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 50,
+    "fields": {
+      "recipe_id": 6,
+      "ingredient_id": 40,
+      "quantity": "1.00",
+      "unit_id": 4
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 51,
+    "fields": {
+      "recipe_id": 6,
+      "ingredient_id": 3,
+      "quantity": "1.00",
+      "unit_id": 7
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 52,
+    "fields": {
+      "recipe_id": 6,
+      "ingredient_id": 19,
+      "quantity": "1.00",
+      "unit_id": 7
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 53,
+    "fields": {
+      "recipe_id": 6,
+      "ingredient_id": 84,
+      "quantity": "1.00",
+      "unit_id": 7
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 54,
+    "fields": {
+      "recipe_id": 6,
+      "ingredient_id": 48,
+      "quantity": "1.00",
+      "unit_id": 9
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 55,
+    "fields": {
+      "recipe_id": 6,
+      "ingredient_id": 71,
+      "quantity": "1.00",
+      "unit_id": 6
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 29,
+    "fields": {
+      "recipe_id": 6,
+      "step_number": 1,
+      "instruction_de": "In einem Topf den Zucker karamellisieren und mit dem Madeira und dem weißen Portwein ablöschen und so lange kochen lassen, bis sich der Zucker aufgelöst.",
+      "instruction_en": "Caramelize the sugar in a pan, deglaze with the Madeira and white port and simmer until the sugar has dissolved.",
+      "instruction_fr": "Dans une casserole, faites caraméliser le sucre, puis ajoutez le madère et le porto blanc et laissez cuire jusqu'à ce que le sucre soit dissous."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 30,
+    "fields": {
+      "recipe_id": 6,
+      "step_number": 2,
+      "instruction_de": "Den Kürbis waschen, entkernen und halbieren. Mit einem Löffel das Kürbisfleisch mit den Kernen herauslösen, grob zerschneiden und dazugeben. Zwiebeln schälen und in Würfel schneiden und in den Topf geben.",
+      "instruction_en": "Wash, deseed and halve the pumpkin. Scoop out the pumpkin flesh with the seeds using a spoon, chop roughly and add. Peel and dice the onions and add to the pan.",
+      "instruction_fr": "Laver la courge, l'épépiner et la couper en deux. À l'aide d'une cuillère, prélever la chair du potiron avec les graines, la couper grossièrement et l'ajouter. Epluchez les oignons, coupez-les en dés et ajoutez-les dans la casserole."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 31,
+    "fields": {
+      "recipe_id": 6,
+      "step_number": 3,
+      "instruction_de": "Übergießen Sie die Suppe mit Gemüsebrühe oder Wasser. Die Suppe 30 Minuten köcheln lassen. Ab und zu umrühren.",
+      "instruction_en": "Pour vegetable stock or water over the soup. Leave the soup to simmer for 30 minutes. Stir occasionally.",
+      "instruction_fr": "Arrosez la soupe de bouillon de légumes ou d'eau. Laisser mijoter la soupe pendant 30 minutes. Remuer de temps en temps."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 32,
+    "fields": {
+      "recipe_id": 6,
+      "step_number": 4,
+      "instruction_de": "Die Suppe nach dem Kochen mit dem Pürierstab fein pürieren, mit Sahne oder Kokosmilch und Currypaste verfeinern und je nach gewünschter Konsistenz verdünnen.",
+      "instruction_en": "Once cooked, puree the soup with a hand blender, refine with cream or coconut milk and curry paste and thin down to the desired consistency.",
+      "instruction_fr": "Après la cuisson, réduire la soupe en purée fine à l'aide d'un mixeur, l'affiner avec de la crème ou du lait de coco et de la pâte de curry et la diluer selon la consistance souhaitée."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 33,
+    "fields": {
+      "recipe_id": 6,
+      "step_number": 5,
+      "instruction_de": "Fertige Suppe mit Salz, Pfeffer, Curry-Pulver sowie Muskatnuss abschmecken.",
+      "instruction_en": "Season the finished soup with salt, pepper, curry powder and nutmeg.",
+      "instruction_fr": "Assaisonner la soupe terminée avec du sel, du poivre, du curry en poudre et de la noix de muscade."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 34,
+    "fields": {
+      "recipe_id": 6,
+      "step_number": 6,
+      "instruction_de": "Eine kleine Handvoll Kürbiskerne in einer Pfanne bei mittlerer Hitze trocken rösten, bis sie zu knistern beginnen. Nimm sie vom Herd und streue eine kleine Menge über die Suppe. Wenn du auch noch ein wenig Kürbiskernöl darüber träufelst, sieht das nicht nur toll aus, sondern schmeckt auch noch richtig gut!",
+      "instruction_en": "Dry roast a small handful of pumpkin seeds in a pan over a medium heat until they start to crackle. Take them off the heat and sprinkle a small amount over the soup. If you drizzle a little pumpkin seed oil on top, it not only looks great, but tastes really good too!",
+      "instruction_fr": "Fais griller à sec une petite poignée de graines de courge dans une poêle à feu moyen jusqu'à ce qu'elles commencent à crépiter. Retirez-les du feu et saupoudrez-en une petite quantité sur la soupe. Si tu ajoutes un peu d'huile de pépins de courge, c'est non seulement très joli, mais aussi très bon !"
+    }
+  }
+]

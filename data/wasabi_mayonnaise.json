@@ -1,0 +1,170 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 21,
+    "fields": {
+      "title_de": "Wasabi Mayonnaise",
+      "title_en": "Wasabi Mayonnaise",
+      "title_fr": "Mayonnaise au wasabi",
+      "title_es": "Mayonesa de wasabi",
+      "title_it": "Maionese al wasabi",
+      "slug_de": "wasabi-mayonnaise",
+      "slug_en": "wasabi-mayonnaise",
+      "slug_fr": "mayonnaise-au-wasabi",
+      "slug_es": "mayonesa-de-wasabi",
+      "slug_it": "maionese-al-wasabi",
+      "introduction_de": "Würzige Wasabi-Mayonnaise - eine cremige, scharfe Mayonnaise mit japanischem Wasabi, perfekt als Dip oder als Beilage zu Sushi, Fischgerichten und mehr.",
+      "introduction_en": "Spicy wasabi mayonnaise - a creamy, spicy mayonnaise with Japanese wasabi, perfect as a dip or as a side dish for sushi, fish dishes and more.",
+      "introduction_fr": "Mayonnaise épicée au wasabi - une mayonnaise crémeuse et épicée avec du wasabi japonais, parfaite comme trempette ou comme accompagnement pour les sushis, les plats de poisson et plus encore.",
+      "introduction_es": "Mayonesa picante de wasabi - una mayonesa cremosa y picante con wasabi japonés, perfecta como salsa para mojar o como guarnición para sushi, platos de pescado y más.",
+      "introduction_it": "Maionese piccante al wasabi - una maionese cremosa e piccante con wasabi giapponese, perfetta come salsa per intingere o come contorno per sushi, piatti di pesce e altro ancora.",
+      "difficulty": "easy",
+      "category": "snack",
+      "prep_time": 10,
+      "cook_time": null,
+      "created_at": "2024-01-22T10:00:00Z",
+      "updated_at": "2024-01-22T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 183,
+    "fields": {
+      "recipe_id": 21,
+      "ingredient_id": 7,
+      "quantity": "1.00",
+      "unit_id": 8,
+      "created_at": "2024-01-22T10:00:00Z",
+      "updated_at": "2024-01-22T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 184,
+    "fields": {
+      "recipe_id": 21,
+      "ingredient_id": 97,
+      "quantity": "150.00",
+      "unit_id": 3,
+      "created_at": "2024-01-22T10:00:00Z",
+      "updated_at": "2024-01-22T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 185,
+    "fields": {
+      "recipe_id": 21,
+      "ingredient_id": 3,
+      "quantity": "1.00",
+      "unit_id": 7,
+      "created_at": "2024-01-22T10:00:00Z",
+      "updated_at": "2024-01-22T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 186,
+    "fields": {
+      "recipe_id": 21,
+      "ingredient_id": 10,
+      "quantity": "1.00",
+      "unit_id": 7,
+      "created_at": "2024-01-22T10:00:00Z",
+      "updated_at": "2024-01-22T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 187,
+    "fields": {
+      "recipe_id": 21,
+      "ingredient_id": 19,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-22T10:00:00Z",
+      "updated_at": "2024-01-22T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 188,
+    "fields": {
+      "recipe_id": 21,
+      "ingredient_id": 98,
+      "quantity": "1.00",
+      "unit_id": 5,
+      "created_at": "2024-01-22T10:00:00Z",
+      "updated_at": "2024-01-22T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 189,
+    "fields": {
+      "recipe_id": 21,
+      "ingredient_id": 99,
+      "quantity": "0.50",
+      "unit_id": 5,
+      "created_at": "2024-01-22T10:00:00Z",
+      "updated_at": "2024-01-22T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 190,
+    "fields": {
+      "recipe_id": 21,
+      "ingredient_id": 22,
+      "quantity": "0.50",
+      "unit_id": 5,
+      "created_at": "2024-01-22T10:00:00Z",
+      "updated_at": "2024-01-22T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 136,
+    "fields": {
+      "recipe_id": 21,
+      "step_number": 1,
+      "instruction_de": "Ei, Wasabi Paste, Salz, Zucker, Pfeffer gut einrühren.",
+      "instruction_en": "Stir in egg, wasabi paste, salt, sugar, pepper well.",
+      "instruction_fr": "Bien mélanger l'œuf, la pâte de wasabi, le sel, le sucre et le poivre.",
+      "instruction_es": "Mezclar bien el huevo, la pasta de wasabi, la sal, el azúcar y la pimienta.",
+      "instruction_it": "Mescolare bene l'uovo, la pasta di wasabi, il sale, lo zucchero e il pepe.",
+      "created_at": "2024-01-22T10:00:00Z",
+      "updated_at": "2024-01-22T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 137,
+    "fields": {
+      "recipe_id": 21,
+      "step_number": 2,
+      "instruction_de": "Das Öl tropfenweise hinzufügen und gleichzeitig ständig mit einem Schneebesen oder Stabmixer aufschlagen, bis eine dick cremige Wasabi Mayonnaise entsteht.",
+      "instruction_en": "Add the oil drop by drop while whisking constantly with a whisk or hand blender until you get a thick creamy wasabi mayonnaise.",
+      "instruction_fr": "Ajoutez l'huile goutte à goutte tout en battant constamment avec un fouet ou un mixeur plongeant jusqu'à obtenir une mayonnaise au wasabi épaisse et crémeuse.",
+      "instruction_es": "Añadir el aceite gota a gota mientras se bate constantemente con un batidor o batidora de mano hasta obtener una mayonesa de wasabi espesa y cremosa.",
+      "instruction_it": "Aggiungere l'olio a goccia a goccia mentre si sbatte costantemente con una frusta o un frullatore a immersione fino a ottenere una maionese al wasabi densa e cremosa.",
+      "created_at": "2024-01-22T10:00:00Z",
+      "updated_at": "2024-01-22T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 138,
+    "fields": {
+      "recipe_id": 21,
+      "step_number": 3,
+      "instruction_de": "Zum Schluss mit Reisessig oder Zitronensaft abschmecken.",
+      "instruction_en": "Finally, season with rice vinegar or lemon juice.",
+      "instruction_fr": "Pour finir, assaisonnez avec du vinaigre de riz ou du jus de citron.",
+      "instruction_es": "Finalmente, sazonar con vinagre de arroz o jugo de limón.",
+      "instruction_it": "Infine, condire con aceto di riso o succo di limone.",
+      "created_at": "2024-01-22T10:00:00Z",
+      "updated_at": "2024-01-22T10:00:00Z"
+    }
+  }
+]

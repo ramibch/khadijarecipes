@@ -1,0 +1,2028 @@
+[
+  {
+    "model": "recipes.unit",
+    "pk": 1,
+    "fields": {
+      "abbreviation": "g",
+      "name_de": "Gramm",
+      "name_en": "gram",
+      "name_fr": "gramme",
+      "name_es": "gramo",
+      "name_it": "grammo",
+      "name_plural_de": "Gramm",
+      "name_plural_en": "grams",
+      "name_plural_fr": "grammes",
+      "name_plural_es": "gramos",
+      "name_plural_it": "grammi"
+    }
+  },
+  {
+    "model": "recipes.unit",
+    "pk": 2,
+    "fields": {
+      "abbreviation": "kg",
+      "name_de": "Kilogramm",
+      "name_en": "kilogram",
+      "name_fr": "kilogramme",
+      "name_es": "kilogramo",
+      "name_it": "chilogrammo",
+      "name_plural_de": "Kilogramm",
+      "name_plural_en": "kilograms",
+      "name_plural_fr": "kilogrammes",
+      "name_plural_es": "kilogramos",
+      "name_plural_it": "chilogrammi"
+    }
+  },
+  {
+    "model": "recipes.unit",
+    "pk": 3,
+    "fields": {
+      "abbreviation": "ml",
+      "name_de": "Milliliter",
+      "name_en": "milliliter",
+      "name_fr": "millilitre",
+      "name_es": "mililitro",
+      "name_it": "millilitro",
+      "name_plural_de": "Milliliter",
+      "name_plural_en": "milliliters",
+      "name_plural_fr": "millilitres",
+      "name_plural_es": "mililitros",
+      "name_plural_it": "millilitri"
+    }
+  },
+  {
+    "model": "recipes.unit",
+    "pk": 4,
+    "fields": {
+      "abbreviation": "l",
+      "name_de": "Liter",
+      "name_en": "liter",
+      "name_fr": "litre",
+      "name_es": "litro",
+      "name_it": "litro",
+      "name_plural_de": "Liter",
+      "name_plural_en": "liters",
+      "name_plural_fr": "litres",
+      "name_plural_es": "litros",
+      "name_plural_it": "litri"
+    }
+  },
+  {
+    "model": "recipes.unit",
+    "pk": 5,
+    "fields": {
+      "abbreviation": "tsp",
+      "name_de": "Teelöffel",
+      "name_en": "teaspoon",
+      "name_fr": "cuillère à café",
+      "name_es": "cucharadita",
+      "name_it": "cucchiaino",
+      "name_plural_de": "Teelöffel",
+      "name_plural_en": "teaspoons",
+      "name_plural_fr": "cuillères à café",
+      "name_plural_es": "cucharaditas",
+      "name_plural_it": "cucchiaini"
+    }
+  },
+  {
+    "model": "recipes.unit",
+    "pk": 6,
+    "fields": {
+      "abbreviation": "tbsp",
+      "name_de": "Esslöffel",
+      "name_en": "tablespoon",
+      "name_fr": "cuillère à soupe",
+      "name_es": "cucharada",
+      "name_it": "cucchiaio",
+      "name_plural_de": "Esslöffel",
+      "name_plural_en": "tablespoons",
+      "name_plural_fr": "cuillères à soupe",
+      "name_plural_es": "cucharadas",
+      "name_plural_it": "cucchiai"
+    }
+  },
+  {
+    "model": "recipes.unit",
+    "pk": 7,
+    "fields": {
+      "abbreviation": "",
+      "name_de": "Prise",
+      "name_en": "pinch",
+      "name_fr": "pincée",
+      "name_es": "pizca",
+      "name_it": "pizzico",
+      "name_plural_de": "Prisen",
+      "name_plural_en": "pinches",
+      "name_plural_fr": "pincées",
+      "name_plural_es": "pizcas",
+      "name_plural_it": "pizzichi"
+    }
+  },
+  {
+    "model": "recipes.unit",
+    "pk": 8,
+    "fields": {
+      "abbreviation": "",
+      "name_de": "Stück",
+      "name_en": "piece",
+      "name_fr": "pièce",
+      "name_es": "pieza",
+      "name_it": "pezzo",
+      "name_plural_de": "Stücke",
+      "name_plural_en": "pieces",
+      "name_plural_fr": "pièces",
+      "name_plural_es": "piezas",
+      "name_plural_it": "pezzi"
+    }
+  },
+  {
+    "model": "recipes.unit",
+    "pk": 9,
+    "fields": {
+      "abbreviation": "",
+      "name_de": "Bund",
+      "name_en": "bunch",
+      "name_fr": "bouquet",
+      "name_es": "manojo",
+      "name_it": "mazzo",
+      "name_plural_de": "Bunde",
+      "name_plural_en": "bunches",
+      "name_plural_fr": "bouquets",
+      "name_plural_es": "manojos",
+      "name_plural_it": "mazzi"
+    }
+  },
+  {
+    "model": "recipes.unit",
+    "pk": 10,
+    "fields": {
+      "abbreviation": "",
+      "name_de": "Stängel",
+      "name_en": "stalk",
+      "name_fr": "tige",
+      "name_es": "tallo",
+      "name_it": "gambo",
+      "name_plural_de": "Stängel",
+      "name_plural_en": "stalks",
+      "name_plural_fr": "tiges",
+      "name_plural_es": "tallos",
+      "name_plural_it": "gambi"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 1,
+    "fields": {
+      "name_de": "Mehl",
+      "name_en": "flour",
+      "name_fr": "farine",
+      "name_es": "harina",
+      "name_it": "farina",
+      "name_plural_de": "Mehl",
+      "name_plural_en": "flour",
+      "name_plural_fr": "farine",
+      "name_plural_es": "harina",
+      "name_plural_it": "farina"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 2,
+    "fields": {
+      "name_de": "Hefe",
+      "name_en": "yeast",
+      "name_fr": "levure",
+      "name_es": "levadura",
+      "name_it": "lievito",
+      "name_plural_de": "Hefe",
+      "name_plural_en": "yeast",
+      "name_plural_fr": "levure",
+      "name_plural_es": "levadura",
+      "name_plural_it": "lievito"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 3,
+    "fields": {
+      "name_de": "Salz",
+      "name_en": "salt",
+      "name_fr": "sel",
+      "name_es": "sal",
+      "name_it": "sale",
+      "name_plural_de": "Salz",
+      "name_plural_en": "salt",
+      "name_plural_fr": "sel",
+      "name_plural_es": "sal",
+      "name_plural_it": "sale"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 4,
+    "fields": {
+      "name_de": "Joghurt",
+      "name_en": "yogurt",
+      "name_fr": "yaourt",
+      "name_es": "yogur",
+      "name_it": "yogurt",
+      "name_plural_de": "Joghurt",
+      "name_plural_en": "yogurt",
+      "name_plural_fr": "yaourt",
+      "name_plural_es": "yogur",
+      "name_plural_it": "yogurt"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 5,
+    "fields": {
+      "name_de": "Wasser",
+      "name_en": "water",
+      "name_fr": "eau",
+      "name_es": "agua",
+      "name_it": "acqua",
+      "name_plural_de": "Wasser",
+      "name_plural_en": "water",
+      "name_plural_fr": "eau",
+      "name_plural_es": "agua",
+      "name_plural_it": "acqua"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 6,
+    "fields": {
+      "name_de": "Olivenöl",
+      "name_en": "olive oil",
+      "name_fr": "huile d'olive",
+      "name_es": "aceite de oliva",
+      "name_it": "olio d'oliva",
+      "name_plural_de": "Olivenöl",
+      "name_plural_en": "olive oil",
+      "name_plural_fr": "huile d'olive",
+      "name_plural_es": "aceite de oliva",
+      "name_plural_it": "olio d'oliva"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 7,
+    "fields": {
+      "name_de": "Vollei",
+      "name_en": "whole egg",
+      "name_fr": "œuf entier",
+      "name_es": "huevo entero",
+      "name_it": "uovo intero",
+      "name_plural_de": "Volleier",
+      "name_plural_en": "whole eggs",
+      "name_plural_fr": "œufs entiers",
+      "name_plural_es": "huevos enteros",
+      "name_plural_it": "uova intere"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 8,
+    "fields": {
+      "name_de": "Dill",
+      "name_en": "dill",
+      "name_fr": "aneth",
+      "name_es": "eneldo",
+      "name_it": "aneto",
+      "name_plural_de": "Dill",
+      "name_plural_en": "dill",
+      "name_plural_fr": "aneth",
+      "name_plural_es": "eneldo",
+      "name_plural_it": "aneto"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 9,
+    "fields": {
+      "name_de": "Eigelb",
+      "name_en": "egg yolk",
+      "name_fr": "jaune d'œuf",
+      "name_es": "yema de huevo",
+      "name_it": "tuorlo d'uovo",
+      "name_plural_de": "Eigelb",
+      "name_plural_en": "egg yolks",
+      "name_plural_fr": "jaunes d'œuf",
+      "name_plural_es": "yemas de huevo",
+      "name_plural_it": "tuorli d'uovo"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 10,
+    "fields": {
+      "name_de": "Zucker",
+      "name_en": "sugar",
+      "name_fr": "sucre",
+      "name_es": "azúcar",
+      "name_it": "zucchero",
+      "name_plural_de": "Zucker",
+      "name_plural_en": "sugar",
+      "name_plural_fr": "sucre",
+      "name_plural_es": "azúcar",
+      "name_plural_it": "zucchero"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 11,
+    "fields": {
+      "name_de": "Nussbutter",
+      "name_en": "nut butter",
+      "name_fr": "beurre de noix",
+      "name_es": "mantequilla de nuez",
+      "name_it": "burro di noci",
+      "name_plural_de": "Nussbutter",
+      "name_plural_en": "nut butter",
+      "name_plural_fr": "beurre de noix",
+      "name_plural_es": "mantequilla de nuez",
+      "name_plural_it": "burro di noci"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 12,
+    "fields": {
+      "name_de": "Butter",
+      "name_en": "butter",
+      "name_fr": "beurre",
+      "name_es": "mantequilla",
+      "name_it": "burro",
+      "name_plural_de": "Butter",
+      "name_plural_en": "butter",
+      "name_plural_fr": "beurre",
+      "name_plural_es": "mantequilla",
+      "name_plural_it": "burro"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 13,
+    "fields": {
+      "name_de": "Lachsfilet",
+      "name_en": "salmon fillet",
+      "name_fr": "filet de saumon",
+      "name_es": "filete de salmón",
+      "name_it": "filetto di salmone",
+      "name_plural_de": "Lachsfilets",
+      "name_plural_en": "salmon fillets",
+      "name_plural_fr": "filets de saumon",
+      "name_plural_es": "filetes de salmón",
+      "name_plural_it": "filetti di salmone"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 14,
+    "fields": {
+      "name_de": "Mango",
+      "name_en": "mango",
+      "name_fr": "mangue",
+      "name_es": "mango",
+      "name_it": "mango",
+      "name_plural_de": "Mangos",
+      "name_plural_en": "mangoes",
+      "name_plural_fr": "mangues",
+      "name_plural_es": "mangos",
+      "name_plural_it": "mango"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 15,
+    "fields": {
+      "name_de": "Avocado",
+      "name_en": "avocado",
+      "name_fr": "avocat",
+      "name_es": "aguacate",
+      "name_it": "avocado",
+      "name_plural_de": "Avocados",
+      "name_plural_en": "avocados",
+      "name_plural_fr": "avocats",
+      "name_plural_es": "aguacates",
+      "name_plural_it": "avocado"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 16,
+    "fields": {
+      "name_de": "Chilischote",
+      "name_en": "chili pepper",
+      "name_fr": "piment",
+      "name_es": "chile",
+      "name_it": "peperoncino",
+      "name_plural_de": "Chilischoten",
+      "name_plural_en": "chili peppers",
+      "name_plural_fr": "piments",
+      "name_plural_es": "chiles",
+      "name_plural_it": "peperoncini"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 17,
+    "fields": {
+      "name_de": "Koriander",
+      "name_en": "coriander",
+      "name_fr": "coriandre",
+      "name_es": "cilantro",
+      "name_it": "coriandolo",
+      "name_plural_de": "Koriander",
+      "name_plural_en": "coriander",
+      "name_plural_fr": "coriandre",
+      "name_plural_es": "cilantro",
+      "name_plural_it": "coriandolo"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 18,
+    "fields": {
+      "name_de": "Sesamöl",
+      "name_en": "sesame oil",
+      "name_fr": "huile de sésame",
+      "name_es": "aceite de sésamo",
+      "name_it": "olio di sesamo",
+      "name_plural_de": "Sesamöl",
+      "name_plural_en": "sesame oil",
+      "name_plural_fr": "huile de sésame",
+      "name_plural_es": "aceite de sésamo",
+      "name_plural_it": "olio di sesamo"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 19,
+    "fields": {
+      "name_de": "Pfeffer",
+      "name_en": "pepper",
+      "name_fr": "poivre",
+      "name_es": "pimienta",
+      "name_it": "pepe",
+      "name_plural_de": "Pfeffer",
+      "name_plural_en": "pepper",
+      "name_plural_fr": "poivre",
+      "name_plural_es": "pimienta",
+      "name_plural_it": "pepe"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 20,
+    "fields": {
+      "name_de": "Schwarzer Sesam",
+      "name_en": "black sesame",
+      "name_fr": "sésame noir",
+      "name_es": "sésamo negro",
+      "name_it": "sesamo nero",
+      "name_plural_de": "Schwarzer Sesam",
+      "name_plural_en": "black sesame",
+      "name_plural_fr": "sésame noir",
+      "name_plural_es": "sésamo negro",
+      "name_plural_it": "sesamo nero"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 21,
+    "fields": {
+      "name_de": "Fenchelsamen",
+      "name_en": "fennel seeds",
+      "name_fr": "graines de fenouil",
+      "name_es": "semillas de hinojo",
+      "name_it": "semi di finocchio",
+      "name_plural_de": "Fenchelsamen",
+      "name_plural_en": "fennel seeds",
+      "name_plural_fr": "graines de fenouil",
+      "name_plural_es": "semillas de hinojo",
+      "name_plural_it": "semi di finocchio"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 22,
+    "fields": {
+      "name_de": "Zitronensaft",
+      "name_en": "lemon juice",
+      "name_fr": "jus de citron",
+      "name_es": "jugo de limón",
+      "name_it": "succo di limone",
+      "name_plural_de": "Zitronensaft",
+      "name_plural_en": "lemon juice",
+      "name_plural_fr": "jus de citron",
+      "name_plural_es": "jugo de limón",
+      "name_plural_it": "succo di limone"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 23,
+    "fields": {
+      "name_de": "Tomaten in Öl",
+      "name_en": "tomatoes in oil",
+      "name_fr": "tomates à l'huile",
+      "name_es": "tomates en aceite",
+      "name_it": "pomodori sott'olio",
+      "name_plural_de": "Tomaten in Öl",
+      "name_plural_en": "tomatoes in oil",
+      "name_plural_fr": "tomates à l'huile",
+      "name_plural_es": "tomates en aceite",
+      "name_plural_it": "pomodori sott'olio"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 24,
+    "fields": {
+      "name_de": "Agavendicksaft",
+      "name_en": "agave syrup",
+      "name_fr": "sirop d'agave",
+      "name_es": "jarabe de agave",
+      "name_it": "sciroppo d'agave",
+      "name_plural_de": "Agavendicksaft",
+      "name_plural_en": "agave syrup",
+      "name_plural_fr": "sirop d'agave",
+      "name_plural_es": "jarabe de agave",
+      "name_plural_it": "sciroppo d'agave"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 25,
+    "fields": {
+      "name_de": "Minzblätter",
+      "name_en": "mint leaves",
+      "name_fr": "feuilles de menthe",
+      "name_es": "hojas de menta",
+      "name_it": "foglie di menta",
+      "name_plural_de": "Minzblätter",
+      "name_plural_en": "mint leaves",
+      "name_plural_fr": "feuilles de menthe",
+      "name_plural_es": "hojas de menta",
+      "name_plural_it": "foglie di menta"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 26,
+    "fields": {
+      "name_de": "Mandeln",
+      "name_en": "almonds",
+      "name_fr": "amandes",
+      "name_es": "almendras",
+      "name_it": "mandorle",
+      "name_plural_de": "Mandeln",
+      "name_plural_en": "almonds",
+      "name_plural_fr": "amandes",
+      "name_plural_es": "almendras",
+      "name_plural_it": "mandorle"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 27,
+    "fields": {
+      "name_de": "Knoblauch",
+      "name_en": "garlic",
+      "name_fr": "ail",
+      "name_es": "ajo",
+      "name_it": "aglio",
+      "name_plural_de": "Knoblauch",
+      "name_plural_en": "garlic",
+      "name_plural_fr": "ail",
+      "name_plural_es": "ajo",
+      "name_plural_it": "aglio"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 28,
+    "fields": {
+      "name_de": "Majoran",
+      "name_en": "marjoram",
+      "name_fr": "marjolaine",
+      "name_es": "mejorana",
+      "name_it": "maggiorana",
+      "name_plural_de": "Majoran",
+      "name_plural_en": "marjoram",
+      "name_plural_fr": "marjolaine",
+      "name_plural_es": "mejorana",
+      "name_plural_it": "maggiorana"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 29,
+    "fields": {
+      "name_de": "Schwarze Oliven",
+      "name_en": "black olives",
+      "name_fr": "olives noires",
+      "name_es": "aceitunas negras",
+      "name_it": "olive nere",
+      "name_plural_de": "Schwarze Oliven",
+      "name_plural_en": "black olives",
+      "name_plural_fr": "olives noires",
+      "name_plural_es": "aceitunas negras",
+      "name_plural_it": "olive nere"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 30,
+    "fields": {
+      "name_de": "Kapern",
+      "name_en": "capers",
+      "name_fr": "câpres",
+      "name_es": "alcaparras",
+      "name_it": "capperi",
+      "name_plural_de": "Kapern",
+      "name_plural_en": "capers",
+      "name_plural_fr": "câpres",
+      "name_plural_es": "alcaparras",
+      "name_plural_it": "capperi"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 31,
+    "fields": {
+      "name_de": "Sardellenfilet",
+      "name_en": "anchovy fillet",
+      "name_fr": "filet d'anchois",
+      "name_es": "filete de anchoa",
+      "name_it": "filetto di acciuga",
+      "name_plural_de": "Sardellenfilets",
+      "name_plural_en": "anchovy fillets",
+      "name_plural_fr": "filets d'anchois",
+      "name_plural_es": "filetes de anchoa",
+      "name_plural_it": "filetti di acciuga"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 32,
+    "fields": {
+      "name_de": "Petersilie",
+      "name_en": "parsley",
+      "name_fr": "persil",
+      "name_es": "perejil",
+      "name_it": "prezzemolo",
+      "name_plural_de": "Petersilie",
+      "name_plural_en": "parsley",
+      "name_plural_fr": "persil",
+      "name_plural_es": "perejil",
+      "name_plural_it": "prezzemolo"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 33,
+    "fields": {
+      "name_de": "Hokkaido Kürbis",
+      "name_en": "Hokkaido pumpkin",
+      "name_fr": "potiron de Hokkaido",
+      "name_es": "calabaza Hokkaido",
+      "name_it": "zucca Hokkaido",
+      "name_plural_de": "Hokkaido Kürbisse",
+      "name_plural_en": "Hokkaido pumpkins",
+      "name_plural_fr": "potirons de Hokkaido",
+      "name_plural_es": "calabazas Hokkaido",
+      "name_plural_it": "zucche Hokkaido"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 34,
+    "fields": {
+      "name_de": "Zwiebeln",
+      "name_en": "onions",
+      "name_fr": "oignons",
+      "name_es": "cebollas",
+      "name_it": "cipolle",
+      "name_plural_de": "Zwiebeln",
+      "name_plural_en": "onions",
+      "name_plural_fr": "oignons",
+      "name_plural_es": "cebollas",
+      "name_plural_it": "cipolle"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 35,
+    "fields": {
+      "name_de": "Weißer Portwein",
+      "name_en": "white port wine",
+      "name_fr": "porto blanc",
+      "name_es": "vino de Oporto blanco",
+      "name_it": "vino porto bianco",
+      "name_plural_de": "Weißer Portwein",
+      "name_plural_en": "white port wine",
+      "name_plural_fr": "porto blanc",
+      "name_plural_es": "vino de Oporto blanco",
+      "name_plural_it": "vino porto bianco"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 36,
+    "fields": {
+      "name_de": "Madeira",
+      "name_en": "Madeira",
+      "name_fr": "Madère",
+      "name_es": "Madeira",
+      "name_it": "Madera",
+      "name_plural_de": "Madeira",
+      "name_plural_en": "Madeira",
+      "name_plural_fr": "Madère",
+      "name_plural_es": "Madeira",
+      "name_plural_it": "Madera"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 37,
+    "fields": {
+      "name_de": "Currypaste",
+      "name_en": "curry paste",
+      "name_fr": "pâte de curry",
+      "name_es": "pasta de curry",
+      "name_it": "pasta di curry",
+      "name_plural_de": "Currypaste",
+      "name_plural_en": "curry paste",
+      "name_plural_fr": "pâte de curry",
+      "name_plural_es": "pasta de curry",
+      "name_plural_it": "pasta di curry"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 38,
+    "fields": {
+      "name_de": "Currypulver",
+      "name_en": "curry powder",
+      "name_fr": "poudre de curry",
+      "name_es": "polvo de curry",
+      "name_it": "polvere di curry",
+      "name_plural_de": "Currypulver",
+      "name_plural_en": "curry powder",
+      "name_plural_fr": "poudre de curry",
+      "name_plural_es": "polvo de curry",
+      "name_plural_it": "polvere di curry"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 39,
+    "fields": {
+      "name_de": "Gemüsebrühe",
+      "name_en": "vegetable stock",
+      "name_fr": "bouillon de légumes",
+      "name_es": "caldo de verduras",
+      "name_it": "brodo di verdure",
+      "name_plural_de": "Gemüsebrühe",
+      "name_plural_en": "vegetable stock",
+      "name_plural_fr": "bouillon de légumes",
+      "name_plural_es": "caldo de verduras",
+      "name_plural_it": "brodo di verdure"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 40,
+    "fields": {
+      "name_de": "Kokosmilch",
+      "name_en": "coconut milk",
+      "name_fr": "lait de coco",
+      "name_es": "leche de coco",
+      "name_it": "latte di cocco",
+      "name_plural_de": "Kokosmilch",
+      "name_plural_en": "coconut milk",
+      "name_plural_fr": "lait de coco",
+      "name_plural_es": "leche de coco",
+      "name_plural_it": "latte di cocco"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 41,
+    "fields": {
+      "name_de": "Kreuzkümmel",
+      "name_en": "cumin",
+      "name_fr": "cumin",
+      "name_es": "comino",
+      "name_it": "cumino",
+      "name_plural_de": "Kreuzkümmel",
+      "name_plural_en": "cumin",
+      "name_plural_fr": "cumin",
+      "name_plural_es": "comino",
+      "name_plural_it": "cumino"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 42,
+    "fields": {
+      "name_de": "Paprika",
+      "name_en": "paprika",
+      "name_fr": "paprika",
+      "name_es": "pimentón",
+      "name_it": "paprika",
+      "name_plural_de": "Paprika",
+      "name_plural_en": "paprika",
+      "name_plural_fr": "paprika",
+      "name_plural_es": "pimentón",
+      "name_plural_it": "paprika"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 43,
+    "fields": {
+      "name_de": "Limette",
+      "name_en": "lime",
+      "name_fr": "citron vert",
+      "name_es": "lima",
+      "name_it": "lime",
+      "name_plural_de": "Limetten",
+      "name_plural_en": "limes",
+      "name_plural_fr": "citrons verts",
+      "name_plural_es": "limas",
+      "name_plural_it": "lime"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 44,
+    "fields": {
+      "name_de": "Senf",
+      "name_en": "mustard",
+      "name_fr": "moutarde",
+      "name_es": "mostaza",
+      "name_it": "senape",
+      "name_plural_de": "Senf",
+      "name_plural_en": "mustard",
+      "name_plural_fr": "moutarde",
+      "name_plural_es": "mostaza",
+      "name_plural_it": "senape"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 45,
+    "fields": {
+      "name_de": "Honig",
+      "name_en": "honey",
+      "name_fr": "miel",
+      "name_es": "miel",
+      "name_it": "miele",
+      "name_plural_de": "Honig",
+      "name_plural_en": "honey",
+      "name_plural_fr": "miel",
+      "name_plural_es": "miel",
+      "name_plural_it": "miele"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 46,
+    "fields": {
+      "name_de": "Essig",
+      "name_en": "vinegar",
+      "name_fr": "vinaigre",
+      "name_es": "vinagre",
+      "name_it": "aceto",
+      "name_plural_de": "Essig",
+      "name_plural_en": "vinegar",
+      "name_plural_fr": "vinaigre",
+      "name_plural_es": "vinagre",
+      "name_plural_it": "aceto"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 47,
+    "fields": {
+      "name_de": "Pflanzenöl",
+      "name_en": "vegetable oil",
+      "name_fr": "huile végétale",
+      "name_es": "aceite vegetal",
+      "name_it": "olio vegetale",
+      "name_plural_de": "Pflanzenöl",
+      "name_plural_en": "vegetable oil",
+      "name_plural_fr": "huile végétale",
+      "name_plural_es": "aceite vegetal",
+      "name_plural_it": "olio vegetale"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 48,
+    "fields": {
+      "name_de": "Kürbiskerne",
+      "name_en": "pumpkin seeds",
+      "name_fr": "graines de courge",
+      "name_es": "semillas de calabaza",
+      "name_it": "semi di zucca",
+      "name_plural_de": "Kürbiskerne",
+      "name_plural_en": "pumpkin seeds",
+      "name_plural_fr": "graines de courge",
+      "name_plural_es": "semillas de calabaza",
+      "name_plural_it": "semi di zucca"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 49,
+    "fields": {
+      "name_de": "Zimt",
+      "name_en": "cinnamon",
+      "name_fr": "cannelle",
+      "name_es": "canela",
+      "name_it": "cannella",
+      "name_plural_de": "Zimt",
+      "name_plural_en": "cinnamon",
+      "name_plural_fr": "cannelle",
+      "name_plural_es": "canela",
+      "name_plural_it": "cannella"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 50,
+    "fields": {
+      "name_de": "Thymian",
+      "name_en": "thyme",
+      "name_fr": "thym",
+      "name_es": "tomillo",
+      "name_it": "timo",
+      "name_plural_de": "Thymian",
+      "name_plural_en": "thyme",
+      "name_plural_fr": "thym",
+      "name_plural_es": "tomillo",
+      "name_plural_it": "timo"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 51,
+    "fields": {
+      "name_de": "Frischkäse",
+      "name_en": "fresh cheese",
+      "name_fr": "fromage frais",
+      "name_es": "queso fresco",
+      "name_it": "formaggio fresco",
+      "name_plural_de": "Frischkäse",
+      "name_plural_en": "fresh cheese",
+      "name_plural_fr": "fromage frais",
+      "name_plural_es": "queso fresco",
+      "name_plural_it": "formaggio fresco"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 52,
+    "fields": {
+      "name_de": "Apfelessig",
+      "name_en": "apple cider vinegar",
+      "name_fr": "vinaigre de cidre",
+      "name_es": "vinagre de manzana",
+      "name_it": "aceto di mele",
+      "name_plural_de": "Apfelessig",
+      "name_plural_en": "apple cider vinegar",
+      "name_plural_fr": "vinaigre de cidre",
+      "name_plural_es": "vinagre de manzana",
+      "name_plural_it": "aceto di mele"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 53,
+    "fields": {
+      "name_de": "Koriandersamen",
+      "name_en": "coriander seeds",
+      "name_fr": "graines de coriandre",
+      "name_es": "semillas de cilantro",
+      "name_it": "semi di coriandolo",
+      "name_plural_de": "Koriandersamen",
+      "name_plural_en": "coriander seeds",
+      "name_plural_fr": "graines de coriandre",
+      "name_plural_es": "semillas de cilantro",
+      "name_plural_it": "semi di coriandolo"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 54,
+    "fields": {
+      "name_de": "Ingwer",
+      "name_en": "ginger",
+      "name_fr": "gingembre",
+      "name_es": "jengibre",
+      "name_it": "zenzero",
+      "name_plural_de": "Ingwer",
+      "name_plural_en": "ginger",
+      "name_plural_fr": "gingembre",
+      "name_plural_es": "jengibre",
+      "name_plural_it": "zenzero"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 55,
+    "fields": {
+      "name_de": "Zitronenschale",
+      "name_en": "lemon zest",
+      "name_fr": "zeste de citron",
+      "name_es": "cáscara de limón",
+      "name_it": "scorza di limone",
+      "name_plural_de": "Zitronenschale",
+      "name_plural_en": "lemon zest",
+      "name_plural_fr": "zeste de citron",
+      "name_plural_es": "cáscara de limón",
+      "name_plural_it": "scorza di limone"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 56,
+    "fields": {
+      "name_de": "Weiße Pfefferkörner",
+      "name_en": "white peppercorns",
+      "name_fr": "poivre blanc en grains",
+      "name_es": "granos de pimienta blanca",
+      "name_it": "grani di pepe bianco",
+      "name_plural_de": "Weiße Pfefferkörner",
+      "name_plural_en": "white peppercorns",
+      "name_plural_fr": "poivre blanc en grains",
+      "name_plural_es": "granos de pimienta blanca",
+      "name_plural_it": "grani di pepe bianco"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 57,
+    "fields": {
+      "name_de": "Rote Beete",
+      "name_en": "beetroot",
+      "name_fr": "betterave rouge",
+      "name_es": "remolacha",
+      "name_it": "barbabietola",
+      "name_plural_de": "Rote Beete",
+      "name_plural_en": "beetroot",
+      "name_plural_fr": "betteraves rouges",
+      "name_plural_es": "remolachas",
+      "name_plural_it": "barbabietole"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 58,
+    "fields": {
+      "name_de": "Kirschtomaten",
+      "name_en": "cherry tomatoes",
+      "name_fr": "tomates cerises",
+      "name_es": "tomates cherry",
+      "name_it": "pomodori ciliegino",
+      "name_plural_de": "Kirschtomaten",
+      "name_plural_en": "cherry tomatoes",
+      "name_plural_fr": "tomates cerises",
+      "name_plural_es": "tomates cherry",
+      "name_plural_it": "pomodori ciliegino"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 59,
+    "fields": {
+      "name_de": "Meersalz",
+      "name_en": "sea salt",
+      "name_fr": "sel de mer",
+      "name_es": "sal marina",
+      "name_it": "sale marino",
+      "name_plural_de": "Meersalz",
+      "name_plural_en": "sea salt",
+      "name_plural_fr": "sel de mer",
+      "name_plural_es": "sal marina",
+      "name_plural_it": "sale marino"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 60,
+    "fields": {
+      "name_de": "Rosmarin",
+      "name_en": "rosemary",
+      "name_fr": "romarin",
+      "name_es": "romero",
+      "name_it": "rosmarino",
+      "name_plural_de": "Rosmarin",
+      "name_plural_en": "rosemary",
+      "name_plural_fr": "romarin",
+      "name_plural_es": "romero",
+      "name_plural_it": "rosmarino"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 61,
+    "fields": {
+      "name_de": "Datteln",
+      "name_en": "dates",
+      "name_fr": "dattes",
+      "name_es": "dátiles",
+      "name_it": "datteri",
+      "name_plural_de": "Datteln",
+      "name_plural_en": "dates",
+      "name_plural_fr": "dattes",
+      "name_plural_es": "dátiles",
+      "name_plural_it": "datteri"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 62,
+    "fields": {
+      "name_de": "Walnüsse",
+      "name_en": "walnuts",
+      "name_fr": "noix",
+      "name_es": "nueces",
+      "name_it": "noci",
+      "name_plural_de": "Walnüsse",
+      "name_plural_en": "walnuts",
+      "name_plural_fr": "noix",
+      "name_plural_es": "nueces",
+      "name_plural_it": "noci"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 63,
+    "fields": {
+      "name_de": "Erdnussbutter",
+      "name_en": "peanut butter",
+      "name_fr": "beurre de cacahuète",
+      "name_es": "mantequilla de maní",
+      "name_it": "burro di arachidi",
+      "name_plural_de": "Erdnussbutter",
+      "name_plural_en": "peanut butter",
+      "name_plural_fr": "beurre de cacahuète",
+      "name_plural_es": "mantequilla de maní",
+      "name_plural_it": "burro di arachidi"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 64,
+    "fields": {
+      "name_de": "Vanille",
+      "name_en": "vanilla",
+      "name_fr": "vanille",
+      "name_es": "vainilla",
+      "name_it": "vaniglia",
+      "name_plural_de": "Vanille",
+      "name_plural_en": "vanilla",
+      "name_plural_fr": "vanille",
+      "name_plural_es": "vainilla",
+      "name_plural_it": "vaniglia"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 65,
+    "fields": {
+      "name_de": "Chiasamen",
+      "name_en": "chia seeds",
+      "name_fr": "graines de chia",
+      "name_es": "semillas de chía",
+      "name_it": "semi di chia",
+      "name_plural_de": "Chiasamen",
+      "name_plural_en": "chia seeds",
+      "name_plural_fr": "graines de chia",
+      "name_plural_es": "semillas de chía",
+      "name_plural_it": "semi di chia"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 66,
+    "fields": {
+      "name_de": "Holunderblüten",
+      "name_en": "elderflowers",
+      "name_fr": "fleurs de sureau",
+      "name_es": "flores de saúco",
+      "name_it": "fiori di sambuco",
+      "name_plural_de": "Holunderblüten",
+      "name_plural_en": "elderflowers",
+      "name_plural_fr": "fleurs de sureau",
+      "name_plural_es": "flores de saúco",
+      "name_plural_it": "fiori di sambuco"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 67,
+    "fields": {
+      "name_de": "Zitronensäure",
+      "name_en": "citric acid",
+      "name_fr": "acide citrique",
+      "name_es": "ácido cítrico",
+      "name_it": "acido citrico",
+      "name_plural_de": "Zitronensäure",
+      "name_plural_en": "citric acid",
+      "name_plural_fr": "acide citrique",
+      "name_plural_es": "ácido cítrico",
+      "name_plural_it": "acido citrico"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 68,
+    "fields": {
+      "name_de": "Zitrone",
+      "name_en": "lemon",
+      "name_fr": "citron",
+      "name_es": "limón",
+      "name_it": "limone",
+      "name_plural_de": "Zitronen",
+      "name_plural_en": "lemons",
+      "name_plural_fr": "citrons",
+      "name_plural_es": "limones",
+      "name_plural_it": "limoni"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 69,
+    "fields": {
+      "name_de": "Aquafaba",
+      "name_en": "aquafaba",
+      "name_fr": "aquafaba",
+      "name_es": "aquafaba",
+      "name_it": "aquafaba",
+      "name_plural_de": "Aquafaba",
+      "name_plural_en": "aquafaba",
+      "name_plural_fr": "aquafaba",
+      "name_plural_es": "aquafaba",
+      "name_plural_it": "aquafaba"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 70,
+    "fields": {
+      "name_de": "Dunkle Schokolade",
+      "name_en": "dark chocolate",
+      "name_fr": "chocolat noir",
+      "name_es": "chocolate negro",
+      "name_it": "cioccolato fondente",
+      "name_plural_de": "Dunkle Schokolade",
+      "name_plural_en": "dark chocolate",
+      "name_plural_fr": "chocolat noir",
+      "name_plural_es": "chocolate negro",
+      "name_plural_it": "cioccolato fondente"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 71,
+    "fields": {
+      "name_de": "Kokosöl",
+      "name_en": "coconut oil",
+      "name_fr": "huile de coco",
+      "name_es": "aceite de coco",
+      "name_it": "olio di cocco",
+      "name_plural_de": "Kokosöl",
+      "name_plural_en": "coconut oil",
+      "name_plural_fr": "huile de coco",
+      "name_plural_es": "aceite de coco",
+      "name_plural_it": "olio di cocco"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 72,
+    "fields": {
+      "name_de": "Rum",
+      "name_en": "rum",
+      "name_fr": "rhum",
+      "name_es": "ron",
+      "name_it": "rum",
+      "name_plural_de": "Rum",
+      "name_plural_en": "rum",
+      "name_plural_fr": "rhum",
+      "name_plural_es": "ron",
+      "name_plural_it": "rum"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 73,
+    "fields": {
+      "name_de": "Beeren",
+      "name_en": "berries",
+      "name_fr": "baies",
+      "name_es": "bayas",
+      "name_it": "bacche",
+      "name_plural_de": "Beeren",
+      "name_plural_en": "berries",
+      "name_plural_fr": "baies",
+      "name_plural_es": "bayas",
+      "name_plural_it": "bacche"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 74,
+    "fields": {
+      "name_de": "Himbeeren",
+      "name_en": "raspberries",
+      "name_fr": "framboises",
+      "name_es": "frambuesas",
+      "name_it": "lamponi",
+      "name_plural_de": "Himbeeren",
+      "name_plural_en": "raspberries",
+      "name_plural_fr": "framboises",
+      "name_plural_es": "frambuesas",
+      "name_plural_it": "lamponi"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 75,
+    "fields": {
+      "name_de": "Rinderfilet",
+      "name_en": "beef fillet",
+      "name_fr": "filet de bœuf",
+      "name_es": "filete de ternera",
+      "name_it": "filetto di manzo",
+      "name_plural_de": "Rinderfilets",
+      "name_plural_en": "beef fillets",
+      "name_plural_fr": "filets de bœuf",
+      "name_plural_es": "filetes de ternera",
+      "name_plural_it": "filetti di manzo"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 76,
+    "fields": {
+      "name_de": "Essiggurken",
+      "name_en": "pickles",
+      "name_fr": "cornichons",
+      "name_es": "pepinillos",
+      "name_it": "cetriolini",
+      "name_plural_de": "Essiggurken",
+      "name_plural_en": "pickles",
+      "name_plural_fr": "cornichons",
+      "name_plural_es": "pepinillos",
+      "name_plural_it": "cetriolini"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 77,
+    "fields": {
+      "name_de": "Schalotten",
+      "name_en": "shallots",
+      "name_fr": "échalotes",
+      "name_es": "chalotes",
+      "name_it": "scalogno",
+      "name_plural_de": "Schalotten",
+      "name_plural_en": "shallots",
+      "name_plural_fr": "échalotes",
+      "name_plural_es": "chalotes",
+      "name_plural_it": "scalogno"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 78,
+    "fields": {
+      "name_de": "Dijon Senf",
+      "name_en": "Dijon mustard",
+      "name_fr": "moutarde de Dijon",
+      "name_es": "mostaza de Dijon",
+      "name_it": "senape di Digione",
+      "name_plural_de": "Dijon Senf",
+      "name_plural_en": "Dijon mustard",
+      "name_plural_fr": "moutarde de Dijon",
+      "name_plural_es": "mostaza de Dijon",
+      "name_plural_it": "senape di Digione"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 79,
+    "fields": {
+      "name_de": "Ketchup",
+      "name_en": "ketchup",
+      "name_fr": "ketchup",
+      "name_es": "ketchup",
+      "name_it": "ketchup",
+      "name_plural_de": "Ketchup",
+      "name_plural_en": "ketchup",
+      "name_plural_fr": "ketchup",
+      "name_plural_es": "ketchup",
+      "name_plural_it": "ketchup"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 80,
+    "fields": {
+      "name_de": "Worcestersauce",
+      "name_en": "Worcestershire sauce",
+      "name_fr": "sauce Worcester",
+      "name_es": "salsa Worcestershire",
+      "name_it": "salsa Worcestershire",
+      "name_plural_de": "Worcestersauce",
+      "name_plural_en": "Worcestershire sauce",
+      "name_plural_fr": "sauce Worcester",
+      "name_plural_es": "salsa Worcestershire",
+      "name_plural_it": "salsa Worcestershire"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 81,
+    "fields": {
+      "name_de": "Tabasco",
+      "name_en": "Tabasco",
+      "name_fr": "Tabasco",
+      "name_es": "Tabasco",
+      "name_it": "Tabasco",
+      "name_plural_de": "Tabasco",
+      "name_plural_en": "Tabasco",
+      "name_plural_fr": "Tabasco",
+      "name_plural_es": "Tabasco",
+      "name_plural_it": "Tabasco"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 82,
+    "fields": {
+      "name_de": "Chiliflocken",
+      "name_en": "chili flakes",
+      "name_fr": "flocons de piment",
+      "name_es": "copos de chile",
+      "name_it": "fiocchi di peperoncino",
+      "name_plural_de": "Chiliflocken",
+      "name_plural_en": "chili flakes",
+      "name_plural_fr": "flocons de piment",
+      "name_plural_es": "copos de chile",
+      "name_plural_it": "fiocchi di peperoncino"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 83,
+    "fields": {
+      "name_de": "Zitronenabrieb",
+      "name_en": "lemon zest",
+      "name_fr": "zeste de citron",
+      "name_es": "ralladura de limón",
+      "name_it": "scorza di limone",
+      "name_plural_de": "Zitronenabrieb",
+      "name_plural_en": "lemon zest",
+      "name_plural_fr": "zeste de citron",
+      "name_plural_es": "ralladura de limón",
+      "name_plural_it": "scorza di limone"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 84,
+    "fields": {
+      "name_de": "Muskat",
+      "name_en": "nutmeg",
+      "name_fr": "muscade",
+      "name_es": "nuez moscada",
+      "name_it": "noce moscata",
+      "name_plural_de": "Muskat",
+      "name_plural_en": "nutmeg",
+      "name_plural_fr": "muscade",
+      "name_plural_es": "nuez moscada",
+      "name_plural_it": "noce moscata"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 85,
+    "fields": {
+      "name_de": "Sahne",
+      "name_en": "cream",
+      "name_fr": "crème",
+      "name_es": "crema",
+      "name_it": "panna",
+      "name_plural_de": "Sahne",
+      "name_plural_en": "cream",
+      "name_plural_fr": "crème",
+      "name_plural_es": "crema",
+      "name_plural_it": "panna"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 86,
+    "fields": {
+      "name_de": "Mascarpone",
+      "name_en": "mascarpone",
+      "name_fr": "mascarpone",
+      "name_es": "mascarpone",
+      "name_it": "mascarpone",
+      "name_plural_de": "Mascarpone",
+      "name_plural_en": "mascarpone",
+      "name_plural_fr": "mascarpone",
+      "name_plural_es": "mascarpone",
+      "name_plural_it": "mascarpone"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 87,
+    "fields": {
+      "name_de": "Pistaziencreme",
+      "name_en": "pistachio cream",
+      "name_fr": "crème de pistache",
+      "name_es": "crema de pistacho",
+      "name_it": "crema di pistacchio",
+      "name_plural_de": "Pistaziencreme",
+      "name_plural_en": "pistachio cream",
+      "name_plural_fr": "crème de pistache",
+      "name_plural_es": "crema de pistacho",
+      "name_plural_it": "crema di pistacchio"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 88,
+    "fields": {
+      "name_de": "Löffelbiskuit",
+      "name_en": "ladyfingers",
+      "name_fr": "biscuits à la cuillère",
+      "name_es": "bizcochos de soletilla",
+      "name_it": "savoiardi",
+      "name_plural_de": "Löffelbiskuit",
+      "name_plural_en": "ladyfingers",
+      "name_plural_fr": "biscuits à la cuillère",
+      "name_plural_es": "bizcochos de soletilla",
+      "name_plural_it": "savoiardi"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 89,
+    "fields": {
+      "name_de": "Milch",
+      "name_en": "milk",
+      "name_fr": "lait",
+      "name_es": "leche",
+      "name_it": "latte",
+      "name_plural_de": "Milch",
+      "name_plural_en": "milk",
+      "name_plural_fr": "lait",
+      "name_plural_es": "leche",
+      "name_plural_it": "latte"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 90,
+    "fields": {
+      "name_de": "Lotus Biskuit",
+      "name_en": "Lotus biscuit",
+      "name_fr": "biscuit Lotus",
+      "name_es": "galleta Lotus",
+      "name_it": "biscotto Lotus",
+      "name_plural_de": "Lotus Biskuit",
+      "name_plural_en": "Lotus biscuits",
+      "name_plural_fr": "biscuits Lotus",
+      "name_plural_es": "galletas Lotus",
+      "name_plural_it": "biscotti Lotus"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 91,
+    "fields": {
+      "name_de": "Noilly Prat",
+      "name_en": "Noilly Prat",
+      "name_fr": "Noilly Prat",
+      "name_es": "Noilly Prat",
+      "name_it": "Noilly Prat",
+      "name_plural_de": "Noilly Prat",
+      "name_plural_en": "Noilly Prat",
+      "name_plural_fr": "Noilly Prat",
+      "name_plural_es": "Noilly Prat",
+      "name_plural_it": "Noilly Prat"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 92,
+    "fields": {
+      "name_de": "Wacholder",
+      "name_en": "juniper",
+      "name_fr": "genièvre",
+      "name_es": "enebro",
+      "name_it": "ginepro",
+      "name_plural_de": "Wacholder",
+      "name_plural_en": "juniper",
+      "name_plural_fr": "genièvre",
+      "name_plural_es": "enebro",
+      "name_plural_it": "ginepro"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 93,
+    "fields": {
+      "name_de": "Fenchel",
+      "name_en": "fennel",
+      "name_fr": "fenouil",
+      "name_es": "hinojo",
+      "name_it": "finocchio",
+      "name_plural_de": "Fenchel",
+      "name_plural_en": "fennel",
+      "name_plural_fr": "fenouil",
+      "name_plural_es": "hinojo",
+      "name_plural_it": "finocchio"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 94,
+    "fields": {
+      "name_de": "Anis",
+      "name_en": "anise",
+      "name_fr": "anis",
+      "name_es": "anís",
+      "name_it": "anice",
+      "name_plural_de": "Anis",
+      "name_plural_en": "anise",
+      "name_plural_fr": "anis",
+      "name_plural_es": "anís",
+      "name_plural_it": "anice"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 95,
+    "fields": {
+      "name_de": "Orangenabrieb",
+      "name_en": "orange zest",
+      "name_fr": "zeste d'orange",
+      "name_es": "ralladura de naranja",
+      "name_it": "scorza d'arancia",
+      "name_plural_de": "Orangenabrieb",
+      "name_plural_en": "orange zest",
+      "name_plural_fr": "zeste d'orange",
+      "name_plural_es": "ralladura de naranja",
+      "name_plural_it": "scorza d'arancia"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 96,
+    "fields": {
+      "name_de": "Wasabi Mayonnaise",
+      "name_en": "wasabi mayonnaise",
+      "name_fr": "mayonnaise au wasabi",
+      "name_es": "mayonesa de wasabi",
+      "name_it": "maionese al wasabi",
+      "name_plural_de": "Wasabi Mayonnaise",
+      "name_plural_en": "wasabi mayonnaise",
+      "name_plural_fr": "mayonnaise au wasabi",
+      "name_plural_es": "mayonesa de wasabi",
+      "name_plural_it": "maionese al wasabi"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 97,
+    "fields": {
+      "name_de": "Neutrales Öl",
+      "name_en": "neutral oil",
+      "name_fr": "huile neutre",
+      "name_es": "aceite neutro",
+      "name_it": "olio neutro",
+      "name_plural_de": "Neutrales Öl",
+      "name_plural_en": "neutral oil",
+      "name_plural_fr": "huile neutre",
+      "name_plural_es": "aceite neutro",
+      "name_plural_it": "olio neutro"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 98,
+    "fields": {
+      "name_de": "Wasabi Paste",
+      "name_en": "wasabi paste",
+      "name_fr": "pâte de wasabi",
+      "name_es": "pasta de wasabi",
+      "name_it": "pasta di wasabi",
+      "name_plural_de": "Wasabi Paste",
+      "name_plural_en": "wasabi paste",
+      "name_plural_fr": "pâte de wasabi",
+      "name_plural_es": "pasta de wasabi",
+      "name_plural_it": "pasta di wasabi"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 99,
+    "fields": {
+      "name_de": "Reisessig",
+      "name_en": "rice vinegar",
+      "name_fr": "vinaigre de riz",
+      "name_es": "vinagre de arroz",
+      "name_it": "aceto di riso",
+      "name_plural_de": "Reisessig",
+      "name_plural_en": "rice vinegar",
+      "name_plural_fr": "vinaigre de riz",
+      "name_plural_es": "vinagre de arroz",
+      "name_plural_it": "aceto di riso"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 100,
+    "fields": {
+      "name_de": "Fleisch",
+      "name_en": "meat",
+      "name_fr": "viande",
+      "name_es": "carne",
+      "name_it": "carne",
+      "name_plural_de": "Fleisch",
+      "name_plural_en": "meat",
+      "name_plural_fr": "viande",
+      "name_plural_es": "carne",
+      "name_plural_it": "carne"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 101,
+    "fields": {
+      "name_de": "Tomatenmark",
+      "name_en": "tomato paste",
+      "name_fr": "concentré de tomates",
+      "name_es": "pasta de tomate",
+      "name_it": "concentrato di pomodoro",
+      "name_plural_de": "Tomatenmark",
+      "name_plural_en": "tomato paste",
+      "name_plural_fr": "concentré de tomates",
+      "name_plural_es": "pasta de tomate",
+      "name_plural_it": "concentrato di pomodoro"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 102,
+    "fields": {
+      "name_de": "Kichererbsen",
+      "name_en": "chickpeas",
+      "name_fr": "pois chiches",
+      "name_es": "garbanzos",
+      "name_it": "ceci",
+      "name_plural_de": "Kichererbsen",
+      "name_plural_en": "chickpeas",
+      "name_plural_fr": "pois chiches",
+      "name_plural_es": "garbanzos",
+      "name_plural_it": "ceci"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 103,
+    "fields": {
+      "name_de": "Tomaten",
+      "name_en": "tomatoes",
+      "name_fr": "tomates",
+      "name_es": "tomates",
+      "name_it": "pomodori",
+      "name_plural_de": "Tomaten",
+      "name_plural_en": "tomatoes",
+      "name_plural_fr": "tomates",
+      "name_plural_es": "tomates",
+      "name_plural_it": "pomodori"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 104,
+    "fields": {
+      "name_de": "Zucchini",
+      "name_en": "zucchini",
+      "name_fr": "courgette",
+      "name_es": "calabacín",
+      "name_it": "zucchina",
+      "name_plural_de": "Zucchini",
+      "name_plural_en": "zucchini",
+      "name_plural_fr": "courgettes",
+      "name_plural_es": "calabacines",
+      "name_plural_it": "zucchine"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 105,
+    "fields": {
+      "name_de": "Steckrüben",
+      "name_en": "rutabaga",
+      "name_fr": "rutabaga",
+      "name_es": "nabo sueco",
+      "name_it": "rapa svedese",
+      "name_plural_de": "Steckrüben",
+      "name_plural_en": "rutabaga",
+      "name_plural_fr": "rutabagas",
+      "name_plural_es": "nabos suecos",
+      "name_plural_it": "rape svedesi"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 106,
+    "fields": {
+      "name_de": "Kartoffeln",
+      "name_en": "potatoes",
+      "name_fr": "pommes de terre",
+      "name_es": "patatas",
+      "name_it": "patate",
+      "name_plural_de": "Kartoffeln",
+      "name_plural_en": "potatoes",
+      "name_plural_fr": "pommes de terre",
+      "name_plural_es": "patatas",
+      "name_plural_it": "patate"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 107,
+    "fields": {
+      "name_de": "Karotten",
+      "name_en": "carrots",
+      "name_fr": "carottes",
+      "name_es": "zanahorias",
+      "name_it": "carote",
+      "name_plural_de": "Karotten",
+      "name_plural_en": "carrots",
+      "name_plural_fr": "carottes",
+      "name_plural_es": "zanahorias",
+      "name_plural_it": "carote"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 108,
+    "fields": {
+      "name_de": "Ingwer gemahlen",
+      "name_en": "ground ginger",
+      "name_fr": "gingembre moulu",
+      "name_es": "jengibre molido",
+      "name_it": "zenzero in polvere",
+      "name_plural_de": "Ingwer gemahlen",
+      "name_plural_en": "ground ginger",
+      "name_plural_fr": "gingembre moulu",
+      "name_plural_es": "jengibre molido",
+      "name_plural_it": "zenzero in polvere"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 109,
+    "fields": {
+      "name_de": "Kurkuma",
+      "name_en": "turmeric",
+      "name_fr": "curcuma",
+      "name_es": "cúrcuma",
+      "name_it": "curcuma",
+      "name_plural_de": "Kurkuma",
+      "name_plural_en": "turmeric",
+      "name_plural_fr": "curcuma",
+      "name_plural_es": "cúrcuma",
+      "name_plural_it": "curcuma"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 110,
+    "fields": {
+      "name_de": "Safran",
+      "name_en": "saffron",
+      "name_fr": "safran",
+      "name_es": "azafrán",
+      "name_it": "zafferano",
+      "name_plural_de": "Safran",
+      "name_plural_en": "saffron",
+      "name_plural_fr": "safran",
+      "name_plural_es": "azafrán",
+      "name_plural_it": "zafferano"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 111,
+    "fields": {
+      "name_de": "Pfeffer gemahlen",
+      "name_en": "ground pepper",
+      "name_fr": "poivre moulu",
+      "name_es": "pimienta molida",
+      "name_it": "pepe macinato",
+      "name_plural_de": "Pfeffer gemahlen",
+      "name_plural_en": "ground pepper",
+      "name_plural_fr": "poivre moulu",
+      "name_plural_es": "pimienta molida",
+      "name_plural_it": "pepe macinato"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 112,
+    "fields": {
+      "name_de": "Couscous",
+      "name_en": "couscous",
+      "name_fr": "couscous",
+      "name_es": "couscous",
+      "name_it": "couscous",
+      "name_plural_de": "Couscous",
+      "name_plural_en": "couscous",
+      "name_plural_fr": "couscous",
+      "name_plural_es": "couscous",
+      "name_plural_it": "couscous"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 113,
+    "fields": {
+      "name_de": "Brauner Zucker",
+      "name_en": "brown sugar",
+      "name_fr": "sucre brun",
+      "name_es": "azúcar moreno",
+      "name_it": "zucchero di canna",
+      "name_plural_de": "Brauner Zucker",
+      "name_plural_en": "brown sugar",
+      "name_plural_fr": "sucre brun",
+      "name_plural_es": "azúcar moreno",
+      "name_plural_it": "zucchero di canna"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 114,
+    "fields": {
+      "name_de": "Walnüsse gemahlen",
+      "name_en": "ground walnuts",
+      "name_fr": "noix moulues",
+      "name_es": "nueces molidas",
+      "name_it": "noci macinate",
+      "name_plural_de": "Walnüsse gemahlen",
+      "name_plural_en": "ground walnuts",
+      "name_plural_fr": "noix moulues",
+      "name_plural_es": "nueces molidas",
+      "name_plural_it": "noci macinate"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 115,
+    "fields": {
+      "name_de": "Sesampaste",
+      "name_en": "sesame paste",
+      "name_fr": "pâte de sésame",
+      "name_es": "pasta de sésamo",
+      "name_it": "pasta di sesamo",
+      "name_plural_de": "Sesampaste",
+      "name_plural_en": "sesame paste",
+      "name_plural_fr": "pâte de sésame",
+      "name_plural_es": "pasta de sésamo",
+      "name_plural_it": "pasta di sesamo"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 116,
+    "fields": {
+      "name_de": "Puderzucker",
+      "name_en": "powdered sugar",
+      "name_fr": "sucre en poudre",
+      "name_es": "azúcar glas",
+      "name_it": "zucchero a velo",
+      "name_plural_de": "Puderzucker",
+      "name_plural_en": "powdered sugar",
+      "name_plural_fr": "sucre en poudre",
+      "name_plural_es": "azúcar glas",
+      "name_plural_it": "zucchero a velo"
+    }
+  }
+]

@@ -1,0 +1,266 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 16,
+    "fields": {
+      "title_de": "Vegane Schokoladenmousse",
+      "title_en": "Vegan Chocolate Mousse",
+      "title_fr": "Mousse au chocolat végétalienne",
+      "title_es": "Mousse de chocolate vegana",
+      "title_it": "Mousse al cioccolato vegana",
+      "slug_de": "vegane-schokoladenmousse",
+      "slug_en": "vegan-chocolate-mousse",
+      "slug_fr": "mousse-au-chocolat-vegetalienne",
+      "slug_es": "mousse-de-chocolate-vegana",
+      "slug_it": "mousse-al-cioccolato-vegana",
+      "introduction_de": "Leichte vegane Schokoladenmousse auf Basis von Aquafaba - eine luftige, köstliche Nachspeise ohne tierische Produkte, perfekt mit frischen Beeren und Minze serviert.",
+      "introduction_en": "Light vegan chocolate mousse based on aquafaba - an airy, delicious dessert without animal products, perfect served with fresh berries and mint.",
+      "introduction_fr": "Mousse au chocolat végétalienne légère à base d'aquafaba - un dessert aérien et délicieux sans produits animaux, parfait servi avec des baies fraîches et de la menthe.",
+      "introduction_es": "Mousse de chocolate vegana ligera a base de aquafaba - un postre aireado y delicioso sin productos animales, perfecto servido con bayas frescas y menta.",
+      "introduction_it": "Mousse al cioccolato vegana leggera a base di aquafaba - un dessert arioso e delizioso senza prodotti animali, perfetto servito con bacche fresche e menta.",
+      "difficulty": "easy",
+      "category": "dessert",
+      "prep_time": 20,
+      "cook_time": null,
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 129,
+    "fields": {
+      "recipe_id": 16,
+      "ingredient_id": 69,
+      "quantity": "250.00",
+      "unit_id": 1,
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 130,
+    "fields": {
+      "recipe_id": 16,
+      "ingredient_id": 70,
+      "quantity": "140.00",
+      "unit_id": 1,
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 131,
+    "fields": {
+      "recipe_id": 16,
+      "ingredient_id": 10,
+      "quantity": "2.00",
+      "unit_id": 6,
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 132,
+    "fields": {
+      "recipe_id": 16,
+      "ingredient_id": 64,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 133,
+    "fields": {
+      "recipe_id": 16,
+      "ingredient_id": 49,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 134,
+    "fields": {
+      "recipe_id": 16,
+      "ingredient_id": 16,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 135,
+    "fields": {
+      "recipe_id": 16,
+      "ingredient_id": 3,
+      "quantity": "1.00",
+      "unit_id": 7,
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 136,
+    "fields": {
+      "recipe_id": 16,
+      "ingredient_id": 71,
+      "quantity": "1.00",
+      "unit_id": 5,
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 137,
+    "fields": {
+      "recipe_id": 16,
+      "ingredient_id": 72,
+      "quantity": "1.00",
+      "unit_id": 5,
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 138,
+    "fields": {
+      "recipe_id": 16,
+      "ingredient_id": 74,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 139,
+    "fields": {
+      "recipe_id": 16,
+      "ingredient_id": 25,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 95,
+    "fields": {
+      "recipe_id": 16,
+      "step_number": 1,
+      "instruction_de": "Die Schokolade zerkleinern, Kokosöl und Salz zugeben und vorsichtig in einem Topf schmelzen.",
+      "instruction_en": "Chop the chocolate, add coconut oil and salt and melt gently in a saucepan.",
+      "instruction_fr": "Concassez le chocolat, ajoutez l'huile de coco et le sel et faites-le fondre délicatement dans une casserole.",
+      "instruction_es": "Picar el chocolate, añadir aceite de coco y sal y derretir suavemente en una cacerola.",
+      "instruction_it": "Tritare il cioccolato, aggiungere l'olio di cocco e il sale e sciogliere delicatamente in una casseruola.",
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 96,
+    "fields": {
+      "recipe_id": 16,
+      "step_number": 2,
+      "instruction_de": "Eine Dose Kichererbsen öffnen und abgießen.",
+      "instruction_en": "Open a can of chickpeas and drain.",
+      "instruction_fr": "Ouvrir une boîte de pois chiches et l'égoutter.",
+      "instruction_es": "Abrir una lata de garbanzos y escurrir.",
+      "instruction_it": "Aprire una lattina di ceci e scolare.",
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 97,
+    "fields": {
+      "recipe_id": 16,
+      "step_number": 3,
+      "instruction_de": "Kichererbsenwasser, Salz, 1 EL Zucker, und Vanille in eine saubere Schüssel zugeben und mit Handmixer aufschlagen.",
+      "instruction_en": "Add chickpea water, salt, 1 tablespoon sugar, and vanilla to a clean bowl and beat with hand mixer.",
+      "instruction_fr": "Ajoutez l'eau des pois chiches, le sel, 1 cuillère à soupe de sucre et la vanille dans un récipient propre et battez le tout au batteur électrique.",
+      "instruction_es": "Añadir agua de garbanzos, sal, 1 cucharada de azúcar y vainilla a un bol limpio y batir con batidora de mano.",
+      "instruction_it": "Aggiungere l'acqua dei ceci, il sale, 1 cucchiaio di zucchero e la vaniglia in una ciotola pulita e battere con il frullatore a mano.",
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 98,
+    "fields": {
+      "recipe_id": 16,
+      "step_number": 4,
+      "instruction_de": "Aquafaba mindestens 7 bis 8 Minuten auf höchster Stufe steifschlagen, bis es fluffig und steif.",
+      "instruction_en": "Whip aquafaba on high speed for at least 7 to 8 minutes until fluffy and stiff.",
+      "instruction_fr": "Fouetter l'aquafaba pendant au moins 7 à 8 minutes à la vitesse maximale jusqu'à ce qu'il devienne moelleux et ferme.",
+      "instruction_es": "Batir el aquafaba a alta velocidad durante al menos 7 a 8 minutos hasta que esté esponjoso y firme.",
+      "instruction_it": "Montare l'aquafaba ad alta velocità per almeno 7-8 minuti fino a quando non diventa soffice e fermo.",
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 99,
+    "fields": {
+      "recipe_id": 16,
+      "step_number": 5,
+      "instruction_de": "Je nach Geschmack fügt man noch mehr Zucker hinzu oder lässt ihn ganz weg.",
+      "instruction_en": "Depending on your taste, add more sugar or omit it altogether.",
+      "instruction_fr": "Selon les goûts, on ajoute encore plus de sucre ou on le supprime complètement.",
+      "instruction_es": "Dependiendo de tu gusto, añade más azúcar o omítelo por completo.",
+      "instruction_it": "A seconda del gusto, aggiungere più zucchero o ometterlo del tutto.",
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 100,
+    "fields": {
+      "recipe_id": 16,
+      "step_number": 6,
+      "instruction_de": "Geschmolzenen Schokolade abkühlen lassen und vorsichtig unter Aquafaba vermengen.",
+      "instruction_en": "Allow melted chocolate to cool and gently mix into aquafaba.",
+      "instruction_fr": "Laisser refroidir le chocolat fondu et le mélanger délicatement à l'aquafaba.",
+      "instruction_es": "Dejar enfriar el chocolate derretido y mezclar suavemente en el aquafaba.",
+      "instruction_it": "Lasciare raffreddare il cioccolato fuso e mescolare delicatamente nell'aquafaba.",
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 101,
+    "fields": {
+      "recipe_id": 16,
+      "step_number": 7,
+      "instruction_de": "Die Mousse in ein Glas gießen, und für 3 bis 4 Stunden in den Kühlschrank stellen. Und mit Himbeeren und einigen Minzblättchen garnieren.",
+      "instruction_en": "Pour the mousse into a glass, and put in the refrigerator for 3 to 4 hours. And garnish with raspberries and a few mint leaves.",
+      "instruction_fr": "Versez la mousse dans un verre et placez-la au réfrigérateur pendant 3 à 4 heures. Et décorez avec des framboises et quelques feuilles de menthe.",
+      "instruction_es": "Verter la mousse en un vaso y poner en el refrigerador durante 3 a 4 horas. Y decorar con frambuesas y unas hojas de menta.",
+      "instruction_it": "Versare la mousse in un bicchiere e mettere in frigorifero per 3-4 ore. E guarnire con lamponi e alcune foglie di menta.",
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z"
+    }
+  }
+]

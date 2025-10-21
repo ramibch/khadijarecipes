@@ -1,0 +1,245 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 20,
+    "fields": {
+      "title_de": "Frühlingskeks",
+      "title_en": "Spring Cookie",
+      "title_fr": "Biscuit de printemps",
+      "title_es": "Galleta de primavera",
+      "title_it": "Biscotto primaverile",
+      "slug_de": "fruehlingskeks",
+      "slug_en": "spring-cookie",
+      "slug_fr": "biscuit-de-printemps",
+      "slug_es": "galleta-de-primavera",
+      "slug_it": "biscotto-primaverile",
+      "introduction_de": "Köstliche Frühlingskekse mit nussiger Note - perfekt für die Frühlingszeit mit einer Kombination aus Walnüssen, Mandeln und Sesampaste für ein einzigartiges Aroma.",
+      "introduction_en": "Delicious spring cookies with a nutty note - perfect for springtime with a combination of walnuts, almonds and sesame paste for a unique flavor.",
+      "introduction_fr": "Délicieux biscuits printaniers avec une note de noisette - parfaits pour le printemps avec une combinaison de noix, d'amandes et de pâte de sésame pour une saveur unique.",
+      "introduction_es": "Deliciosas galletas primaverales con un toque de nuez - perfectas para la primavera con una combinación de nueces, almendras y pasta de sésamo para un sabor único.",
+      "introduction_it": "Deliziosi biscotti primaverili con una nota di nocciola - perfetti per la primavera con una combinazione di noci, mandorle e pasta di sesamo per un sapore unico.",
+      "difficulty": "easy",
+      "category": "dessert",
+      "prep_time": 30,
+      "cook_time": 15,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 175,
+    "fields": {
+      "recipe_id": 20,
+      "ingredient_id": 1,
+      "quantity": "170.00",
+      "unit_id": 1,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 176,
+    "fields": {
+      "recipe_id": 20,
+      "ingredient_id": 12,
+      "quantity": "100.00",
+      "unit_id": 1,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 177,
+    "fields": {
+      "recipe_id": 20,
+      "ingredient_id": 113,
+      "quantity": "50.00",
+      "unit_id": 1,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 178,
+    "fields": {
+      "recipe_id": 20,
+      "ingredient_id": 114,
+      "quantity": "60.00",
+      "unit_id": 1,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 179,
+    "fields": {
+      "recipe_id": 20,
+      "ingredient_id": 26,
+      "quantity": "60.00",
+      "unit_id": 1,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 180,
+    "fields": {
+      "recipe_id": 20,
+      "ingredient_id": 115,
+      "quantity": "80.00",
+      "unit_id": 1,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 181,
+    "fields": {
+      "recipe_id": 20,
+      "ingredient_id": 116,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 182,
+    "fields": {
+      "recipe_id": 20,
+      "ingredient_id": 3,
+      "quantity": "1.00",
+      "unit_id": 7,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 128,
+    "fields": {
+      "recipe_id": 20,
+      "step_number": 1,
+      "instruction_de": "Butter, braunen Zucker, Salz und Sesampaste mit einem Schneebesen verrühren.",
+      "instruction_en": "Mix butter, brown sugar, salt and sesame paste with a whisk.",
+      "instruction_fr": "Mélanger le beurre, le sucre brun, le sel et la pâte de sésame avec un fouet.",
+      "instruction_es": "Mezclar la mantequilla, el azúcar moreno, la sal y la pasta de sésamo con un batidor.",
+      "instruction_it": "Mescolare il burro, lo zucchero di canna, il sale e la pasta di sesamo con una frusta.",
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 129,
+    "fields": {
+      "recipe_id": 20,
+      "step_number": 2,
+      "instruction_de": "Fein gemahlene Walnüsse und Mehl dazugeben, dann den Teig zu einer glatten Masse kneten.",
+      "instruction_en": "Add finely ground walnuts and flour, then knead the dough until smooth.",
+      "instruction_fr": "Ajouter les noix finement moulues et la farine, puis pétrir la pâte jusqu'à ce qu'elle soit lisse.",
+      "instruction_es": "Añadir las nueces finamente molidas y la harina, luego amasar la masa hasta que esté suave.",
+      "instruction_it": "Aggiungere le noci finemente macinate e la farina, poi impastare fino a quando l'impasto è liscio.",
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 130,
+    "fields": {
+      "recipe_id": 20,
+      "step_number": 3,
+      "instruction_de": "Den Teig in eine runde Form bringen und mit Frischhaltefolie umwickeln. Für 15-20 Minuten im Kühlschrank kalt stellen.",
+      "instruction_en": "Shape the dough into a round form and wrap with cling film. Chill in the refrigerator for 15-20 minutes.",
+      "instruction_fr": "Donner à la pâte une forme ronde et l'envelopper de film alimentaire. Placer au réfrigérateur pendant 15-20 minutes.",
+      "instruction_es": "Dar forma redonda a la masa y envolver con film transparente. Enfriar en el refrigerador durante 15-20 minutos.",
+      "instruction_it": "Dare all'impasto una forma rotonda e avvolgerlo con pellicola trasparente. Mettere in frigorifero per 15-20 minuti.",
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 131,
+    "fields": {
+      "recipe_id": 20,
+      "step_number": 4,
+      "instruction_de": "Die Teigkugel aus dem Kühlschrank holen und auf einer leicht bemehlten Arbeitsfläche platzieren.",
+      "instruction_en": "Remove the dough ball from the refrigerator and place on a lightly floured work surface.",
+      "instruction_fr": "Sortir la boule de pâte du réfrigérateur et la poser sur un plan de travail légèrement fariné.",
+      "instruction_es": "Sacar la bola de masa del refrigerador y colocarla sobre una superficie de trabajo ligeramente enharinada.",
+      "instruction_it": "Tirare fuori la palla di pasta dal frigorifero e posizionarla su una superficie di lavoro leggermente infarinata.",
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 132,
+    "fields": {
+      "recipe_id": 20,
+      "step_number": 5,
+      "instruction_de": "Kleine Kugeln formen und mit dem Ausstechen beginnen (das sind unsere Kekse).",
+      "instruction_en": "Form small balls and start cutting them out (these are our cookies).",
+      "instruction_fr": "Former de petites boules et commencer à les découper (ce sont nos biscuits).",
+      "instruction_es": "Formar pequeñas bolas y empezar a cortarlas (estas son nuestras galletas).",
+      "instruction_it": "Formare piccole palline e iniziare a tagliarle (questi sono i nostri biscotti).",
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 133,
+    "fields": {
+      "recipe_id": 20,
+      "step_number": 6,
+      "instruction_de": "Den Backofen auf 180 Grad vorheizen und ein Backblech mit Backpapier belegen.",
+      "instruction_en": "Preheat the oven to 180 degrees and line a baking sheet with parchment paper.",
+      "instruction_fr": "Préchauffer le four à 180 degrés et tapisser une plaque de cuisson de papier sulfurisé.",
+      "instruction_es": "Precalentar el horno a 180 grados y forrar una bandeja de horno con papel de hornear.",
+      "instruction_it": "Preriscaldare il forno a 180 gradi e foderare una teglia con carta da forno.",
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 134,
+    "fields": {
+      "recipe_id": 20,
+      "step_number": 7,
+      "instruction_de": "Die Kekse auf das Backblech legen und 15 Minuten bei 180ºC backen.",
+      "instruction_en": "Place the cookies on the baking sheet and bake for 15 minutes at 180ºC.",
+      "instruction_fr": "Placer les biscuits sur la plaque de cuisson et cuire pendant 15 minutes à 180ºC.",
+      "instruction_es": "Colocar las galletas en la bandeja de horno y hornear durante 15 minutos a 180ºC.",
+      "instruction_it": "Posizionare i biscotti sulla teglia e cuocere per 15 minuti a 180ºC.",
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 135,
+    "fields": {
+      "recipe_id": 20,
+      "step_number": 8,
+      "instruction_de": "Nach dem Backen auf einem Backgitter auskühlen lassen und mit Puderzucker bestäuben.",
+      "instruction_en": "After baking, let cool on a baking rack and dust with powdered sugar.",
+      "instruction_fr": "Après la cuisson, laisser refroidir sur une grille à pâtisserie et saupoudrer de sucre glace.",
+      "instruction_es": "Después de hornear, dejar enfriar en una rejilla de horno y espolvorear con azúcar glas.",
+      "instruction_it": "Dopo la cottura, lasciare raffreddare su una griglia da forno e spolverare con zucchero a velo.",
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  }
+]

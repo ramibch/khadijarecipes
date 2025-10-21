@@ -1,0 +1,191 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 12,
+    "fields": {
+      "title_de": "Datteln Bällchen",
+      "title_en": "Dates Ball",
+      "title_fr": "Boules de dattes",
+      "title_es": "Bolas de dátiles",
+      "title_it": "Palline di datteri",
+      "slug_de": "datteln-baellchen",
+      "slug_en": "dates-ball",
+      "slug_fr": "boules-de-dattes",
+      "slug_es": "bolas-de-datiles",
+      "slug_it": "palline-di-datteri",
+      "introduction_de": "Energiegeladene Dattelbällchen mit Walnüssen und Erdnussbutter - ein gesunder Snack für zwischendurch, der einfach zuzubereiten ist und ohne Backen auskommt.",
+      "introduction_en": "Energy-packed date balls with walnuts and peanut butter - a healthy snack for in-between that's easy to prepare and requires no baking.",
+      "introduction_fr": "Boules de dattes énergétiques avec noix et beurre de cacahuète - une collation saine pour entre les repas, facile à préparer et sans cuisson.",
+      "introduction_es": "Bolas de dátiles energéticas con nueces y mantequilla de maní - un snack saludable para entre horas que es fácil de preparar y no requiere horno.",
+      "introduction_it": "Palline di datteri energetiche con noci e burro di arachidi - uno spuntino sano per la pausa che è facile da preparare e non richiede cottura.",
+      "difficulty": "easy",
+      "category": "snack",
+      "prep_time": 20,
+      "cook_time": null,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 90,
+    "fields": {
+      "recipe_id": 12,
+      "ingredient_id": 61,
+      "quantity": "200.00",
+      "unit_id": 1,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 91,
+    "fields": {
+      "recipe_id": 12,
+      "ingredient_id": 62,
+      "quantity": "150.00",
+      "unit_id": 1,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 92,
+    "fields": {
+      "recipe_id": 12,
+      "ingredient_id": 63,
+      "quantity": "2.00",
+      "unit_id": 6,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 93,
+    "fields": {
+      "recipe_id": 12,
+      "ingredient_id": 64,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 94,
+    "fields": {
+      "recipe_id": 12,
+      "ingredient_id": 65,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 95,
+    "fields": {
+      "recipe_id": 12,
+      "ingredient_id": 3,
+      "quantity": null,
+      "unit_id": 7,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 67,
+    "fields": {
+      "recipe_id": 12,
+      "step_number": 1,
+      "instruction_de": "Die trockenen Datteln sollten 15 Minuten mit heißem Wasser eingeweicht werden. Bis sie sich mit Wasser vollgesogen haben und weich geworden sind. Wenn man sehr weiche Datteln verwendet, kann man diesen Schritt überspringen.",
+      "instruction_en": "Dry dates should be soaked with hot water for 15 minutes. Until they are soaked with water and become soft. If you use very soft dates, you can skip this step.",
+      "instruction_fr": "Les dattes sèches doivent être trempées dans de l'eau chaude pendant 15 minutes. Jusqu'à ce qu'elles soient imbibées d'eau et deviennent molles. Si vous utilisez des dattes très molles, vous pouvez sauter cette étape.",
+      "instruction_es": "Los dátiles secos deben remojarse con agua caliente durante 15 minutos. Hasta que estén empapados de agua y se ablanden. Si usas dátiles muy blandos, puedes saltarte este paso.",
+      "instruction_it": "I datteri secchi devono essere immersi in acqua calda per 15 minuti. Finché non si impregnano d'acqua e diventano morbidi. Se usi datteri molto morbidi, puoi saltare questo passaggio.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 68,
+    "fields": {
+      "recipe_id": 12,
+      "step_number": 2,
+      "instruction_de": "Die Datteln entweder im Mixer kurz pürieren oder sehr klein schneiden.",
+      "instruction_en": "Either puree the dates briefly in a blender or chop them very finely.",
+      "instruction_fr": "Réduisez brièvement les dattes en purée dans un mixeur ou hachez-les très finement.",
+      "instruction_es": "Tritura los dátiles brevemente en una licuadora o pícalos muy finamente.",
+      "instruction_it": "Frulla brevemente i datteri in un frullatore o tagliali molto finemente.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 69,
+    "fields": {
+      "recipe_id": 12,
+      "step_number": 3,
+      "instruction_de": "Die Walnuss klein hacken.",
+      "instruction_en": "Chop the walnut into small pieces.",
+      "instruction_fr": "Hacher la noix en petits morceaux.",
+      "instruction_es": "Picar las nueces en trozos pequeños.",
+      "instruction_it": "Tritura le noci in piccoli pezzi.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 70,
+    "fields": {
+      "recipe_id": 12,
+      "step_number": 4,
+      "instruction_de": "Alle Zutaten in einer Schüssel hinzugeben und mit den Händen kurz zusammendrücken und dann mit den Händen zu gleich großen Kugeln formen.",
+      "instruction_en": "Add all ingredients in a bowl and press together briefly with your hands, then use your hands to shape into equal-sized balls.",
+      "instruction_fr": "Ajouter tous les ingrédients dans un bol et presser brièvement avec les mains, puis former des boules de taille égale avec les mains.",
+      "instruction_es": "Añadir todos los ingredientes en un bol y presionar brevemente con las manos, luego usar las manos para formar bolas del mismo tamaño.",
+      "instruction_it": "Aggiungere tutti gli ingredienti in una ciotola e premere brevemente con le mani, quindi usare le mani per formare palline della stessa dimensione.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 71,
+    "fields": {
+      "recipe_id": 12,
+      "step_number": 5,
+      "instruction_de": "Dazu tauchen sie die fertigen Bällchen einfach in eine Schüssel mit Schia Samen, sodass sie gleichmäßig mit Schia Samen ummantelt sind.",
+      "instruction_en": "To do this, simply dip the finished balls into a bowl of shia seeds so that they are evenly coated with shia seeds.",
+      "instruction_fr": "Pour ce faire, il suffit de plonger les boules finies dans un bol de graines de shia afin qu'elles soient uniformément enrobées de graines de shia.",
+      "instruction_es": "Para ello, simplemente sumerge las bolas terminadas en un bol de semillas de chía para que queden uniformemente cubiertas con semillas de chía.",
+      "instruction_it": "Per fare questo, basta immergere le palline finite in una ciotola di semi di chia in modo che siano uniformemente ricoperte di semi di chia.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 72,
+    "fields": {
+      "recipe_id": 12,
+      "step_number": 6,
+      "instruction_de": "Nach Belieben kann man die Kugeln auch noch in den verschiedenen Zutaten wälzen. Die fertigen Bällchen in einem luftdichten Gefäß aufbewahren und kalt stellen, halten sich ca. eine Woche im Kühlschrank. Man kann sie auch einfrieren. In der Tiefkühltruhe sind sie ca. 3 Monate haltbar.",
+      "instruction_en": "If you like, you can also roll the balls in the various ingredients. Store the finished balls in an airtight container and refrigerate, will keep for about a week in the refrigerator. You can also freeze them. In the freezer they can be kept for about 3 months.",
+      "instruction_fr": "Si vous le souhaitez, vous pouvez également rouler les boules dans les différents ingrédients. Conservez les boules finies dans une boîte hermétique et réfrigérez-les, elles se conserveront environ une semaine au réfrigérateur. Vous pouvez également les congeler. Au congélateur, ils se conservent environ 3 mois.",
+      "instruction_es": "Si lo deseas, también puedes enrollar las bolas en los diversos ingredientes. Guarda las bolas terminadas en un recipiente hermético y refrigera, se conservarán aproximadamente una semana en el refrigerador. También puedes congelarlos. En el congelador se pueden conservar durante unos 3 meses.",
+      "instruction_it": "Se lo desideri, puoi anche rotolare le palline nei vari ingredienti. Conservare le palline finite in un contenitore ermetico e refrigerare, si conserveranno per circa una settimana in frigorifero. Puoi anche congelarli. Nel congelatore si possono conservare per circa 3 mesi.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  }
+]

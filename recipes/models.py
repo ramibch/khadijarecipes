@@ -9,7 +9,7 @@ class Unit(CustomModel):
     """Model for measurement units"""
 
     abbreviation = models.CharField(max_length=10, blank=True)
-    name_de = models.CharField(max_length=50)
+    name_de = models.CharField(max_length=50, unique=True)
     name_en = models.CharField(max_length=50, null=True, blank=True)
     name_fr = models.CharField(max_length=50, null=True, blank=True)
     name_es = models.CharField(max_length=50, null=True, blank=True)
@@ -40,7 +40,7 @@ class Unit(CustomModel):
 class Ingredient(CustomModel):
     """Model for ingredients that can be reused across recipes"""
 
-    name_de = models.CharField(max_length=100)
+    name_de = models.CharField(max_length=100, unique=True)
     name_en = models.CharField(max_length=100, null=True, blank=True)
     name_fr = models.CharField(max_length=100, null=True, blank=True)
     name_es = models.CharField(max_length=100, null=True, blank=True)

@@ -1,0 +1,116 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 9,
+    "fields": {
+      "title_de": "Korallenchips oder Korallen Hippen",
+      "title_en": "Coral Chips or Coral Hips",
+      "title_fr": "Chips de corail ou corail hippen",
+      "slug_de": "korallenchips-oder-korallen-hippen",
+      "slug_en": "coral-chips-or-coral-hips",
+      "slug_fr": "chips-de-corail-ou-corail-hippen",
+      "introduction_de": "Knusprige, farbenfrohe Chips aus einem einfachen Teig, verziert mit Sepia-Tinte oder Lebensmittelfarbe. Perfekt als kreative Garnitur oder knuspriger Snack.",
+      "introduction_en": "Crispy, colorful chips made from a simple batter, decorated with sepia ink or food coloring. Perfect as a creative garnish or crispy snack.",
+      "introduction_fr": "Chips croustillantes et colorées à base d'une pâte simple, décorées à l'encre de seiche ou au colorant alimentaire. Parfaites comme garniture créative ou en-cas croustillant.",
+      "difficulty": "medium",
+      "category": "snack",
+      "prep_time": 10,
+      "cook_time": 20
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 70,
+    "fields": {
+      "recipe_id": 9,
+      "ingredient_id": 5,
+      "quantity": "120.00",
+      "unit_id": 3
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 71,
+    "fields": {
+      "recipe_id": 9,
+      "ingredient_id": 47,
+      "quantity": "120.00",
+      "unit_id": 3
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 72,
+    "fields": {
+      "recipe_id": 9,
+      "ingredient_id": 1,
+      "quantity": "27.00",
+      "unit_id": 1
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 73,
+    "fields": {
+      "recipe_id": 9,
+      "ingredient_id": 116,
+      "quantity": "5.00",
+      "unit_id": 1
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 47,
+    "fields": {
+      "recipe_id": 9,
+      "step_number": 1,
+      "instruction_de": "Die Zutaten für die Hippen mit einem Mixer gut verrühren, oder mit Schneebesen glattrühren. Dabei darauf achten, dass keine Mehlklümpchen zurückbleiben.",
+      "instruction_en": "Mix the ingredients for the hips well with a mixer or whisk until smooth. Make sure that no lumps of flour remain.",
+      "instruction_fr": "Mélangez bien les ingrédients des cupcakes à l'aide d'un mixeur ou d'un fouet. Veillez à ce qu'il ne reste pas de grumeaux de farine."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 48,
+    "fields": {
+      "recipe_id": 9,
+      "step_number": 2,
+      "instruction_de": "Die Pfanne ohne Öl heiß werden lassen.",
+      "instruction_en": "Heat the pan without oil.",
+      "instruction_fr": "Faire chauffer la poêle sans huile."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 49,
+    "fields": {
+      "recipe_id": 9,
+      "step_number": 3,
+      "instruction_de": "Etwas Teig in die Pfanne geben und den Korallenchip gut ausbacken lassen.",
+      "instruction_en": "Pour some batter into the pan and allow the coral chip to bake well.",
+      "instruction_fr": "Verser un peu de pâte dans la poêle et laisser la chip corail bien cuire."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 50,
+    "fields": {
+      "recipe_id": 9,
+      "step_number": 4,
+      "instruction_de": "Die Flüssigkeit so lange kochen lassen, bis kein Wasser mehr herausspritzt.",
+      "instruction_en": "Allow the liquid to boil until no more water splashes out.",
+      "instruction_fr": "Laisser bouillir le liquide jusqu'à ce qu'il n'y ait plus d'eau qui gicle."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 51,
+    "fields": {
+      "recipe_id": 9,
+      "step_number": 5,
+      "instruction_de": "Nach jedem Frittieren die bunten Korallenchips mithilfe eines Pfannenwenders aus der Pfanne nehmen und auf Küchenpapier abtropfen und abkühlen lassen.",
+      "instruction_en": "After each frying, remove the colorful coral chips from the pan using a spatula, drain on kitchen paper and leave to cool.",
+      "instruction_fr": "Après chaque friture, retirez les chips de corail colorées de la poêle à l'aide d'une spatule et laissez-les s'égoutter et refroidir sur du papier absorbant."
+    }
+  }
+]

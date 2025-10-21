@@ -1,0 +1,161 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 1,
+    "fields": {
+      "title_de": "Naan Brot",
+      "title_en": "Naan Bread",
+      "title_fr": "Pain Naan",
+      "slug_de": "naan-brot",
+      "slug_en": "naan-bread",
+      "slug_fr": "pain-naan",
+      "introduction_de": "Ein weiches und fluffiges Fladenbrot, perfekt zu Currys oder als Beilage.",
+      "introduction_en": "A soft and fluffy flatbread, perfect with curries or as a side dish.",
+      "introduction_fr": "Un pain plat moelleux et aéré, parfait avec des currys ou en accompagnement.",
+      "difficulty": "easy",
+      "category": "bread",
+      "prep_time": 80,
+      "cook_time": 15,
+      "main_image": "recipes/main/naan_bread.jpg",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 1,
+    "fields": {
+      "recipe_id": 1,
+      "ingredient_id": 1,
+      "quantity": "250.00",
+      "unit_id": 1,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 2,
+    "fields": {
+      "recipe_id": 1,
+      "ingredient_id": 2,
+      "quantity": "1.00",
+      "unit_id": 5,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 3,
+    "fields": {
+      "recipe_id": 1,
+      "ingredient_id": 3,
+      "quantity": "0.50",
+      "unit_id": 5,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 4,
+    "fields": {
+      "recipe_id": 1,
+      "ingredient_id": 4,
+      "quantity": "2.00",
+      "unit_id": 6,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 5,
+    "fields": {
+      "recipe_id": 1,
+      "ingredient_id": 5,
+      "quantity": "125.00",
+      "unit_id": 1,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 6,
+    "fields": {
+      "recipe_id": 1,
+      "ingredient_id": 6,
+      "quantity": "1.00",
+      "unit_id": 6,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 1,
+    "fields": {
+      "recipe_id": 1,
+      "step_number": 1,
+      "instruction_de": "Die trockenen Zutaten in eine große Schüssel vermischen. Dann den Joghurt, Öl und lauwarmes Wasser nach und nach hinzugeben und glatt kneten. Oder einfach alle Zutaten in die Rührschüssel geben und ca. 10 min auf mittlerer Stufe kneten lassen.",
+      "instruction_en": "Mix the dry ingredients in a large bowl. Then gradually add the yogurt, oil and lukewarm water and knead until smooth. Or simply add all ingredients to the mixing bowl and knead for about 10 min on medium speed.",
+      "instruction_fr": "Mélangez les ingrédients secs dans un grand bol. Ajoutez ensuite le yaourt, l'huile et l'eau tiède petit à petit et pétrissez jusqu'à obtenir une pâte lisse. Ou simplement mettre tous les ingrédients dans le bol du batteur et laisser pétrir pendant environ 10 minutes à vitesse moyenne.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 2,
+    "fields": {
+      "recipe_id": 1,
+      "step_number": 2,
+      "instruction_de": "Der Teig sollte nicht mehr kleben und schön weich sein. Den Teig zu einer Kugel formen, mit Oliven-Öl bedecken.",
+      "instruction_en": "The dough should no longer stick and be nice and soft. Form the dough into a ball, cover with olive oil.",
+      "instruction_fr": "La pâte ne doit plus coller et être bien souple. Former une boule de pâte et la recouvrir d'huile d'olive.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 3,
+    "fields": {
+      "recipe_id": 1,
+      "step_number": 3,
+      "instruction_de": "Ein sauberes Küchentuch über den Teig legen und eine Stunde gehen lassen.",
+      "instruction_en": "Place a clean kitchen towel over the dough and let it rise for an hour.",
+      "instruction_fr": "Recouvrir la pâte d'un torchon propre et laisser lever pendant une heure.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 4,
+    "fields": {
+      "recipe_id": 1,
+      "step_number": 4,
+      "instruction_de": "Aus dem Teig 6 Portionen schneiden und jedes Stück zu einer Kügelchen formen. Die kleinen Teigstücken mit den Händen etwas flach drücken.",
+      "instruction_en": "Cut 6 portions from the dough and shape each piece into a ball. Flatten the small pieces of dough slightly with your hands.",
+      "instruction_fr": "Découper 6 portions de pâte et former une boule avec chaque morceau. Aplatir légèrement les petits morceaux de pâte avec les mains.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 5,
+    "fields": {
+      "recipe_id": 1,
+      "step_number": 5,
+      "instruction_de": "In einer beschichteten Pfanne bei mittlerer Hitze von beiden Seiten garen. Mit flüssiger Kräuterbutter den warmen Naan bestreichen.",
+      "instruction_en": "Cook on both sides in a coated pan over medium heat. Spread liquid herb butter on the warm naan.",
+      "instruction_fr": "Faites-les cuire des deux côtés dans une poêle antiadhésive à feu moyen. Badigeonner le naan chaud de beurre aux herbes liquide.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  }
+]

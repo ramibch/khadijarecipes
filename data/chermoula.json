@@ -1,0 +1,187 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 7,
+    "fields": {
+      "title_de": "Marokkanische Soße Chermoula",
+      "title_en": "Moroccan Sauce Chermoula",
+      "title_fr": "Sauce marocaine Chermoula",
+      "slug_de": "marokkanische-sosse-chermoula",
+      "slug_en": "moroccan-sauce-chermoula",
+      "slug_fr": "sauce-marocaine-chermoula",
+      "introduction_de": "Eine traditionelle marokkanische Kräutersauce mit Koriander, Petersilie und Gewürzen - perfekt zum Marinieren von Gemüse, Fisch oder Fleisch. Hält sich bedeckt mit Öl bis zu 2 Wochen im Kühlschrank.",
+      "introduction_en": "A traditional Moroccan herb sauce with coriander, parsley and spices - perfect for marinating vegetables, fish or meat. Keeps for up to 2 weeks in the refrigerator when covered with oil.",
+      "introduction_fr": "Une sauce aux herbes marocaine traditionnelle avec coriandre, persil et épices - parfaite pour mariner les légumes, le poisson ou la viande. Se conserve jusqu'à 2 semaines au réfrigérateur lorsqu'elle est recouverte d'huile.",
+      "difficulty": "easy",
+      "category": "appetizer",
+      "prep_time": 40,
+      "cook_time": 20
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 56,
+    "fields": {
+      "recipe_id": 7,
+      "ingredient_id": 27,
+      "quantity": "3.00",
+      "unit_id": 8
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 57,
+    "fields": {
+      "recipe_id": 7,
+      "ingredient_id": 16,
+      "quantity": "1.00",
+      "unit_id": 8
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 58,
+    "fields": {
+      "recipe_id": 7,
+      "ingredient_id": 17,
+      "quantity": "0.50",
+      "unit_id": 9
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 59,
+    "fields": {
+      "recipe_id": 7,
+      "ingredient_id": 32,
+      "quantity": "0.50",
+      "unit_id": 9
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 60,
+    "fields": {
+      "recipe_id": 7,
+      "ingredient_id": 43,
+      "quantity": "1.00",
+      "unit_id": 8
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 61,
+    "fields": {
+      "recipe_id": 7,
+      "ingredient_id": 41,
+      "quantity": "1.00",
+      "unit_id": 5
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 62,
+    "fields": {
+      "recipe_id": 7,
+      "ingredient_id": 42,
+      "quantity": "1.00",
+      "unit_id": 5
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 63,
+    "fields": {
+      "recipe_id": 7,
+      "ingredient_id": 6,
+      "quantity": "5.00",
+      "unit_id": 6
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 64,
+    "fields": {
+      "recipe_id": 7,
+      "ingredient_id": 3,
+      "quantity": "1.00",
+      "unit_id": 7
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 65,
+    "fields": {
+      "recipe_id": 7,
+      "ingredient_id": 19,
+      "quantity": "1.00",
+      "unit_id": 7
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 35,
+    "fields": {
+      "recipe_id": 7,
+      "step_number": 1,
+      "instruction_de": "Knoblauch pellen und durch eine Knoblauchpresse pressen (oder sehr fein hacken). Petersilie und Koriander waschen, trocknen, zupfen und fein hacken.",
+      "instruction_en": "Peel the garlic and press through a garlic press (or chop very finely). Wash, dry, pluck and finely chop the parsley and coriander.",
+      "instruction_fr": "Peler l'ail et le presser dans un presse-ail (ou le hacher très finement). Laver le persil et la coriandre, les sécher, les effeuiller et les hacher finement."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 36,
+    "fields": {
+      "recipe_id": 7,
+      "step_number": 2,
+      "instruction_de": "Die Salzzitronen-Viertel fein hacken. (Hinweis: Im Rezept werden Limetten verwendet, aber Salzzitronen sind eine traditionelle Variante)",
+      "instruction_en": "Finely chop the salt lemon quarters. (Note: The recipe uses limes, but preserved lemons are a traditional variation)",
+      "instruction_fr": "Hacher finement les quartiers de citron salé. (Remarque : La recette utilise des citrons verts, mais les citrons confits sont une variante traditionnelle)"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 37,
+    "fields": {
+      "recipe_id": 7,
+      "step_number": 3,
+      "instruction_de": "Kräuter, Zitronenabrieb und –Saft sowie Olivenöl in ein hohes Rührgefäß geben und mit einem Pürierstab zu einer feinen Paste pürieren, oder im Mörsern.",
+      "instruction_en": "Place the herbs, lemon zest and juice and olive oil in a tall mixing bowl and blend to a fine paste using a hand blender or mortar and pestle.",
+      "instruction_fr": "Mettre les herbes, le zeste et le jus de citron ainsi que l'huile d'olive dans un récipient haut et mixer jusqu'à obtention d'une pâte fine, ou bien broyer au mortier."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 38,
+    "fields": {
+      "recipe_id": 7,
+      "step_number": 4,
+      "instruction_de": "Die Kräuterpaste in eine Schale füllen und mit dem Knoblauch, Kreuzkümmel, Paprikapulver, Chilipulver, Salz und Pfeffer gut vermischen. Öl und Zitronensaft zugeben und alles gut miteinander verrühren. Das Ganze für ca. 30 min. gut durchziehen lassen.",
+      "instruction_en": "Put the herb paste in a bowl and mix well with the garlic, cumin, paprika powder, chili powder, salt and pepper. Add the oil and lemon juice and mix everything together well. Allow to marinate for approx. 30 mins.",
+      "instruction_fr": "Verser la pâte d'herbes dans un bol et bien la mélanger avec l'ail, le cumin, la poudre de paprika, la poudre de chili, le sel et le poivre. Ajouter l'huile et le jus de citron et bien mélanger le tout. Laisser bien reposer le tout pendant environ 30 minutes."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 39,
+    "fields": {
+      "recipe_id": 7,
+      "step_number": 5,
+      "instruction_de": "Die Auberginen abwaschen und halbieren. Dann kreuzweise auf dem Fruchtfleisch einschneiden. Die Auberginen mit der Marinade einstreichen. Auf einem Backblech verteilen und im Ofen bei 180 °C Ober-/Unterhitze für ca. 20 Minuten garen.",
+      "instruction_en": "Wash the eggplants and cut in half. Then make crosswise cuts in the flesh. Coat the eggplants with the marinade. Spread on a baking tray and cook in the oven at 180 °C top/bottom heat for approx. 20 minutes.",
+      "instruction_fr": "Laver les aubergines et les couper en deux. Puis faire des incisions blanches en croix sur la chair. Enduire les aubergines de la marinade. Répartir sur une plaque de cuisson et faire cuire au four à 180 °C (chaleur de voûte et de sole) pendant environ 20 minutes."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 40,
+    "fields": {
+      "recipe_id": 7,
+      "step_number": 6,
+      "instruction_de": "Zum Servieren mit frisch gehacktem Koriander bestreuen. Dazu passt frisches Fladenbrot. Man kann die Sauce in einem Glas aufheben, das mit Öl bedeckt ist, kann es 2 Wochen lang im Kühlschrank aufbewahrt werden.",
+      "instruction_en": "To serve, sprinkle with freshly chopped coriander. Goes well with fresh flatbread. You can keep the sauce in a jar covered with oil, it can be kept in the fridge for 2 weeks.",
+      "instruction_fr": "Pour servir, saupoudrer de coriandre fraîchement hachée. Servir avec du pain pita frais. On peut garder la sauce dans un bocal recouvert d'huile, elle peut être conservée au réfrigérateur pendant 2 semaines."
+    }
+  }
+]

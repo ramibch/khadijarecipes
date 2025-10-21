@@ -1,0 +1,230 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 11,
+    "fields": {
+      "title_de": "Strudel Teig",
+      "title_en": "Strudel Dough",
+      "title_fr": "Pâte à strudel",
+      "title_es": "Masa de strudel",
+      "title_it": "Pasta per strudel",
+      "slug_de": "strudel-teig",
+      "slug_en": "strudel-dough",
+      "slug_fr": "pate-a-strudel",
+      "slug_es": "masa-de-strudel",
+      "slug_it": "pasta-per-strudel",
+      "introduction_de": "Den Strudelteig selbst herstellen: Ein vielseitiger Teig für süße und herzhafte Strudel, der sich dünn ausrollen lässt und perfekt für verschiedene Füllungen geeignet ist.",
+      "introduction_en": "Make the strudel dough yourself: A versatile dough for sweet and savory strudels that can be rolled out thinly and is perfect for various fillings.",
+      "introduction_fr": "Confectionner soi-même la pâte à strudel : Une pâte polyvalente pour les strudels sucrés et salés, qui peut être étalée finement et parfaite pour différentes farces.",
+      "introduction_es": "Hacer la masa de strudel uno mismo: una masa versátil para strudels dulces y salados que se puede estirar finamente y es perfecta para varios rellenos.",
+      "introduction_it": "Preparare la pasta per strudel da soli: una pasta versatile per strudel dolci e salati che può essere stesa sottilmente ed è perfetta per vari ripieni.",
+      "difficulty": "medium",
+      "category": "bread",
+      "prep_time": 30,
+      "cook_time": null,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 82,
+    "fields": {
+      "recipe_id": 11,
+      "ingredient_id": 1,
+      "quantity": "1000.00",
+      "unit_id": 1,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 83,
+    "fields": {
+      "recipe_id": 11,
+      "ingredient_id": 47,
+      "quantity": "80.00",
+      "unit_id": 1,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 84,
+    "fields": {
+      "recipe_id": 11,
+      "ingredient_id": 46,
+      "quantity": "40.00",
+      "unit_id": 1,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 85,
+    "fields": {
+      "recipe_id": 11,
+      "ingredient_id": 10,
+      "quantity": "20.00",
+      "unit_id": 1,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 86,
+    "fields": {
+      "recipe_id": 11,
+      "ingredient_id": 7,
+      "quantity": "50.00",
+      "unit_id": 1,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 87,
+    "fields": {
+      "recipe_id": 11,
+      "ingredient_id": 9,
+      "quantity": "40.00",
+      "unit_id": 1,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 88,
+    "fields": {
+      "recipe_id": 11,
+      "ingredient_id": 5,
+      "quantity": "50.00",
+      "unit_id": 3,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 89,
+    "fields": {
+      "recipe_id": 11,
+      "ingredient_id": 3,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 60,
+    "fields": {
+      "recipe_id": 11,
+      "step_number": 1,
+      "instruction_de": "Zuerst das Mehl mit dem Salz, dem Zucker, dem Essig und dem Öl in einer Schüssel mischen; nach und nach das Wasser dazugeben und den Teig kräftig kneten.",
+      "instruction_en": "First mix the flour with the salt, sugar, vinegar and oil in a bowl; gradually add the water and knead the dough vigorously.",
+      "instruction_fr": "Mélanger d'abord la farine avec le sel, le sucre, le vinaigre et l'huile dans un saladier ; ajouter peu à peu l'eau et pétrir vigoureusement la pâte.",
+      "instruction_es": "Primero mezclar la harina con la sal, el azúcar, el vinagre y el aceite en un bol; añadir gradualmente el agua y amasar la masa vigorosamente.",
+      "instruction_it": "Per prima cosa mescolare la farina con il sale, lo zucchero, l'aceto e l'olio in una ciotola; aggiungere gradualmente l'acqua e impastare energicamente la pasta.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 61,
+    "fields": {
+      "recipe_id": 11,
+      "step_number": 2,
+      "instruction_de": "Alternativ: Mehl, Ei, Salz, Essig, Zucker und Öl mit einem Handrührgerät oder einer Küchenmaschine verrühren. Das Wasser wird nach und nach zugegeben, bis ein glatter, geschmeidiger Teig entsteht.",
+      "instruction_en": "Alternatively: Mix flour, egg, salt, vinegar, sugar and oil with a hand mixer or food processor. Add the water gradually until you get a smooth, supple dough.",
+      "instruction_fr": "Alternative : Mélanger la farine, l'œuf, le sel, le vinaigre, le sucre et l'huile à l'aide d'un batteur électrique ou d'un robot ménager. Ajoutez l'eau petit à petit jusqu'à obtenir une pâte lisse et souple.",
+      "instruction_es": "Alternativamente: Mezclar la harina, el huevo, la sal, el vinagre, el azúcar y el aceite con una batidora de mano o un robot de cocina. Añade el agua gradualmente hasta obtener una masa suave y flexible.",
+      "instruction_it": "In alternativa: mescolare la farina, l'uovo, il sale, l'aceto, lo zucchero e l'olio con una frusta elettrica o un robot da cucina. Aggiungere l'acqua gradualmente fino ad ottenere un impasto liscio e morbido.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 62,
+    "fields": {
+      "recipe_id": 11,
+      "step_number": 3,
+      "instruction_de": "Den Teig zu einer Kugel formen, mit Öl bestreichen und 45 Minuten in einer heiß ausgespülten Schüssel ruhen lassen.",
+      "instruction_en": "Shape the dough into a ball, brush with oil and let rest in a hot rinsed bowl for 45 minutes.",
+      "instruction_fr": "Former une boule de pâte, l'enduire d'huile et la laisser reposer 45 minutes dans un saladier rincé à l'eau chaude.",
+      "instruction_es": "Formar la masa en una bola, pintar con aceite y dejar reposar en un bol enjuagado con agua caliente durante 45 minutos.",
+      "instruction_it": "Formare la pasta a palla, spennellare con olio e lasciare riposare in una ciotola sciacquata con acqua calda per 45 minuti.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 63,
+    "fields": {
+      "recipe_id": 11,
+      "step_number": 4,
+      "instruction_de": "Butter oder Margarine in einem kleinen Topf schmelzen und beiseite stellen.",
+      "instruction_en": "Melt butter or margarine in a small saucepan and set aside.",
+      "instruction_fr": "Faire fondre le beurre ou la margarine dans une petite casserole et le mettre de côté.",
+      "instruction_es": "Derretir la mantequilla o margarina en una cacerola pequeña y reservar.",
+      "instruction_it": "Sciogliere il burro o la margarina in una piccola pentola e mettere da parte.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 64,
+    "fields": {
+      "recipe_id": 11,
+      "step_number": 5,
+      "instruction_de": "Den Strudelteig auf einem leicht bemehlten Küchentuch flach drücken und mit dem Nudelholz ausrollen.",
+      "instruction_en": "Flatten the strudel dough on a lightly floured kitchen towel and roll out with a rolling pin.",
+      "instruction_fr": "Aplatissez la pâte à strudel sur un torchon légèrement fariné et étalez-la avec un rouleau à pâtisserie.",
+      "instruction_es": "Aplanar la masa de strudel sobre un paño de cocina ligeramente enharinado y estirar con un rodillo.",
+      "instruction_it": "Appiattire la pasta per strudel su un canovaccio leggermente infarinato e stendere con il matterello.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 65,
+    "fields": {
+      "recipe_id": 11,
+      "step_number": 6,
+      "instruction_de": "Den Teig mit beiden Händen weiter anheben und mit dem Handrücken hauchdünn ausrollen, bis das Küchentuch sichtbar wird, und mit etwas zerlassener Butter oder Margarine bestreichen.",
+      "instruction_en": "Continue to lift the dough with both hands and roll it out paper-thin with the back of your hand until the kitchen towel is visible, and brush it with a little melted butter or margarine.",
+      "instruction_fr": "Continuer à soulever la pâte avec les deux mains et l'étaler très finement avec le dos de la main jusqu'à ce que le torchon soit visible, puis la badigeonner d'un peu de beurre fondu ou de margarine.",
+      "instruction_es": "Continuar levantando la masa con ambas manos y estirarla finamente con el dorso de la mano hasta que el paño de cocina sea visible, y pintar con un poco de mantequilla o margarina derretida.",
+      "instruction_it": "Continuare a sollevare la pasta con entrambe le mani e stenderla sottilissima con il dorso della mano fino a quando il canovaccio è visibile, e spennellare con un po' di burro o margarina fusi.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 66,
+    "fields": {
+      "recipe_id": 11,
+      "step_number": 7,
+      "instruction_de": "Dickere Teigränder abschneiden und nach Belieben belegen. Der Teig kann bis zu drei Monate lang tiefgekühlt aufbewahrt werden.",
+      "instruction_en": "Cut off thicker edges of dough and top as desired. The dough can be kept frozen for up to three months.",
+      "instruction_fr": "Découper des bords de pâte plus épais et garnir à volonté. La pâte peut être conservée jusqu'à trois mois au congélateur.",
+      "instruction_es": "Cortar los bordes de masa más gruesos y cubrir al gusto. La masa se puede conservar congelada hasta tres meses.",
+      "instruction_it": "Tagliare i bordi della pasta più spessi e farcire a piacere. La pasta può essere conservata in freezer fino a tre mesi.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  }
+]

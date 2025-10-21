@@ -1,0 +1,221 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 19,
+    "fields": {
+      "title_de": "Holunderblütensirup",
+      "title_en": "Elderflower Syrup",
+      "title_fr": "Sirop de fleurs de sureau",
+      "title_es": "Jarabe de flor de saúco",
+      "title_it": "Sciroppo di fiori di sambuco",
+      "slug_de": "holunderbluetensirup",
+      "slug_en": "elderflower-syrup",
+      "slug_fr": "sirop-de-fleurs-de-sureau",
+      "slug_es": "jarabe-de-flor-de-sauco",
+      "slug_it": "sciroppo-di-fiori-di-sambuco",
+      "introduction_de": "Aromatischer Holunderblütensirup - ein vielseitiger Sirup, der sich perfekt für erfrischende Getränke, Desserts oder zum Verfeinern von Speisen eignet. Haltbar gemacht durch Zitronensäure für lange Genussfreude.",
+      "introduction_en": "Aromatic elderflower syrup - a versatile syrup perfect for refreshing drinks, desserts or refining dishes. Preserved with citric acid for long-lasting enjoyment.",
+      "introduction_fr": "Sirop aromatique de fleurs de sureau - un sirop polyvalent parfait pour les boissons rafraîchissantes, les desserts ou pour affiner les plats. Conservé avec de l'acide citrique pour un plaisir durable.",
+      "introduction_es": "Jarabe aromático de flor de saúco - un jarabe versátil perfecto para bebidas refrescantes, postres o para refinar platos. Conservado con ácido cítrico para un disfrute duradero.",
+      "introduction_it": "Sciroppo aromatico di fiori di sambuco - uno sciroppo versatile perfetto per bevande rinfrescanti, dessert o per raffinare i piatti. Conservato con acido citrico per un godimento duraturo.",
+      "difficulty": "easy",
+      "category": "beverage",
+      "prep_time": 30,
+      "cook_time": 20,
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 169,
+    "fields": {
+      "recipe_id": 19,
+      "ingredient_id": 5,
+      "quantity": "6.00",
+      "unit_id": 4,
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 170,
+    "fields": {
+      "recipe_id": 19,
+      "ingredient_id": 10,
+      "quantity": "8.00",
+      "unit_id": 2,
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 171,
+    "fields": {
+      "recipe_id": 19,
+      "ingredient_id": 66,
+      "quantity": "800.00",
+      "unit_id": 1,
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 172,
+    "fields": {
+      "recipe_id": 19,
+      "ingredient_id": 67,
+      "quantity": "200.00",
+      "unit_id": 1,
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 173,
+    "fields": {
+      "recipe_id": 19,
+      "ingredient_id": 68,
+      "quantity": "1.00",
+      "unit_id": 8,
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 174,
+    "fields": {
+      "recipe_id": 19,
+      "ingredient_id": 43,
+      "quantity": "1.00",
+      "unit_id": 8,
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 120,
+    "fields": {
+      "recipe_id": 19,
+      "step_number": 1,
+      "instruction_de": "Das Wasser mit dem Zucker zum Kochen bringen, bis der Zucker aufgelöst ist, dann die Zitronensäure hinzugeben und so lange kochen lassen, bis der Sirup eine klare Farbe hat.",
+      "instruction_en": "Bring the water to a boil with the sugar until the sugar is dissolved, then add the citric acid and boil until the syrup has a clear color.",
+      "instruction_fr": "Porter l'eau à ébullition avec le sucre jusqu'à ce que le sucre soit dissous, puis ajouter l'acide citrique et faire bouillir jusqu'à ce que le sirop ait une couleur claire.",
+      "instruction_es": "Llevar el agua a ebullición con el azúcar hasta que el azúcar se disuelva, luego añadir el ácido cítrico y hervir hasta que el jarabe tenga un color claro.",
+      "instruction_it": "Portare l'acqua a ebollizione con lo zucchero fino a quando lo zucchero si scioglie, poi aggiungere l'acido citrico e far bollire fino a quando lo sciroppo ha un colore chiaro.",
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 121,
+    "fields": {
+      "recipe_id": 19,
+      "step_number": 2,
+      "instruction_de": "Auf Raumtemperatur abkühlen lassen.",
+      "instruction_en": "Allow to cool to room temperature.",
+      "instruction_fr": "Laisser refroidir à température ambiante.",
+      "instruction_es": "Dejar enfriar a temperatura ambiente.",
+      "instruction_it": "Lasciare raffreddare a temperatura ambiente.",
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 122,
+    "fields": {
+      "recipe_id": 19,
+      "step_number": 3,
+      "instruction_de": "Blütendolden vorsichtig ausschütteln, um kleine Insekten zu entfernen und kopfüber in den Sirup tauchen.",
+      "instruction_en": "Gently shake out flower umbels to remove small insects and dip upside down in the syrup.",
+      "instruction_fr": "Secouer délicatement les ombelles de fleurs pour éliminer les petits insectes et les tremper à l'envers dans le sirop.",
+      "instruction_es": "Sacudir suavemente las umbelas de flores para eliminar insectos pequeños y sumergir boca abajo en el jarabe.",
+      "instruction_it": "Scuotere delicatamente le ombrelle di fiori per rimuovere piccoli insetti e immergerle a testa in giù nello sciroppo.",
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 123,
+    "fields": {
+      "recipe_id": 19,
+      "step_number": 4,
+      "instruction_de": "Zitrone in dünne Scheiben schneiden und sie ebenfalls in den Topf geben.",
+      "instruction_en": "Cut the lemon into thin slices and add them to the pot as well.",
+      "instruction_fr": "Couper le citron en fines tranches et les ajouter également dans la casserole.",
+      "instruction_es": "Cortar el limón en rodajas finas y añadirlas también a la olla.",
+      "instruction_it": "Tagliare il limone a fette sottili e aggiungerle anche nella pentola.",
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 124,
+    "fields": {
+      "recipe_id": 19,
+      "step_number": 5,
+      "instruction_de": "Den Sirup 2 Tage an einem kühlen Ort ziehen lassen.",
+      "instruction_en": "Leave the syrup to infuse for 2 days in a cool place.",
+      "instruction_fr": "Laisser le sirop infuser pendant 2 jours dans un endroit frais.",
+      "instruction_es": "Dejar el jarabe en infusión durante 2 días en un lugar fresco.",
+      "instruction_it": "Lasciare lo sciroppo in infusione per 2 giorni in un luogo fresco.",
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 125,
+    "fields": {
+      "recipe_id": 19,
+      "step_number": 6,
+      "instruction_de": "Dann den Sirup durch ein feines Sieb oder ein Mulltuch in einen Topf gießen.",
+      "instruction_en": "Then pour the syrup through a fine sieve or muslin cloth into a pot.",
+      "instruction_fr": "Puis verser le sirop à travers un tamis fin ou un tissu de mousseline dans une casserole.",
+      "instruction_es": "Luego verter el jarabe a través de un colador fino o una tela de muselina en una olla.",
+      "instruction_it": "Poi versare lo sciroppo attraverso un setaccio fine o un panno di mussola in una pentola.",
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 126,
+    "fields": {
+      "recipe_id": 19,
+      "step_number": 7,
+      "instruction_de": "Kurz aufkochen, Holunderblütensirup noch heiß in saubere, heiß ausgespülte Flaschen füllen und sofort verschließen.",
+      "instruction_en": "Boil briefly, fill elderflower syrup while still hot into clean, hot rinsed bottles and seal immediately.",
+      "instruction_fr": "Faire bouillir brièvement, remplir le sirop de fleurs de sureau encore chaud dans des bouteilles propres et rincées à l'eau chaude et sceller immédiatement.",
+      "instruction_es": "Hervir brevemente, llenar el jarabe de flor de saúco aún caliente en botellas limpias y enjuagadas con agua caliente y sellar inmediatamente.",
+      "instruction_it": "Far bollire brevemente, riempire lo sciroppo di fiori di sambuco ancora caldo in bottiglie pulite e sciacquate con acqua calda e sigillare immediatamente.",
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 127,
+    "fields": {
+      "recipe_id": 19,
+      "step_number": 8,
+      "instruction_de": "Der fertige Sirup wird für eine Haltbarkeit von bis zu einem Jahr am besten kühl und dunkel gelagert, zum Beispiel im Keller.",
+      "instruction_en": "The finished syrup is best stored in a cool and dark place, for example in the cellar, for a shelf life of up to one year.",
+      "instruction_fr": "Le sirop fini est mieux conservé dans un endroit frais et sombre, par exemple dans la cave, pour une durée de conservation allant jusqu'à un an.",
+      "instruction_es": "El jarabe terminado se almacena mejor en un lugar fresco y oscuro, por ejemplo en el sótano, para una vida útil de hasta un año.",
+      "instruction_it": "Lo sciroppo finito si conserva meglio in un luogo fresco e buio, ad esempio in cantina, per una durata di conservazione fino a un anno.",
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z"
+    }
+  }
+]

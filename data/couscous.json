@@ -1,0 +1,419 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 18,
+    "fields": {
+      "title_de": "Marokkanischer Couscous",
+      "title_en": "Moroccan Couscous",
+      "title_fr": "Couscous marocain",
+      "title_es": "Cuscús marroquí",
+      "title_it": "Couscous marocchino",
+      "slug_de": "marokkanischer-couscous",
+      "slug_en": "moroccan-couscous",
+      "slug_fr": "couscous-marocain",
+      "slug_es": "couscous-marroqui",
+      "slug_it": "couscous-marocchino",
+      "introduction_de": "Traditioneller marokkanischer Couscous mit zartem Fleisch, aromatischen Gewürzen und einer Vielfalt an Gemüse - ein herzhaftes und nahrhaftes Gericht, das die Seele der nordafrikanischen Küche einfängt.",
+      "introduction_en": "Traditional Moroccan couscous with tender meat, aromatic spices and a variety of vegetables - a hearty and nutritious dish that captures the soul of North African cuisine.",
+      "introduction_fr": "Couscous marocain traditionnel avec de la viande tendre, des épices aromatiques et une variété de légumes - un plat copieux et nutritif qui capture l'âme de la cuisine nord-africaine.",
+      "introduction_es": "Cuscús marroquí tradicional con carne tierna, especias aromáticas y una variedad de verduras - un plato abundante y nutritivo que captura el alma de la cocina norteafricana.",
+      "introduction_it": "Couscous marocchino tradizionale con carne tenera, spezie aromatiche e una varietà di verdure - un piatto sostanzioso e nutriente che cattura l'anima della cucina nordafricana.",
+      "difficulty": "medium",
+      "category": "main",
+      "prep_time": 30,
+      "cook_time": 120,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 148,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 100,
+      "quantity": "500.00",
+      "unit_id": 1,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 149,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 6,
+      "quantity": "2.00",
+      "unit_id": 5,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 150,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 34,
+      "quantity": "1.00",
+      "unit_id": 8,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 151,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 101,
+      "quantity": "1.00",
+      "unit_id": 5,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 152,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 17,
+      "quantity": "4.00",
+      "unit_id": 10,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 153,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 32,
+      "quantity": "4.00",
+      "unit_id": 10,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 154,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 102,
+      "quantity": "200.00",
+      "unit_id": 1,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 155,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 103,
+      "quantity": "1.00",
+      "unit_id": 8,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 156,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 104,
+      "quantity": "1.00",
+      "unit_id": 8,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 157,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 105,
+      "quantity": "1.00",
+      "unit_id": 8,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 158,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 33,
+      "quantity": "300.00",
+      "unit_id": 1,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 159,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 106,
+      "quantity": "3.00",
+      "unit_id": 8,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 160,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 107,
+      "quantity": "3.00",
+      "unit_id": 8,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 161,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 3,
+      "quantity": "1.50",
+      "unit_id": 5,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 162,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 108,
+      "quantity": "0.50",
+      "unit_id": 5,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 163,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 109,
+      "quantity": "0.50",
+      "unit_id": 5,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 164,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 111,
+      "quantity": "0.50",
+      "unit_id": 5,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 165,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 112,
+      "quantity": "500.00",
+      "unit_id": 1,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 166,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 5,
+      "quantity": "500.00",
+      "unit_id": 3,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 167,
+    "fields": {
+      "recipe_id": 18,
+      "ingredient_id": 12,
+      "quantity": "100.00",
+      "unit_id": 1,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 110,
+    "fields": {
+      "recipe_id": 18,
+      "step_number": 1,
+      "instruction_de": "Kichererbsen über Nacht einweichen, danach in einem Sieb abgießen und sie abtropfen lassen.",
+      "instruction_en": "Soak chickpeas overnight, then drain them in a colander.",
+      "instruction_fr": "Faire tremper les pois chiches pendant une nuit, puis les égoutter dans une passoire et les laisser s'égoutter.",
+      "instruction_es": "Remojar los garbanzos durante la noche, luego escurrirlos en un colador.",
+      "instruction_it": "Mettere a bagno i ceci durante la notte, poi scolarli in uno scolapasta.",
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 111,
+    "fields": {
+      "recipe_id": 18,
+      "step_number": 2,
+      "instruction_de": "Zwiebeln schälen und klein schneiden. Die Gemüse waschen und schneiden. Karotten, Kartoffeln, Steckrüben und Zucchini am besten längs halbieren und in 10 cm lange Stücke schneiden. Der Kürbis wird grob zerteilt.",
+      "instruction_en": "Peel and chop the onions. Wash and cut the vegetables. Carrots, potatoes, turnips and zucchini best cut in half lengthwise and cut into 10 cm long pieces. The pumpkin is coarsely cut.",
+      "instruction_fr": "Epluchez les oignons et coupez-les en petits morceaux. Laver et couper les légumes. Il est préférable de couper les carottes, les pommes de terre, les navets et les courgettes en deux dans le sens de la longueur et de les couper en morceaux de 10 cm. Le potiron est grossièrement découpé.",
+      "instruction_es": "Pelar y picar las cebollas. Lavar y cortar las verduras. Es mejor cortar las zanahorias, patatas, nabos y calabacines por la mitad a lo largo y cortarlos en trozos de 10 cm. La calabaza se corta en trozos gruesos.",
+      "instruction_it": "Sbucciare e tritare le cipolle. Lavare e tagliare le verduras. È meglio tagliare carote, patate, rape e zucchine a metà per il lungo e tagliarle a pezzi di 10 cm. La zucca viene tagliata grossolanamente.",
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 112,
+    "fields": {
+      "recipe_id": 18,
+      "step_number": 3,
+      "instruction_de": "Das Fleisch in Stücke schneiden.",
+      "instruction_en": "Cut the meat into pieces.",
+      "instruction_fr": "Couper la viande en morceaux.",
+      "instruction_es": "Cortar la carne en trozos.",
+      "instruction_it": "Tagliare la carne a pezzi.",
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 113,
+    "fields": {
+      "recipe_id": 18,
+      "step_number": 4,
+      "instruction_de": "In einem großen Topf etwas Öl erhitzen und das Fleisch mit der Zwiebeln bis glasig und unter ständigen Rühren anbraten. Gewürze, Kichererbsen, Tomatenmark und das Wasser oder Brühe zufügen und alles bei schwacher bis mittlerer Hitze etwa 1-2 Stunden köcheln lassen.",
+      "instruction_en": "Heat some oil in a large pot and sauté the meat with the onion until translucent, stirring constantly. Add spices, chickpeas, tomato paste and the water or broth and simmer everything over low to medium heat for about 1-2 hours.",
+      "instruction_fr": "Faire chauffer un peu d'huile dans une grande casserole et faire revenir la viande avec l'oignon jusqu'à ce qu'elle devienne translucide et en remuant constamment. Ajouter les épices, les pois chiches, le concentré de tomates et l'eau ou le bouillon et laisser mijoter le tout à feu doux ou moyen pendant environ 1 à 2 heures.",
+      "instruction_es": "Calentar un poco de aceite en una olla grande y saltear la carne con la cebolla hasta que esté translúcida, revolviendo constantemente. Añadir especias, garbanzos, pasta de tomate y el agua o caldo y cocinar a fuego lento durante aproximadamente 1-2 horas.",
+      "instruction_it": "Scaldare un po' d'olio in una pentola grande e soffriggere la carne con la cipolla fino a quando non diventa traslucida, mescolando costantemente. Aggiungere spezie, ceci, concentrato di pomodoro e l'acqua o brodo e cuocere a fuoco lento per circa 1-2 ore.",
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 114,
+    "fields": {
+      "recipe_id": 18,
+      "step_number": 5,
+      "instruction_de": "Koriander und Petersilie waschen, trocken schütteln.",
+      "instruction_en": "Wash cilantro and parsley, shake dry.",
+      "instruction_fr": "Laver la coriandre et le persil, les secouer pour les sécher.",
+      "instruction_es": "Lavar el cilantro y el perejil, sacudir para secar.",
+      "instruction_it": "Lavare il coriandolo e il prezzemolo, scuotere per asciugare.",
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 115,
+    "fields": {
+      "recipe_id": 18,
+      "step_number": 6,
+      "instruction_de": "Die vorbereitete Gemüse mit längerer Garzeit Karotten, Steckrübe, Kartoffeln und gebundene Koriander und Petersilie in den Topf geben.",
+      "instruction_en": "Add the prepared vegetables with longer cooking time carrots, rutabaga, potatoes and tied cilantro and parsley in the pot.",
+      "instruction_fr": "Ajouter dans la casserole les légumes préparés avec un temps de cuisson plus long : carottes, navets, pommes de terre et coriandre et persil liés.",
+      "instruction_es": "Añadir a la olla las verduras preparadas con mayor tiempo de cocción: zanahorias, nabo sueco, patatas y cilantro y perejil atados.",
+      "instruction_it": "Aggiungere nella pentola le verdure preparate con tempo di cottura più lungo: carote, rapa svedese, patate e coriandolo e prezzemolo legati.",
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 116,
+    "fields": {
+      "recipe_id": 18,
+      "step_number": 7,
+      "instruction_de": "Diese Zutaten werden mit heißem Wasser übergossen und auf mittlerer Flamme zum Kochen gebracht.",
+      "instruction_en": "These ingredients are poured hot water and brought to a boil over medium heat.",
+      "instruction_fr": "Ces ingrédients sont arrosés d'eau chaude et portés à ébullition à feu moyen.",
+      "instruction_es": "Estos ingredientes se vierten con agua caliente y se llevan a ebullición a fuego medio.",
+      "instruction_it": "Questi ingredienti vengono versati con acqua caldia e portati a ebollizione a fuoco medio.",
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 117,
+    "fields": {
+      "recipe_id": 18,
+      "step_number": 8,
+      "instruction_de": "Währenddessen den Couscous vorbereiten, den Couscous mit der heißen Brühe oder Wasser aufgießen und mit geschlossenem Deckel quellen lassen. Nach 10 Minuten den Couscous mit der Gabel auflockern und die Butter dazugeben.",
+      "instruction_en": "Meanwhile, prepare the couscous, pour the hot broth or water on the couscous and let it swell with the lid closed. After 10 minutes, loosen the couscous with a fork and add the butter.",
+      "instruction_fr": "Pendant ce temps, préparer le couscous, verser le bouillon chaud ou l'eau sur le couscous et laisser gonfler avec le couvercle fermé. Après 10 minutes, aérer le couscous avec une fourchette et ajouter le beurre.",
+      "instruction_es": "Mientras tanto, preparar el cuscús, verter el caldo caliente o agua sobre el cuscús y dejar hinchar con la tapa cerrada. Después de 10 minutos, aflojar el cuscús con un tenedor y añadir la mantequilla.",
+      "instruction_it": "Nel frattempo, preparare il couscous, versare il brodo caldo o l'acqua sul couscous e lasciare gonfiare con il coperchio chiuso. Dopo 10 minuti, allentare il couscous con una forchetta e aggiungere il burro.",
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 118,
+    "fields": {
+      "recipe_id": 18,
+      "step_number": 9,
+      "instruction_de": "Gemüse mit kürzerer Garzeit in den Topf geben (Kürbis, Zucchini und Tomaten Stück) lassen Sie alles bei mäßiger Hitze, bis es weich wird.",
+      "instruction_en": "Add vegetables with shorter cooking time to the pot (squash, zucchini and tomatoes piece) leave everything on moderate heat until soft.",
+      "instruction_fr": "Ajoutez les légumes avec un temps de cuisson plus court dans la casserole (potiron, courgettes et tomates en morceaux) laissez le tout à feu modéré jusqu'à ce qu'il devienne tendre.",
+      "instruction_es": "Añadir verduras con menor tiempo de cocción a la olla (calabaza, calabacín y tomates en trozos) dejar todo a fuego moderado hasta que esté suave.",
+      "instruction_it": "Aggiungere le verdure con tempo di cottura più breve nella pentola (zucca, zucchine e pomodori a pezzi) lasciare tutto a fuoco moderato fino a quando non diventa morbido.",
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 119,
+    "fields": {
+      "recipe_id": 18,
+      "step_number": 10,
+      "instruction_de": "Die Soße abschmecken und den fertigen Couscous mit dem Gemüse vermengen, das Fleisch darauf setzten und mit etwas Soße begießen und auf einer Platte anrichten.",
+      "instruction_en": "Season the sauce and mix the finished couscous with the vegetables, put the meat on top and pour some sauce and arrange on a platter.",
+      "instruction_fr": "Assaisonnez la sauce et mélangez le couscous terminé avec les légumes, placez la viande par-dessus et arrosez d'un peu de sauce et disposez sur un plat.",
+      "instruction_es": "Sazonar la salsa y mezclar el cuscús terminado con las verduras, poner la carne encima y verter un poco de salsa y disponer en una fuente.",
+      "instruction_it": "Condire la salsa e mescolare il couscous finito con le verdure, mettere la carne sopra e versare un po' di salsa e disporre su un piatto.",
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z"
+    }
+  }
+]

@@ -1,0 +1,248 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 3,
+    "fields": {
+      "title_de": "Lachs-tatar mit Chili-Mango",
+      "title_en": "Salmon Tartare with Chili Mango",
+      "title_fr": "Tartare de saumon au chili et à la mangue",
+      "slug_de": "lachs-tatar-mit-chili-mango",
+      "slug_en": "salmon-tartare-with-chili-mango",
+      "slug_fr": "tartare-de-saumon-au-chili-et-a-la-mangue",
+      "introduction_de": "Ein frisches und würziges Lachstartar mit süßer Mango und scharfer Chili, elegant in Schichten angerichtet - perfekt als Vorspeise oder leichte Hauptmahlzeit.",
+      "introduction_en": "A fresh and spicy salmon tartare with sweet mango and hot chili, elegantly arranged in layers - perfect as an appetizer or light main course.",
+      "introduction_fr": "Un tartare de saumon frais et épicé avec de la mangue sucrée et du piment fort, élégamment disposé en couches - parfait en entrée ou en plat principal léger.",
+      "difficulty": "medium",
+      "category": "appetizer",
+      "prep_time": 30,
+      "cook_time": 0
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 15,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 13,
+      "quantity": "200.00",
+      "unit_id": 1
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 16,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 43,
+      "quantity": "2.00",
+      "unit_id": 8
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 17,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 6,
+      "quantity": "1.00",
+      "unit_id": 6
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 18,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 3,
+      "quantity": "1.00",
+      "unit_id": 7
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 19,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 15,
+      "quantity": "1.00",
+      "unit_id": 8
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 20,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 14,
+      "quantity": "1.00",
+      "unit_id": 8
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 21,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 16,
+      "quantity": "1.00",
+      "unit_id": 8
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 22,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 17,
+      "quantity": "1.00",
+      "unit_id": 9
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 23,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 83,
+      "quantity": "1.00",
+      "unit_id": null
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 24,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 22,
+      "quantity": "2.00",
+      "unit_id": 6
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 25,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 18,
+      "quantity": "1.00",
+      "unit_id": 6
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 26,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 98,
+      "quantity": "1.00",
+      "unit_id": 5
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 27,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 19,
+      "quantity": "1.00",
+      "unit_id": 7
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 28,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 20,
+      "quantity": "1.00",
+      "unit_id": 6
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 29,
+    "fields": {
+      "recipe_id": 3,
+      "ingredient_id": 96,
+      "quantity": "2.00",
+      "unit_id": 6
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 12,
+    "fields": {
+      "recipe_id": 3,
+      "step_number": 1,
+      "instruction_de": "Lachs waschen und fein würfeln. Mit Abrieb, Saft von Limetten, Öl, Salz vermengen. Im Kühlschrank gut durchziehen lassen.",
+      "instruction_en": "Wash and finely dice the salmon. Mix with rubbing, juice of limes, oil, salt. Leave to infuse well in the refrigerator.",
+      "instruction_fr": "Laver le saumon et le couper en petits dés. Mélanger avec le zeste, le jus de citron vert, l'huile et le sel. Laisser bien reposer au réfrigérateur."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 13,
+    "fields": {
+      "recipe_id": 3,
+      "step_number": 2,
+      "instruction_de": "In der Zwischenzeit die übrigen Zutaten vorbereiten. Avocado und Mango aus der Schale lösen, entkernen und Würfel schneiden.",
+      "instruction_en": "In the meantime, prepare the remaining ingredients. Remove avocado and mango from peel, remove seeds and cut into cubes.",
+      "instruction_fr": "Entre-temps, préparer les autres ingrédients. Détachez la peau de l'avocat et de la mangue, dénoyautez-les et coupez-les en cubes."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 14,
+    "fields": {
+      "recipe_id": 3,
+      "step_number": 3,
+      "instruction_de": "Chili waschen, längs halbieren, entkernen, klein hacken. Koriander waschen, abtropfen lassen und klein schneiden.",
+      "instruction_en": "Wash chili, cut in half lengthwise, remove seeds, chop finely. Wash, drain and chop the cilantro.",
+      "instruction_fr": "Laver le piment, le couper en deux dans le sens de la longueur, l'épépiner et le hacher finement. Laver la coriandre, l'égoutter et la couper en petits morceaux."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 15,
+    "fields": {
+      "recipe_id": 3,
+      "step_number": 4,
+      "instruction_de": "Alles in einer Schüssel gut durchmischen und mit einer Reibe die Schale von Limetten fein abreiben, Saft der Limetten auspressen. Sesamöl, Wasabi Paste, Salz und Pfeffer abschmecken.",
+      "instruction_en": "Mix everything well in a bowl and finely grate the zest of limes with a grater, squeeze the juice of the limes. Sesame oil, wasabi paste, salt and pepper to taste.",
+      "instruction_fr": "Bien mélanger le tout dans un saladier et râper finement le zeste des citrons verts à l'aide d'une râpe, presser le jus des citrons verts. Assaisonner avec l'huile de sésame, la pâte de wasabi, le sel et le poivre."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 16,
+    "fields": {
+      "recipe_id": 3,
+      "step_number": 5,
+      "instruction_de": "Anrichten auf Tellern in Schichten, dazu am besten einen Servierring verwenden. Servierring auf einen Teller setzen, Avocado-Mango Würfel mithilfe eines Teelöffels gleichmäßig verteilen, glatt streichen und fest pressen.",
+      "instruction_en": "Arrange on plates in layers, it is best to use a serving ring for this purpose. Place serving ring on a plate, spread avocado-mango cubes evenly with the help of a teaspoon, smooth and press firmly.",
+      "instruction_fr": "Dresser sur des assiettes par couches, en utilisant de préférence un cercle de service. Placer le cercle de service sur une assiette, répartir uniformément les cubes d'avocat et de mangue à l'aide d'une cuillère à café, lisser et presser fermement."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 17,
+    "fields": {
+      "recipe_id": 3,
+      "step_number": 6,
+      "instruction_de": "Lachstatar darauf verteilen und ebenfalls leicht andrücken. Den Ring vorsichtig abheben.",
+      "instruction_en": "Spread salmon tartar on top and press down lightly as well. Carefully lift off the ring.",
+      "instruction_fr": "Répartir le tartare de saumon par-dessus et presser également légèrement. Soulever délicatement l'anneau."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 18,
+    "fields": {
+      "recipe_id": 3,
+      "step_number": 7,
+      "instruction_de": "Lachstatar mit Wasabi-Mayo, geröstetem schwarzen Sesam und Kresse garnieren.",
+      "instruction_en": "Salmon tartare, garnish with wasabi mayo, toasted black sesame seeds and cress.",
+      "instruction_fr": "Tartare de saumon, garnir de mayo au wasabi, de sésame noir grillé et de cresson."
+    }
+  }
+]

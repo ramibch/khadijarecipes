@@ -1,0 +1,167 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 2,
+    "fields": {
+      "title_de": "Kräuter Sponge Biskuit (in Mikrowelle)",
+      "title_en": "Herbs Sponge Biscuit (in microwave)",
+      "title_fr": "Biscuit sponge aux herbes (au micro-ondes)",
+      "slug_de": "krauter-sponge-biskuit-in-mikrowelle",
+      "slug_en": "herbs-sponge-biscuit-in-microwave",
+      "slug_fr": "biscuit-sponge-aux-herbes-au-micro-ondes",
+      "introduction_de": "Ein luftiges Biskuit mit Kräutern, schnell in der Mikrowelle zubereitet - perfekt als kleine Snacks oder Vorspeise.",
+      "introduction_en": "An airy biscuit with herbs, quickly prepared in the microwave - perfect as small snacks or appetizers.",
+      "introduction_fr": "Un biscuit aéré aux herbes, préparé rapidement au micro-ondes - parfait comme petites collations ou apéritifs.",
+      "difficulty": "medium",
+      "category": "snack",
+      "prep_time": 15,
+      "cook_time": 1
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 7,
+    "fields": {
+      "recipe_id": 2,
+      "ingredient_id": 7,
+      "quantity": "95.00",
+      "unit_id": 1
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 8,
+    "fields": {
+      "recipe_id": 2,
+      "ingredient_id": 8,
+      "quantity": "40.00",
+      "unit_id": null
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 9,
+    "fields": {
+      "recipe_id": 2,
+      "ingredient_id": 9,
+      "quantity": "20.00",
+      "unit_id": 1
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 10,
+    "fields": {
+      "recipe_id": 2,
+      "ingredient_id": 10,
+      "quantity": "10.00",
+      "unit_id": 1
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 11,
+    "fields": {
+      "recipe_id": 2,
+      "ingredient_id": 11,
+      "quantity": "20.00",
+      "unit_id": 1
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 12,
+    "fields": {
+      "recipe_id": 2,
+      "ingredient_id": 12,
+      "quantity": "8.00",
+      "unit_id": 1
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 13,
+    "fields": {
+      "recipe_id": 2,
+      "ingredient_id": 3,
+      "quantity": "1.00",
+      "unit_id": 7
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 14,
+    "fields": {
+      "recipe_id": 2,
+      "ingredient_id": 1,
+      "quantity": "15.00",
+      "unit_id": 1
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 6,
+    "fields": {
+      "recipe_id": 2,
+      "step_number": 1,
+      "instruction_de": "Alle Zutaten in einer Schüssel und mit Stabmixer fein pürieren.",
+      "instruction_en": "All ingredients in a bowl and with hand blender finely puree.",
+      "instruction_fr": "Mettre tous les ingrédients dans un bol et les réduire en fine purée à l'aide d'un mixeur plongeant."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 7,
+    "fields": {
+      "recipe_id": 2,
+      "step_number": 2,
+      "instruction_de": "Die Masse passieren, in einen 0,5 L iSi Sahnespender auffüllen und mit einer iSi Sahnekapseln aufladen und gut schütteln.",
+      "instruction_en": "Strain the mixture, fill into a 0.5 L iSi cream dispenser, load with an iSi cream capsule and shake well.",
+      "instruction_fr": "Passer la masse, la verser dans un distributeur de crème iSi de 0,5 L et charger avec une cartouche à crème Chantilly iSi, puis bien agiter."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 8,
+    "fields": {
+      "recipe_id": 2,
+      "step_number": 3,
+      "instruction_de": "Papierbecher bis zur Hälfte mit dem Teig füllen.",
+      "instruction_en": "Fill paper cups halfway with the batter.",
+      "instruction_fr": "Remplir les gobelets en papier jusqu'à la moitié avec la pâte."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 9,
+    "fields": {
+      "recipe_id": 2,
+      "step_number": 4,
+      "instruction_de": "In der Mikrowelle bei 800 Watt 40-50 Sekunden backen.",
+      "instruction_en": "Bake in the microwave at 800 watts for 40-50 seconds.",
+      "instruction_fr": "Faire cuire au micro-ondes à 800 watts pendant 40 à 50 secondes."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 10,
+    "fields": {
+      "recipe_id": 2,
+      "step_number": 5,
+      "instruction_de": "Den Becher mit der Öffnung nach unten auskühlen lassen. Denn so behält er seine Form und Struktur.",
+      "instruction_en": "Allow the cup to cool with the opening facing down. Because in this way it retains its shape and structure.",
+      "instruction_fr": "Laisser refroidir le gobelet avec l'ouverture vers le bas. Car c'est ainsi qu'il conserve sa forme et sa structure."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 11,
+    "fields": {
+      "recipe_id": 2,
+      "step_number": 6,
+      "instruction_de": "Zum Servieren die Biskuits in kleine Stücke schneiden.",
+      "instruction_en": "To serve, cut the cookies into small pieces.",
+      "instruction_fr": "Pour servir, couper les biscuits en petits morceaux."
+    }
+  }
+]

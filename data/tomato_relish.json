@@ -1,0 +1,136 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 4,
+    "fields": {
+      "title_de": "Tomaten-Minz Relish",
+      "title_en": "Tomato and Mint Relish",
+      "title_fr": "Relish à la tomate et à la menthe",
+      "slug_de": "tomaten-minz-relish",
+      "slug_en": "tomato-and-mint-relish",
+      "slug_fr": "relish-a-la-tomate-et-a-la-menthe",
+      "introduction_de": "Ein würziges Relish mit Tomaten, Minze und Fenchelsamen - perfekt als Dip, Marinade oder zum Einmachen. Passt hervorragend zu Zucchini-Rollen.",
+      "introduction_en": "A spicy relish with tomatoes, mint and fennel seeds - perfect as a dip, marinade or for preserving. Goes perfectly with zucchini rolls.",
+      "introduction_fr": "Un relish épicé avec tomates, menthe et graines de fenouil - parfait comme trempette, marinade ou pour la conservation. Se marie parfaitement avec des rouleaux de courgettes.",
+      "difficulty": "easy",
+      "category": "appetizer",
+      "prep_time": 20,
+      "cook_time": 0
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 30,
+    "fields": {
+      "recipe_id": 4,
+      "ingredient_id": 21,
+      "quantity": "5.00",
+      "unit_id": 5
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 31,
+    "fields": {
+      "recipe_id": 4,
+      "ingredient_id": 16,
+      "quantity": "2.00",
+      "unit_id": 8
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 32,
+    "fields": {
+      "recipe_id": 4,
+      "ingredient_id": 22,
+      "quantity": "5.00",
+      "unit_id": 5
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 33,
+    "fields": {
+      "recipe_id": 4,
+      "ingredient_id": 23,
+      "quantity": "500.00",
+      "unit_id": 1
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 34,
+    "fields": {
+      "recipe_id": 4,
+      "ingredient_id": 24,
+      "quantity": "2.00",
+      "unit_id": 5
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 35,
+    "fields": {
+      "recipe_id": 4,
+      "ingredient_id": 25,
+      "quantity": "5.00",
+      "unit_id": 10
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 19,
+    "fields": {
+      "recipe_id": 4,
+      "step_number": 1,
+      "instruction_de": "Fenchelsamen 10 min in heißem Wasser einweichen, abtropfen lassen.",
+      "instruction_en": "Soak the fennel seeds in hot water for 10 minutes, drain.",
+      "instruction_fr": "Faire tremper les graines de fenouil pendant 10 minutes dans de l'eau chaude, puis les égoutter."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 20,
+    "fields": {
+      "recipe_id": 4,
+      "step_number": 2,
+      "instruction_de": "Tomaten abtropfen lassen und in feine Würfel schneiden.",
+      "instruction_en": "Drain the tomatoes and cut into fine cubes.",
+      "instruction_fr": "Égoutter les tomates et les couper en petits dés."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 21,
+    "fields": {
+      "recipe_id": 4,
+      "step_number": 3,
+      "instruction_de": "Einfach alle Zutaten in den Mixer geben und gut mixen, bis ein Teig ohne Stücke entsteht. Eventuell muss man den Mixvorgang unterbrechen und den Teig an den Wänden herunterdrücken.",
+      "instruction_en": "Simply place all the ingredients in the blender and mix well until a dough without pieces is formed. You may need to interrupt the blending process and press the dough down the sides.",
+      "instruction_fr": "Il suffit de mettre tous les ingrédients dans le mixeur et de bien mélanger jusqu'à obtenir une pâte sans morceaux. Il faut éventuellement interrompre le processus de mixage et presser la pâte vers le bas sur les parois."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 22,
+    "fields": {
+      "recipe_id": 4,
+      "step_number": 4,
+      "instruction_de": "Abschmecken und in sterilisierte Gläser abgefüllt lässt es sich perfekt aufbewahren.",
+      "instruction_en": "Season to taste and store perfectly in sterilized jars.",
+      "instruction_fr": "Assaisonner et mettre en bocaux stérilisés pour une conservation parfaite."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 23,
+    "fields": {
+      "recipe_id": 4,
+      "step_number": 5,
+      "instruction_de": "Die Zucchini werden mit einem Sparschäler oder Hobel längs in Scheiben geschnitten, mit Tomaten relish mariniert und eingerollt.",
+      "instruction_en": "Slice the zucchinis lengthways with a peeler or slicer, marinate with tomato relish and roll up.",
+      "instruction_fr": "Les courgettes sont coupées en tranches dans le sens de la longueur à l'aide d'un économe ou d'un rabot, marinées avec de la relish de tomates et enroulées."
+    }
+  }
+]

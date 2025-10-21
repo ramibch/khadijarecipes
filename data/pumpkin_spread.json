@@ -1,0 +1,245 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 10,
+    "fields": {
+      "title_de": "Kürbis Aufstrich",
+      "title_en": "Pumpkin Spread",
+      "title_fr": "Pâte à tartiner au potiron",
+      "title_es": "Untable de calabaza",
+      "title_it": "Crema spalmabile di zucca",
+      "slug_de": "kuerbis-aufstrich",
+      "slug_en": "pumpkin-spread",
+      "slug_fr": "pate-a-tartiner-au-potiron",
+      "slug_es": "untable-de-calabaza",
+      "slug_it": "crema-spalmabile-di-zucca",
+      "introduction_de": "Hokkaidokürbisse eignen sich am besten für diesen Brotaufstrich, da das Fruchtfleisch anderer Kürbissorten zu wässrig ist.",
+      "introduction_en": "Hokkaido pumpkins are best suited for this spread, as the flesh of other pumpkin varieties is too watery.",
+      "introduction_fr": "Les citrouilles Hokkaido conviennent le mieux à cette tartinade, car la chair des autres variétés de citrouilles est trop aqueuse.",
+      "introduction_es": "Las calabazas Hokkaido son las más adecuadas para este untable, ya que la pulpa de otras variedades de calabaza es demasiado acuosa.",
+      "introduction_it": "Le zucche Hokkaido sono le più adatte per questa crema spalmabile, poiché la polpa di altre varietà di zucca è troppo acquosa.",
+      "difficulty": "easy",
+      "category": "snack",
+      "prep_time": 15,
+      "cook_time": 20,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 74,
+    "fields": {
+      "recipe_id": 10,
+      "ingredient_id": 33,
+      "quantity": "500.00",
+      "unit_id": 1,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 75,
+    "fields": {
+      "recipe_id": 10,
+      "ingredient_id": 77,
+      "quantity": "1.00",
+      "unit_id": 8,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 76,
+    "fields": {
+      "recipe_id": 10,
+      "ingredient_id": 6,
+      "quantity": "2.00",
+      "unit_id": 6,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 77,
+    "fields": {
+      "recipe_id": 10,
+      "ingredient_id": 50,
+      "quantity": "1.00",
+      "unit_id": 6,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 78,
+    "fields": {
+      "recipe_id": 10,
+      "ingredient_id": 51,
+      "quantity": "200.00",
+      "unit_id": 1,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 79,
+    "fields": {
+      "recipe_id": 10,
+      "ingredient_id": 3,
+      "quantity": "0.50",
+      "unit_id": 5,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 80,
+    "fields": {
+      "recipe_id": 10,
+      "ingredient_id": 19,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 81,
+    "fields": {
+      "recipe_id": 10,
+      "ingredient_id": 82,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 52,
+    "fields": {
+      "recipe_id": 10,
+      "step_number": 1,
+      "instruction_de": "Den Backofen auf 200 Grad Ober-/Unterhitze (Umluft 180 Grad) vorheizen.",
+      "instruction_en": "Preheat the oven to 200 degrees top/bottom heat (fan oven 180 degrees).",
+      "instruction_fr": "Préchauffer le four à 200 degrés en haut et en bas (four à chaleur tournante à 180 degrés).",
+      "instruction_es": "Precalentar el horno a 200 grados arriba y abajo (horno de convección 180 grados).",
+      "instruction_it": "Preriscaldare il forno a 200 gradi sopra e sotto (forno a convezione 180 gradi).",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 53,
+    "fields": {
+      "recipe_id": 10,
+      "step_number": 2,
+      "instruction_de": "Kürbis halbieren, entkernen, das lose Fruchtfleisch mit einem Löffel herauskratzen und in dünne Scheiben schneiden. Die Schale nicht entfernen.",
+      "instruction_en": "Cut the pumpkin in half, remove the seeds, scrape out the loose flesh with a spoon and cut into thin slices. Do not remove the skin.",
+      "instruction_fr": "Couper le potiron en deux, retirer les graines, racler la chair à l'aide d'une cuillère et couper en fines tranches. Ne pas enlever la peau.",
+      "instruction_es": "Cortar la calabaza por la mitad, quitar las semillas, raspar la pulpa suelta con una cuchara y cortar en rodajas finas. No quitar la piel.",
+      "instruction_it": "Tagliare la zucca a metà, rimuovere i semi, raschiare la polpa con un cucchiaio e tagliare a fette sottili. Non rimuovere la buccia.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 54,
+    "fields": {
+      "recipe_id": 10,
+      "step_number": 3,
+      "instruction_de": "Das Olivenöl mit den Thymianblättchen verrühren und das vorbereitete Gemüse mit der Thymian-Öl-Mischung auf ein mit Backpapier ausgelegtes Backblech geben.",
+      "instruction_en": "Mix the olive oil with the thyme leaves and place the prepared vegetables with the thyme and oil mixture on a baking tray lined with baking paper.",
+      "instruction_fr": "Mélanger l'huile d'olive avec les feuilles de thym et placer les légumes préparés avec le mélange d'huile et de thym sur une plaque de cuisson recouverte de papier sulfurisé.",
+      "instruction_es": "Mezclar el aceite de oliva con las hojas de tomillo y colocar las verduras preparadas con la mezcla de tomillo y aceite en una bandeja de horno forrada con papel de hornear.",
+      "instruction_it": "Mescolare l'olio d'oliva con le foglie di timo e disporre le verdure preparate con il composto di timo e olio su una teglia foderata con carta da forno.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 55,
+    "fields": {
+      "recipe_id": 10,
+      "step_number": 4,
+      "instruction_de": "Marinierten Kürbis 20 Minuten im Ofen backen, bis das Fruchtfleisch weich ist.",
+      "instruction_en": "Bake the marinated pumpkin in the oven for 20 minutes until the flesh is soft.",
+      "instruction_fr": "Faites cuire le potiron mariné au four pendant 20 minutes jusqu'à ce que la chair soit tendre.",
+      "instruction_es": "Hornear la calabaza marinada en el horno durante 20 minutos hasta que la pulpa esté tierna.",
+      "instruction_it": "Cuocere la zucca marinata in forno per 20 minuti fino a quando la polpa sarà morbida.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 56,
+    "fields": {
+      "recipe_id": 10,
+      "step_number": 5,
+      "instruction_de": "Die Schalotten schälen, in kleine Würfel schneiden und in einer Pfanne mit ein paar Esslöffeln Öl ca. 3 Minuten dünsten, bis sie glasig sind.",
+      "instruction_en": "Peel the shallots, cut into small cubes and fry in a pan with a few tablespoons of oil for about 3 minutes until translucent.",
+      "instruction_fr": "Éplucher les échalotes, les couper en petits cubes et les faire revenir dans une poêle avec quelques cuillères à soupe d'huile pendant environ 3 minutes jusqu'à ce qu'elles deviennent translucides.",
+      "instruction_es": "Pelar los chalotes, cortar en cubitos pequeños y sofreír en una sartén con unas cucharadas de aceite durante unos 3 minutos hasta que estén translúcidos.",
+      "instruction_it": "Sbucciare gli scalogni, tagliarli a cubetti piccoli e soffriggerli in una padella con un paio di cucchiai di olio per circa 3 minuti fino a quando diventano traslucidi.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 57,
+    "fields": {
+      "recipe_id": 10,
+      "step_number": 6,
+      "instruction_de": "Nach dem Abkühlen den Kürbis mit dem Pürierstab fein pürieren und mit dem Frischkäse und Zwiebeln vermischen. Eventuell mit Salz und Pfeffer abschmecken.",
+      "instruction_en": "Once cooled, finely puree the pumpkin with a hand blender and mix with the cream cheese and onions. Season with salt and pepper if necessary.",
+      "instruction_fr": "Une fois refroidi, réduire le potiron en fine purée à l'aide d'un mixeur plongeant et le mélanger au fromage frais et aux oignons. Assaisonner de sel et de poivre si nécessaire.",
+      "instruction_es": "Una vez enfriado, hacer puré fino la calabaza con una batidora de mano y mezclar con el queso fresco y las cebollas. Sazonar con sal y pimienta si es necesario.",
+      "instruction_it": "Una volta raffreddata, frullare finemente la zucca con un frullatore a immersione e mescolarla con il formaggio fresco e le cipolle. Condire con sale e pepe se necesario.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 58,
+    "fields": {
+      "recipe_id": 10,
+      "step_number": 7,
+      "instruction_de": "Für einen schärferen Geschmack können optional einige Chiliflocken hinzugefügt werden.",
+      "instruction_en": "For a spicier taste, you can optionally add some chili flakes.",
+      "instruction_fr": "Pour un goût plus épicé, vous pouvez éventuellement ajouter des flocons de piment.",
+      "instruction_es": "Para un sabor más picante, opcionalmente se pueden agregar algunos copos de chile.",
+      "instruction_it": "Per un sapore più piccante, si possono eventualmente aggiungere alcuni fiocchi di peperoncino.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 59,
+    "fields": {
+      "recipe_id": 10,
+      "step_number": 8,
+      "instruction_de": "Aus dieser Masse kann man 6 kleine Kürbisse formen, in Nacho oder Brezelchips wälzen und mit dem Messerrücken Linien ziehen, so dass es wie ein Kürbis aussieht. Wer einen Paprikastiel oder Schnittlauch übrig hat, kann diesen gut auf den Kürbis legen.",
+      "instruction_en": "You can form 6 small pumpkins from this mixture, roll them in nacho or pretzel potato chips and draw lines with the back of a knife so that it looks like a pumpkin. If you have leftover bell pepper stalks or chives, you can place them on top of the pumpkin.",
+      "instruction_fr": "Vous pouvez former 6 petites citrouilles avec ce mélange, les rouler dans des chips de nacho ou de bretzel et dessiner des lignes avec le dos d'un couteau pour qu'elles ressemblent à une citrouille. S'il vous reste des tiges de poivron ou de la ciboulette, vous pouvez les placer sur le potiron.",
+      "instruction_es": "Puedes formar 6 calabazas pequeñas con esta mezcla, enrollarlas en chips de nacho o pretzel y dibujar líneas con el dorso de un cuchillo para que se parezca a una calabaza. Si te sobra tallos de pimiento o cebollino, puedes colocarlos sobre la calabaza.",
+      "instruction_it": "Puoi formare 6 piccole zucche con questo impasto, rotolarle in chips di nacho o pretzel e tracciare linee con il dorso di un coltello in modo che assomigli a una zucca. Se hai avanzi di gambi di peperone o erba cipollina, puoi posizionarli sulla zucca.",
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  }
+]

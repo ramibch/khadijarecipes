@@ -1,0 +1,230 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 15,
+    "fields": {
+      "title_de": "Gebeizter Lachs mit Noilly Prat",
+      "title_en": "Pickled Salmon with Noilly Prat",
+      "title_fr": "Saumon mariné au Noilly Prat",
+      "title_es": "Salmón marinado con Noilly Prat",
+      "title_it": "Salmone marinato con Noilly Prat",
+      "slug_de": "gebeizter-lachs-mit-noilly-prat",
+      "slug_en": "pickled-salmon-with-noilly-prat",
+      "slug_fr": "saumon-marine-au-noilly-prat",
+      "slug_es": "salmon-marinado-con-noilly-prat",
+      "slug_it": "salmone-marinato-con-noilly-prat",
+      "introduction_de": "Feiner gebeizter Lachs mit Noilly Prat - ein elegantes Gericht, bei dem Lachsfilet mit einer würzigen Marinade aus Dill, Zitrusfrüchten und Gewürzen gebeizt und mit Noilly Prat verfeinert wird.",
+      "introduction_en": "Fine pickled salmon with Noilly Prat - an elegant dish where salmon fillet is pickled with a spicy marinade of dill, citrus fruits and spices and refined with Noilly Prat.",
+      "introduction_fr": "Saumon mariné fin au Noilly Prat - un plat élégant où le filet de saumon est mariné avec une marinade épicée d'aneth, d'agrumes et d'épices et raffiné avec du Noilly Prat.",
+      "introduction_es": "Salmón marinado fino con Noilly Prat - un plato elegante donde el filete de salmón se marina con una marinada picante de eneldo, cítricos y especias y se refina con Noilly Prat.",
+      "introduction_it": "Salmone marinato fine con Noilly Prat - un piatto elegante dove il filetto di salmone viene marinato con una marinatura piccante di aneto, agrumi e spezie e raffinato con Noilly Prat.",
+      "difficulty": "medium",
+      "category": "main",
+      "prep_time": 30,
+      "cook_time": null,
+      "created_at": "2024-01-16T10:00:00Z",
+      "updated_at": "2024-01-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 121,
+    "fields": {
+      "recipe_id": 15,
+      "ingredient_id": 13,
+      "quantity": "1.00",
+      "unit_id": 8,
+      "created_at": "2024-01-16T10:00:00Z",
+      "updated_at": "2024-01-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 122,
+    "fields": {
+      "recipe_id": 15,
+      "ingredient_id": 8,
+      "quantity": "1.00",
+      "unit_id": 9,
+      "created_at": "2024-01-16T10:00:00Z",
+      "updated_at": "2024-01-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 123,
+    "fields": {
+      "recipe_id": 15,
+      "ingredient_id": 83,
+      "quantity": "1.00",
+      "unit_id": 8,
+      "created_at": "2024-01-16T10:00:00Z",
+      "updated_at": "2024-01-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 124,
+    "fields": {
+      "recipe_id": 15,
+      "ingredient_id": 95,
+      "quantity": "1.00",
+      "unit_id": 8,
+      "created_at": "2024-01-16T10:00:00Z",
+      "updated_at": "2024-01-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 125,
+    "fields": {
+      "recipe_id": 15,
+      "ingredient_id": 10,
+      "quantity": "2.00",
+      "unit_id": 6,
+      "created_at": "2024-01-16T10:00:00Z",
+      "updated_at": "2024-01-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 126,
+    "fields": {
+      "recipe_id": 15,
+      "ingredient_id": 3,
+      "quantity": "2.00",
+      "unit_id": 6,
+      "created_at": "2024-01-16T10:00:00Z",
+      "updated_at": "2024-01-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 127,
+    "fields": {
+      "recipe_id": 15,
+      "ingredient_id": 91,
+      "quantity": "4.00",
+      "unit_id": 6,
+      "created_at": "2024-01-16T10:00:00Z",
+      "updated_at": "2024-01-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 128,
+    "fields": {
+      "recipe_id": 15,
+      "ingredient_id": 96,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-16T10:00:00Z",
+      "updated_at": "2024-01-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 88,
+    "fields": {
+      "recipe_id": 15,
+      "step_number": 1,
+      "instruction_de": "Die ganzen Gewürze in den Mörser oder Kaffeemühle geben, und es ist möglich nicht ganz fein mahlen",
+      "instruction_en": "Put the whole spices in the mortar or coffee grinder, and it is possible not grind quite fine",
+      "instruction_fr": "Mettre les épices entières dans le mortier ou le moulin à café, et il est possible de ne pas les moudre très finement",
+      "instruction_es": "Poner las especias enteras en el mortero o molinillo de café, y es posible no moler muy finamente",
+      "instruction_it": "Mettere le spezie intere nel mortaio o nel macinacaffè, ed è possibile non macinarle molto finemente",
+      "created_at": "2024-01-16T10:00:00Z",
+      "updated_at": "2024-01-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 89,
+    "fields": {
+      "recipe_id": 15,
+      "step_number": 2,
+      "instruction_de": "Für die Beizen Mischung: brauchen wir gehackte Dill, Abrieb bzw. Abrieb von Zitronen oder Orangen, Zucker, Salz und gemahlene Gewürze",
+      "instruction_en": "For the pickling mixture: we need chopped dill, grated or grated lemons or oranges, sugar, salt and ground spices",
+      "instruction_fr": "Pour le mélange de marinade, nous avons besoin d'aneth haché, de citron ou d'orange râpé(e), de sucre, de sel et d'épices moulues",
+      "instruction_es": "Para la mezcla de marinada: necesitamos eneldo picado, ralladura de limón o naranja, azúcar, sal y especias molidas",
+      "instruction_it": "Per la miscela di marinatura: abbiamo bisogno di aneto tritato, scorza di limone o arancia, zucchero, sale e spezie macinate",
+      "created_at": "2024-01-16T10:00:00Z",
+      "updated_at": "2024-01-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 90,
+    "fields": {
+      "recipe_id": 15,
+      "step_number": 3,
+      "instruction_de": "Lachsfilet waschen und trocken tupfen",
+      "instruction_en": "Wash salmon fillet and pat dry",
+      "instruction_fr": "Laver le filet de saumon et l'éponger",
+      "instruction_es": "Lavar el filete de salmón y secar",
+      "instruction_it": "Lavare il filetto di salmone e asciugare",
+      "created_at": "2024-01-16T10:00:00Z",
+      "updated_at": "2024-01-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 91,
+    "fields": {
+      "recipe_id": 15,
+      "step_number": 4,
+      "instruction_de": "Mischung gleichmäßig auf dem Lachsfilet verteilen",
+      "instruction_en": "Spread mixture evenly over salmon fillet",
+      "instruction_fr": "Répartir le mélange uniformément sur le filet de saumon",
+      "instruction_es": "Distribuir la mezcla uniformemente sobre el filete de salmón",
+      "instruction_it": "Distribuire la miscela uniformemente sul filetto di salmone",
+      "created_at": "2024-01-16T10:00:00Z",
+      "updated_at": "2024-01-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 92,
+    "fields": {
+      "recipe_id": 15,
+      "step_number": 5,
+      "instruction_de": "Den Fisch mit einer Lage Frischhaltefolie bedecken. Mit einem Dösen oder einem Marmeladenglas beschweren. Ca. 8 Stunden im Kühlschrank kaltstellen",
+      "instruction_en": "Cover the fish with a layer of cling film. Weigh down with a doze or a jam jar. Chill in the refrigerator for about 8 hours",
+      "instruction_fr": "Couvrir le poisson d'une couche de film alimentaire. Lester le poisson avec une bouée ou un pot de confiture. Mettre au réfrigérateur pendant environ 8 heures",
+      "instruction_es": "Cubrir el pescado con una capa de film transparente. Pesar con una lata o un tarro de mermelada. Enfriar en el refrigerador durante aproximadamente 8 horas",
+      "instruction_it": "Coprire il pesce con uno strato di pellicola trasparente. Pesar con una lattina o un vasetto di marmellata. Raffreddare in frigorifero per circa 8 ore",
+      "created_at": "2024-01-16T10:00:00Z",
+      "updated_at": "2024-01-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 93,
+    "fields": {
+      "recipe_id": 15,
+      "step_number": 6,
+      "instruction_de": "Lachsfilet auspacken, unter kaltem Wasser abspülen, trocken tupfen und von der Haut ablösen, mit Noilly Prat bestreichen und kurz flambieren",
+      "instruction_en": "Unwrap salmon fillet, rinse under cold water, pat dry and remove from skin, brush with Noilly Prat and flambé briefly",
+      "instruction_fr": "Déballer le filet de saumon, le rincer sous l'eau froide, l'éponger et le détacher de la peau, le badigeonner de Noilly Prat et le flamber brièvement",
+      "instruction_es": "Desenvolver el filete de salmón, enjuagar bajo agua fría, secar y quitar la piel, pintar con Noilly Prat y flamear brevemente",
+      "instruction_it": "Scartare il filetto di salmone, sciacquare sotto acqua fredda, asciugare e rimuovere la pelle, spennellare con Noilly Prat e fiammeggiare brevemente",
+      "created_at": "2024-01-16T10:00:00Z",
+      "updated_at": "2024-01-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 94,
+    "fields": {
+      "recipe_id": 15,
+      "step_number": 7,
+      "instruction_de": "Zum Anrichten den Lachs in dünne Scheiben schneiden und mit dem Kräuter-Biskuit und der Wasabi-Mayonnaise servieren",
+      "instruction_en": "To serve, slice the salmon thinly and serve with the herb bisque and wasabi mayonnaise",
+      "instruction_fr": "Pour le dressage, couper le saumon en fines tranches et servir avec le biscuit aux herbes et la mayonnaise au wasabi",
+      "instruction_es": "Para servir, cortar el salmón en rodajas finas y servir con la galleta de hierbas y la mayonesa de wasabi",
+      "instruction_it": "Per servire, affettare il salmone sottilmente e servire con il biscotto alle erbe e la maionese al wasabi",
+      "created_at": "2024-01-16T10:00:00Z",
+      "updated_at": "2024-01-16T10:00:00Z"
+    }
+  }
+]

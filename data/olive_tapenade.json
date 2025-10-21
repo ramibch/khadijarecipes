@@ -1,0 +1,136 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 5,
+    "fields": {
+      "title_de": "Mandel Feta",
+      "title_en": "Almond Feta",
+      "title_fr": "Feta aux amandes",
+      "slug_de": "mandel-feta",
+      "slug_en": "almond-feta",
+      "slug_fr": "feta-aux-amandes",
+      "introduction_de": "Ein veganer Feta-Käse auf Mandelbasis - cremig, würzig und perfekt für Salate, Antipasti oder als Brotbelag. Einfach zuzubereiten und 5 Tage im Kühlschrank haltbar.",
+      "introduction_en": "A vegan feta cheese based on almonds - creamy, spicy and perfect for salads, antipasti or as a bread spread. Easy to prepare and keeps for 5 days in the refrigerator.",
+      "introduction_fr": "Un fromage feta végétalien à base d'amandes - crémeux, épicé et parfait pour les salades, antipasti ou comme tartinade. Facile à préparer et se conserve 5 jours au réfrigérateur.",
+      "difficulty": "medium",
+      "category": "appetizer",
+      "prep_time": 1440,
+      "cook_time": 30
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 36,
+    "fields": {
+      "recipe_id": 5,
+      "ingredient_id": 26,
+      "quantity": "150.00",
+      "unit_id": 1
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 37,
+    "fields": {
+      "recipe_id": 5,
+      "ingredient_id": 22,
+      "quantity": "2.00",
+      "unit_id": 6
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 38,
+    "fields": {
+      "recipe_id": 5,
+      "ingredient_id": 3,
+      "quantity": "1.00",
+      "unit_id": 5
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 39,
+    "fields": {
+      "recipe_id": 5,
+      "ingredient_id": 6,
+      "quantity": "4.00",
+      "unit_id": 6
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 40,
+    "fields": {
+      "recipe_id": 5,
+      "ingredient_id": 27,
+      "quantity": "1.00",
+      "unit_id": 8
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 41,
+    "fields": {
+      "recipe_id": 5,
+      "ingredient_id": 28,
+      "quantity": "1.00",
+      "unit_id": 5
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 24,
+    "fields": {
+      "recipe_id": 5,
+      "step_number": 1,
+      "instruction_de": "Mandel mit kochendem Wasser übergießen, 10 Minuten einweichen - damit sich die Haut löst, abgießen, Schalen entfernen.",
+      "instruction_en": "Pour boiling water over the almonds, soak for 10 minutes to loosen the skin, drain and remove the skins.",
+      "instruction_fr": "Verser de l'eau bouillante sur l'amande, laisser tremper 10 minutes - pour que la peau se détache, égoutter, enlever les peaux."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 25,
+    "fields": {
+      "recipe_id": 5,
+      "step_number": 2,
+      "instruction_de": "Die eingeweichten Mandeln zusammen mit dem Zitronensaft, dem Olivenöl, den geschälten Knoblauchzehen und dem Salz in einen Mixer geben. Alles gut mixen, bis eine leicht klebrige Masse entsteht.",
+      "instruction_en": "Place the soaked almonds in a blender with the lemon juice, olive oil, peeled garlic cloves and salt. Blend everything well until a slightly sticky mixture is formed.",
+      "instruction_fr": "Mettre les amandes trempées dans un mixeur avec le jus de citron, l'huile d'olive, les gousses d'ail épluchées et le sel. Mixez bien le tout jusqu'à l'obtention d'une masse légèrement collante."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 26,
+    "fields": {
+      "recipe_id": 5,
+      "step_number": 3,
+      "instruction_de": "Die Masse in ein Käsetuch füllen, mit Majoran bestreuen, gut zubinden, in ein Sieb geben und über dem Geschirr abtropfen lassen. Die Masse sollte auf jeden Fall über Nacht abtropfen.",
+      "instruction_en": "Pour the mixture into a cheesecloth, sprinkle with marjoram, tie well, place in a sieve and leave to drain over the dishes. The mixture should be left to drain overnight.",
+      "instruction_fr": "Verser la masse dans un torchon à fromage, saupoudrer de marjolaine, bien ficeler, mettre dans une passoire et laisser égoutter au-dessus de la vaisselle. Dans tous les cas, la masse doit être égouttée pendant une nuit."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 27,
+    "fields": {
+      "recipe_id": 5,
+      "step_number": 4,
+      "instruction_de": "Das Backblech mit Olivenöl bestreichen, die gepresste Masse auf das Backblech stürzen, das Backtuch entfernen und mit Olivenöl bepinseln und den Mandel Feta ca. 25 - 30 Minuten im Ofen backen. Die Oberfläche soll leicht gebräunt und fest sein.",
+      "instruction_en": "Brush the baking tray with olive oil, turn the pressed mixture out onto the baking tray, remove the baking sheet, brush with olive oil and bake the almond feta in the oven for approx. 25 - 30 minutes. The surface should be lightly browned and firm.",
+      "instruction_fr": "Badigeonner la plaque de cuisson d'huile d'olive, renverser la masse pressée sur la plaque de cuisson, retirer le torchon de cuisson et badigeonner d'huile d'olive, puis faire cuire la feta aux amandes au four pendant environ 25 à 30 minutes. La surface doit être légèrement dorée et ferme."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 28,
+    "fields": {
+      "recipe_id": 5,
+      "step_number": 5,
+      "instruction_de": "Der vegane Käse kann ca. 5 Tage im Kühlschrank aufbewahrt werden.",
+      "instruction_en": "The vegan cheese can be kept in the fridge for approx. 5 days.",
+      "instruction_fr": "Le fromage végétalien peut être conservé environ 5 jours au réfrigérateur."
+    }
+  }
+]

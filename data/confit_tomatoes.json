@@ -1,0 +1,245 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 17,
+    "fields": {
+      "title_de": "Confitierte Tomaten",
+      "title_en": "Confit Tomatoes",
+      "title_fr": "Tomates confites",
+      "title_es": "Tomates confitados",
+      "title_it": "Pomodori confit",
+      "slug_de": "confitierte-tomaten",
+      "slug_en": "confit-tomatoes",
+      "slug_fr": "tomates-confites",
+      "slug_es": "tomates-confitados",
+      "slug_it": "pomodori-confit",
+      "introduction_de": "Langsam bei niedriger Temperatur gegarte Kirschtomaten, die durch das Confieren ihr Aroma intensivieren und eine zarte, geschmacksintensive Delikatesse ergeben. Perfekt als Antipasti oder zur Verfeinerung von Gerichten.",
+      "introduction_en": "Slow-cooked cherry tomatoes at low temperature that intensify their flavor through confiting, resulting in a tender, flavor-intensive delicacy. Perfect as antipasti or for refining dishes.",
+      "introduction_fr": "Tomates cerises cuites lentement à basse température qui intensifient leur saveur grâce au confisage, donnant une délicatesse tendre et riche en saveur. Parfaites en antipasti ou pour raffiner les plats.",
+      "introduction_es": "Tomates cherry cocinados lentamente a baja temperatura que intensifican su sabor mediante el confitado, resultando en una delicadeza tierna e intensa en sabor. Perfectos como antipasti o para refinar platos.",
+      "introduction_it": "Pomodori ciliegino cotti lentamente a bassa temperatura che intensificano il loro sapore attraverso la confettura, risultando in una delicatezza tenera e intensa di sapore. Perfetti come antipasti o per raffinare i piatti.",
+      "difficulty": "easy",
+      "category": "appetizer",
+      "prep_time": 15,
+      "cook_time": 120,
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 140,
+    "fields": {
+      "recipe_id": 17,
+      "ingredient_id": 58,
+      "quantity": "500.00",
+      "unit_id": 1,
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 141,
+    "fields": {
+      "recipe_id": 17,
+      "ingredient_id": 59,
+      "quantity": "1.00",
+      "unit_id": 6,
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 142,
+    "fields": {
+      "recipe_id": 17,
+      "ingredient_id": 10,
+      "quantity": "1.00",
+      "unit_id": 6,
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 143,
+    "fields": {
+      "recipe_id": 17,
+      "ingredient_id": 60,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 144,
+    "fields": {
+      "recipe_id": 17,
+      "ingredient_id": 50,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 145,
+    "fields": {
+      "recipe_id": 17,
+      "ingredient_id": 27,
+      "quantity": "3.00",
+      "unit_id": 8,
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 146,
+    "fields": {
+      "recipe_id": 17,
+      "ingredient_id": 19,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 147,
+    "fields": {
+      "recipe_id": 17,
+      "ingredient_id": 6,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 102,
+    "fields": {
+      "recipe_id": 17,
+      "step_number": 1,
+      "instruction_de": "Die Kirschtomaten werden nach dem Waschen und Halbieren in eine ausreichend große Schüssel gegeben.",
+      "instruction_en": "After washing and halving the cherry tomatoes, place them in a large enough bowl.",
+      "instruction_fr": "Après les avoir lavées et coupées en deux, les tomates cerises sont placées dans un récipient suffisamment grand.",
+      "instruction_es": "Después de lavar y cortar por la mitad los tomates cherry, colocarlos en un bol lo suficientemente grande.",
+      "instruction_it": "Dopo aver lavato e tagliato a metà i pomodori ciliegino, metterli in una ciotola abbastanza grande.",
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 103,
+    "fields": {
+      "recipe_id": 17,
+      "step_number": 2,
+      "instruction_de": "Die Knoblauchzehe wird gehäutet und zerdrückt, über die Tomaten geben und unterrühren.",
+      "instruction_en": "Peel and crush the garlic clove, add it over the tomatoes and stir it in.",
+      "instruction_fr": "Peler et écraser la gousse d'ail, la verser sur les tomates et l'incorporer.",
+      "instruction_es": "Pelar y aplastar el diente de ajo, añadirlo sobre los tomates y mezclar.",
+      "instruction_it": "Sbucciare e schiacciare lo spicchio d'aglio, aggiungerlo sopra i pomodori e mescolare.",
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 104,
+    "fields": {
+      "recipe_id": 17,
+      "step_number": 3,
+      "instruction_de": "Mit Salz, Pfeffer aus der Mühle, Olivenöl und Zucker gut vermengen.",
+      "instruction_en": "Mix well with salt, ground pepper, olive oil and sugar.",
+      "instruction_fr": "Bien mélanger avec le sel, le poivre du moulin, l'huile d'olive et le sucre.",
+      "instruction_es": "Mezclar bien con sal, pimienta molida, aceite de oliva y azúcar.",
+      "instruction_it": "Mescolare bene con sale, pepe macinato, olio d'oliva e zucchero.",
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 105,
+    "fields": {
+      "recipe_id": 17,
+      "step_number": 4,
+      "instruction_de": "Dann 1 Stunde lang ziehen lassen, bis das Wasser vollständig aus den Tomaten ausgetreten ist.",
+      "instruction_en": "Then infuse for 1 hour until the water is completely out of the tomatoes.",
+      "instruction_fr": "Puis laisser reposer pendant 1 heure jusqu'à ce que l'eau soit complètement sortie des tomates.",
+      "instruction_es": "Luego dejar infusionar durante 1 hora hasta que el agua salga completamente de los tomates.",
+      "instruction_it": "Poi lasciare in infusione per 1 ora fino a quando l'acqua è completamente uscita dai pomodori.",
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 106,
+    "fields": {
+      "recipe_id": 17,
+      "step_number": 5,
+      "instruction_de": "Die Tomaten werden halbiert und mit der Schnittfläche nach oben auf ein Backblech eingesetzt.",
+      "instruction_en": "Cut the tomatoes in half and place them cut-side up on a baking sheet.",
+      "instruction_fr": "Les tomates sont coupées en deux et placées sur une plaque de cuisson, face coupée vers le haut.",
+      "instruction_es": "Cortar los tomates por la mitad y colocarlos con el lado cortado hacia arriba en una bandeja para hornear.",
+      "instruction_it": "Tagliare i pomodori a metà e posizionarli con il lato tagliato verso l'alto su una teglia da forno.",
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 107,
+    "fields": {
+      "recipe_id": 17,
+      "step_number": 6,
+      "instruction_de": "Den Backofen auf 90 °C Ober-/Unterhitze vorheizen.",
+      "instruction_en": "Preheat the oven to 90 °C top/bottom heat.",
+      "instruction_fr": "Préchauffer le four à 90 °C, chaleur de voûte et de sole.",
+      "instruction_es": "Precalentar el horno a 90 °C con calor superior e inferior.",
+      "instruction_it": "Preriscaldare il forno a 90 °C con calore superiore e inferiore.",
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 108,
+    "fields": {
+      "recipe_id": 17,
+      "step_number": 7,
+      "instruction_de": "In den Ofen schieben und dort für ca. 2 Stunden confieren.",
+      "instruction_en": "Place in the oven and confit there for about 2 hours.",
+      "instruction_fr": "Mettre au four et confire pendant environ 2 heures.",
+      "instruction_es": "Colocar en el horno y confitar allí durante aproximadamente 2 horas.",
+      "instruction_it": "Mettere in forno e confitare per circa 2 ore.",
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 109,
+    "fields": {
+      "recipe_id": 17,
+      "step_number": 8,
+      "instruction_de": "Abkühlen lassen und dann in Weckgläsern, mit Öl überdeckt, problemlos mehrere Tage im Kühlschrank aufbewahren.",
+      "instruction_en": "Allow to cool and then store in jars, covered with oil, in the refrigerator for several days without any problems.",
+      "instruction_fr": "Laisser refroidir, puis conserver sans problème plusieurs jours au réfrigérateur dans des bocaux à réchaud, recouverts d'huile.",
+      "instruction_es": "Dejar enfriar y luego almacenar en frascos, cubiertos con aceite, en el refrigerador durante varios días sin problemas.",
+      "instruction_it": "Lasciare raffreddare e poi conservare in barattoli, coperti con olio, in frigorifero per diversi giorni senza problemi.",
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z"
+    }
+  }
+]

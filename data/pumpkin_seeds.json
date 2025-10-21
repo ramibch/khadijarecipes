@@ -1,0 +1,127 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 8,
+    "fields": {
+      "title_de": "Gebrannte Kürbiskerne",
+      "title_en": "Roasted Pumpkin Seeds",
+      "title_fr": "Graines de citrouille brûlées",
+      "slug_de": "gebrannte-kurbiskerne",
+      "slug_en": "roasted-pumpkin-seeds",
+      "slug_fr": "graines-de-citrouille-brulees",
+      "introduction_de": "Knusprige, karamellisierte Kürbiskerne mit einer Prise Zimt - perfekt als Snack oder zum Verfeinern von Salaten und Desserts. Einfach zuzubereiten und in einem luftdichten Glas haltbar.",
+      "introduction_en": "Crispy, caramelized pumpkin seeds with a pinch of cinnamon - perfect as a snack or for refining salads and desserts. Easy to prepare and keeps well in an airtight jar.",
+      "introduction_fr": "Graines de courge croustillantes et caramélisées avec une pincée de cannelle - parfaites comme collation ou pour affiner les salades et desserts. Facile à préparer et se conserve dans un bocal hermétique.",
+      "difficulty": "easy",
+      "category": "snack",
+      "prep_time": 5,
+      "cook_time": 15
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 66,
+    "fields": {
+      "recipe_id": 8,
+      "ingredient_id": 48,
+      "quantity": "250.00",
+      "unit_id": 1
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 67,
+    "fields": {
+      "recipe_id": 8,
+      "ingredient_id": 10,
+      "quantity": "200.00",
+      "unit_id": 1
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 68,
+    "fields": {
+      "recipe_id": 8,
+      "ingredient_id": 5,
+      "quantity": "100.00",
+      "unit_id": 3
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 69,
+    "fields": {
+      "recipe_id": 8,
+      "ingredient_id": 49,
+      "quantity": "1.00",
+      "unit_id": 7
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 41,
+    "fields": {
+      "recipe_id": 8,
+      "step_number": 1,
+      "instruction_de": "Zucker, Wasser und Prise Zimt in eine Pfanne oder Topf geben und bei mittlerer Temperatur erhitzen, bis sich der Zucker aufgelöst hat.",
+      "instruction_en": "Place the sugar, water and a pinch of cinnamon in a pan or saucepan and heat over a medium heat until the sugar has dissolved.",
+      "instruction_fr": "Mettre le sucre, l'eau et la pincée de cannelle dans une poêle ou une casserole et faire chauffer à température moyenne jusqu'à ce que le sucre soit dissous."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 42,
+    "fields": {
+      "recipe_id": 8,
+      "step_number": 2,
+      "instruction_de": "Die Kürbiskernen zugeben und mit einem Pfannenwender so lange verrühren, bis alle Kürbiskerne mit der Flüssigkeit benetzt sind.",
+      "instruction_en": "Add the pumpkin seeds and stir with a spatula until all the pumpkin seeds are coated with the liquid.",
+      "instruction_fr": "Ajoutez les graines de courge et mélangez avec une spatule jusqu'à ce que toutes les graines de courge soient mouillées par le liquide."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 43,
+    "fields": {
+      "recipe_id": 8,
+      "step_number": 3,
+      "instruction_de": "Unter ständigem Rühren, so dass alle Kerne gleichmäßig leicht gebräunt sind und nichts anbrennen kann.",
+      "instruction_en": "Stir constantly so that all the seeds are evenly browned and nothing burns.",
+      "instruction_fr": "Remuer constamment pour que toutes les graines soient légèrement dorées de manière uniforme et que rien ne brûle."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 44,
+    "fields": {
+      "recipe_id": 8,
+      "step_number": 4,
+      "instruction_de": "Pfanne vom Herd nehmen, sobald die Kürbiskernen goldbraun sind.",
+      "instruction_en": "Remove the pan from the heat as soon as the pumpkin seeds are golden brown.",
+      "instruction_fr": "Retirer la poêle du feu dès que les graines de courge sont dorées."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 45,
+    "fields": {
+      "recipe_id": 8,
+      "step_number": 5,
+      "instruction_de": "Die Kürbiskernen auf ein mit Backpapier ausgelegtes Backblech geben, verteilen und abkühlen lassen, bis die Kürbiskernen die gewünschte Farbe erreicht haben.",
+      "instruction_en": "Place the pumpkin seeds on a baking tray lined with baking paper, spread out and leave to cool until the pumpkin seeds have reached the desired color.",
+      "instruction_fr": "Déposer les graines de courge sur une plaque de cuisson recouverte de papier sulfurisé, répartir et laisser refroidir jusqu'à ce que les graines de courge aient atteint la couleur souhaitée."
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 46,
+    "fields": {
+      "recipe_id": 8,
+      "step_number": 6,
+      "instruction_de": "Anschließend in einem luftdicht verschlossenen Glas aufbewahrt werden. Guten Appetit 🍽😋.",
+      "instruction_en": "Then be stored in an airtight jar. Enjoy your meal 🍽😋.",
+      "instruction_fr": "Ensuite être conservées dans un bocal hermétiquement fermé. Bon appétit 🍽😋."
+    }
+  }
+]

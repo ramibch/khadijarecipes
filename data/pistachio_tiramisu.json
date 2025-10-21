@@ -1,0 +1,257 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 20,
+    "fields": {
+      "title_de": "Pistazien Tiramisu",
+      "title_en": "Pistachio Tiramisu",
+      "title_fr": "Tiramisu à la pistache",
+      "title_es": "Tiramisú de pistacho",
+      "title_it": "Tiramisù al pistacchio",
+      "slug_de": "pistazien-tiramisu",
+      "slug_en": "pistachio-tiramisu",
+      "slug_fr": "tiramisu-a-la-pistache",
+      "slug_es": "tiramisu-de-pistacho",
+      "slug_it": "tiramisu-al-pistacchio",
+      "introduction_de": "Verfeinertes Tiramisu mit aromatischer Pistaziencreme und frischer Limette - eine moderne Interpretation des italienischen Klassikers, die durch ihre nussige Note und zitrische Frische überzeugt.",
+      "introduction_en": "Refined tiramisu with aromatic pistachio cream and fresh lime - a modern interpretation of the Italian classic that convinces with its nutty note and citrus freshness.",
+      "introduction_fr": "Tiramisu raffiné avec de la crème de pistache aromatique et du citron vert frais - une interprétation moderne du classique italien qui convainc par sa note de noisette et sa fraîcheur citronnée.",
+      "introduction_es": "Tiramisú refinado con crema de pistacho aromática y lima fresca - una interpretación moderna del clásico italiano que convence con su nota de nuez y frescura cítrica.",
+      "introduction_it": "Tiramisù raffinato con crema di pistacchio aromatica e lime fresco - un'interpretazione moderna del classico italiano che convince con la sua nota di nocciola e freschezza agrumata.",
+      "difficulty": "medium",
+      "category": "dessert",
+      "prep_time": 30,
+      "cook_time": null,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 175,
+    "fields": {
+      "recipe_id": 20,
+      "ingredient_id": 85,
+      "quantity": "150.00",
+      "unit_id": 3,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 176,
+    "fields": {
+      "recipe_id": 20,
+      "ingredient_id": 86,
+      "quantity": "250.00",
+      "unit_id": 1,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 177,
+    "fields": {
+      "recipe_id": 20,
+      "ingredient_id": 87,
+      "quantity": "60.00",
+      "unit_id": 1,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 178,
+    "fields": {
+      "recipe_id": 20,
+      "ingredient_id": 43,
+      "quantity": "1.00",
+      "unit_id": 8,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 179,
+    "fields": {
+      "recipe_id": 20,
+      "ingredient_id": 88,
+      "quantity": "150.00",
+      "unit_id": 1,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 180,
+    "fields": {
+      "recipe_id": 20,
+      "ingredient_id": 9,
+      "quantity": "2.00",
+      "unit_id": 8,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 181,
+    "fields": {
+      "recipe_id": 20,
+      "ingredient_id": 10,
+      "quantity": "50.00",
+      "unit_id": 1,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 182,
+    "fields": {
+      "recipe_id": 20,
+      "ingredient_id": 89,
+      "quantity": "220.00",
+      "unit_id": 3,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 183,
+    "fields": {
+      "recipe_id": 20,
+      "ingredient_id": 90,
+      "quantity": null,
+      "unit_id": null,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 128,
+    "fields": {
+      "recipe_id": 20,
+      "step_number": 1,
+      "instruction_de": "Eigelb und Zucker schaumig rühren, bis Zucker sich auflöst.",
+      "instruction_en": "Cream egg yolks and sugar until sugar dissolves.",
+      "instruction_fr": "Battre les jaunes d'œufs et le sucre jusqu'à ce que le sucre se dissolve.",
+      "instruction_es": "Batir las yemas de huevo y el azúcar hasta que el azúcar se disuelva.",
+      "instruction_it": "Montare i tuorli d'uovo e lo zucchero fino a quando lo zucchero si scioglie.",
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 129,
+    "fields": {
+      "recipe_id": 20,
+      "step_number": 2,
+      "instruction_de": "Die Sahne steif schlagen, nach und nach Mascarpone, Limetten Abrieb und Pistazien Paste zugeben, umrühren bis eine gleichmäßige Masse entsteht.",
+      "instruction_en": "Whip the cream until stiff, gradually add the mascarpone, lime zest and pistachio paste, stirring until a smooth mixture is obtained.",
+      "instruction_fr": "Fouetter la crème, ajouter peu à peu le mascarpone, le citron vert râpé et la pâte de pistache, mélanger jusqu'à obtenir une masse homogène.",
+      "instruction_es": "Batir la crema hasta que esté firme, añadir gradualmente el mascarpone, la ralladura de lima y la pasta de pistacho, removiendo hasta obtener una mezcla homogénea.",
+      "instruction_it": "Montare la panna fino a quando è ferma, aggiungere gradualmente il mascarpone, la scorza di lime e la pasta di pistacchio, mescolando fino ad ottenere una miscela omogenea.",
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 130,
+    "fields": {
+      "recipe_id": 20,
+      "step_number": 3,
+      "instruction_de": "Die Mascarpone Creme mit dem Schneebesen unter das geschlagene Ei heben.",
+      "instruction_en": "Whisk the mascarpone cream into the beaten egg.",
+      "instruction_fr": "Incorporer la crème de mascarpone aux œufs battus à l'aide d'un fouet.",
+      "instruction_es": "Incorporar la crema de mascarpone a los huevos batidos con un batidor.",
+      "instruction_it": "Incorporare la crema di mascarpone alle uova montate con una frusta.",
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 131,
+    "fields": {
+      "recipe_id": 20,
+      "step_number": 4,
+      "instruction_de": "Die Löffelbiskuits kurz in der Milch tränken und in eine Form oder Gläser legen.",
+      "instruction_en": "Briefly soak the ladyfingers in the milk and place in a mold or glasses.",
+      "instruction_fr": "Tremper brièvement les biscuits à la cuillère dans le lait et les placer dans un moule ou des verres.",
+      "instruction_es": "Remojar brevemente los bizcochos de soletilla en la leche y colocarlos en un molde o vasos.",
+      "instruction_it": "Immergere brevemente i savoiardi nel latte e posizionarli in uno stampo o bicchieri.",
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 132,
+    "fields": {
+      "recipe_id": 20,
+      "step_number": 5,
+      "instruction_de": "Die Hälfte der Creme auf den Löffelbiskuit geben und glatt streichen.",
+      "instruction_en": "Pour half of the cream on the ladyfinger and smooth it down.",
+      "instruction_fr": "Verser la moitié de la crème sur le biscuit à la cuillère et lisser.",
+      "instruction_es": "Verter la mitad de la crema sobre el bizcocho de soletilla y alisar.",
+      "instruction_it": "Versare metà della crema sul savoiardo e spianare.",
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 133,
+    "fields": {
+      "recipe_id": 20,
+      "step_number": 6,
+      "instruction_de": "Anschließend 2 Löffelbiskuit Hälften erneut tränken und darauf legen.",
+      "instruction_en": "Then soak 2 ladyfinger halves again and place on top.",
+      "instruction_fr": "Ensuite, imbiber à nouveau 2 moitiés de biscuits à la cuillère et les poser dessus.",
+      "instruction_es": "Luego remojar 2 mitades de bizcocho de soletilla nuevamente y colocarlas encima.",
+      "instruction_it": "Poi immergere di nuovo 2 metà di savoiardo e posizionarle sopra.",
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 134,
+    "fields": {
+      "recipe_id": 20,
+      "step_number": 7,
+      "instruction_de": "Mit der Creme bedecken und mit gehackten Pistazien oder Lotus Biskuit bestreuen.",
+      "instruction_en": "Cover with the cream and sprinkle with chopped pistachios or lotus sponge cake.",
+      "instruction_fr": "Recouvrir de crème et parsemer de pistaches hachées ou de biscuits Lotus.",
+      "instruction_es": "Cubrir con la crema y espolvorear con pistachos picados o bizcocho Lotus.",
+      "instruction_it": "Coprire con la crema e cospargere con pistacchi tritati o biscotto Lotus.",
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipestep",
+    "pk": 135,
+    "fields": {
+      "recipe_id": 20,
+      "step_number": 8,
+      "instruction_de": "Pistazien Tiramisu im Kühlschrank 3 bis 4 Stunden kaltstellen.",
+      "instruction_en": "Chill the pistachio tiramisu in the refrigerator for 3 to 4 hours.",
+      "instruction_fr": "Réserver le tiramisu à la pistache au réfrigérateur pendant 3 à 4 heures.",
+      "instruction_es": "Refrigerar el tiramisú de pistacho en el refrigerador durante 3 a 4 horas.",
+      "instruction_it": "Mettere il tiramisù al pistacchio in frigorifero per 3-4 ore.",
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z"
+    }
+  }
+]
