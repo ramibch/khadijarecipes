@@ -29,7 +29,10 @@ class RecipeDetailView(DetailView):
         slug_d = {f"slug_{lang}": slug for lang in settings.LANGUAGE_CODES}
         expr = reduce(or_, (Q(**d) for d in [dict([i]) for i in slug_d.items()]))
         try:
-            self.object = Recipe.objects.get(expr)
+            self.object = Recipe.objects.prefetch_related(
+                "ingredients__unit",
+                "ingredients__ingredient",
+            ).get(expr)
             return self.object
         except Recipe.DoesNotExist as err:
             raise Http404 from err

@@ -30,3 +30,6 @@ print("Duplicate ingredients:", Ingredient.objects.values('name_de').annotate(co
 ```
 
 **Priority**: Fix the 4 recipe-breaking issues first, then handle database constraints.
+
+
+**Alternative ingredient**
