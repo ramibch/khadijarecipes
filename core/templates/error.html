@@ -5,7 +5,8 @@
 {% endblock meta_robots %}
 
 {% block content %}
-  <main>
+  <main class="text-center">
     <h1 class="text-center">{{ page_title }} 😓</h1>
+    <a role="button" href="{% url 'home' %}">{% translate "Home" %}</a>
   </main>
 {% endblock content %}

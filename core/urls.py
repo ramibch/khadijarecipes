@@ -5,6 +5,8 @@ from .sitemaps import get_sitemaps
 from .views import (
     HomeView,
     PrivacyView,
+    RecipeDetailRedirectView,
+    RecipeListRedirectView,
     RobotTxtView,
     TermsView,
     favicon_view,
@@ -26,4 +28,7 @@ urlpatterns = [
     path("~/t", TermsView.as_view(), name="terms"),
     # Home
     path("", HomeView.as_view(), name="home"),
+    # Redirects (previous site)
+    path("<str:lang>/blog/", RecipeListRedirectView.as_view()),
+    path("<str:lang>/blog/<slug:slug>/", RecipeDetailRedirectView.as_view()),
 ]

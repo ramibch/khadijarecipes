@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block meta_robots %}
+  <meta name="robots" content="noindex">
+{% endblock meta_robots %}
+
+{% block extra_meta %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TermsOfService",
+    "name": "{{ page_title|escapejs }}",
+    "url": "{{ request.build_absolute_uri }}",
+    "inLanguage": "{{ request.LANGUAGE_CODE }}",
+    "mainEntityOfPage": {
+      "@type": "WebSite",
+      "url": "{{ request.site.url }}",
+      "name": "{{ request.site.display_brand|escapejs }}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ brand_name }}",
+      "url": "{{ website_url }}",
+      "email": "{{ request.site.brand_email_sender.address|default:'' }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{% if request.site.home_screenshot %}{{ request.site.home_screenshot.url }}{% endif %}"
+      }
+    }
+  }
+  </script>
+{% endblock extra_meta %}
+
+{% block content %}
+  <main>
+    <h1 class="text-center">{{ page_title }}</h1>
+    <h2>{% translate "Introduction" %}</h2>
+    <p>{% translate "These Terms of Service govern your use of our website and services." %}</p>
+    <h2>{% translate "Acceptance of Terms" %}</h2>
+    <p>{% translate "By accessing or using the Site, you agree to be bound by these Terms." %}</p>
+    <h2>{% translate "User Obligations" %}</h2>
+    <p>
+      {% translate "You agree to use the Site only for lawful purposes and in a way that does not infringe the rights of others." %}
+    </p>
+    <h2>{% translate "Limitations of Liability" %}</h2>
+    <p>{% translate "We are not liable for damages arising from your use of the Site, except as required by law." %}</p>
+    <h2>{% translate "Changes to Terms" %}</h2>
+    <p>
+      {% translate "We may revise these Terms from time to time by updating this page. Continued use of the Site indicates acceptance of the updated Terms." %}
+    </p>
+    <h2>{% translate "Contact" %}</h2>
+    <p>{% translate "If you have questions about these Terms, contact us:" %}</p>
+    <ul>
+      <li>
+        <a target="_blank" href="https://ramib.ch/contact">{% translate "Contact form" %}</a>
+      </li>
+    </ul>
+  </main>
+{% endblock content %}

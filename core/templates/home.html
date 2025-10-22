@@ -37,6 +37,8 @@
              target="_blank"><i class="bi bi-whatsapp"></i> {% translate "Order Product" %}</a>
         </center>
       </article>
+    {% empty %}
+      <p class="text-center">{% translate "No platters available yet" %}</p>
     {% endfor %}
   </section>
   {% include "snippets/faqs.html" %}

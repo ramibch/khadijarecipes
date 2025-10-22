@@ -33,3 +33,7 @@ if settings.DEBUG:
     urlpatterns.append(path("__reload__/", include("django_browser_reload.urls")))
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += debug_toolbar_urls()
+else:
+    handler403 = "core.views.error_403"
+    handler404 = "core.views.error_404"
+    handler500 = "core.views.error_500"

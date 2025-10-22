@@ -15,9 +15,9 @@
     <i x-bind:class="open? 'bi bi-x-lg' : 'bi bi-list'"></i>
   </button>
   <menu class="nav-links" :class="{ 'open': open }" x-cloak>
-    <!--
-    <li><a class="contrast" href="{% url 'recipe_list' %}"> {% translate 'Recipes' %} </a></li>
-    -->
+    <li>
+      <a class="contrast" href="{% url 'recipe_list' %}">👨‍🍳 {% translate 'Recipes' %}</a>
+    </li>
     <li>
       <a role="button"
          rel="nofollow"

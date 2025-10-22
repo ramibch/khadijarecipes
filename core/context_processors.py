@@ -15,6 +15,7 @@ def links(request):
     lang = get_language()
     return {
         "request": request,
+        "website_url": settings.WEBSITE_URL,
         "whatsapp_url": settings.WHATSAPP_URL,
         "telegram_url": settings.TELEGRAM_URL,
         "instagram_url": settings.INSTAGRAM_URL,

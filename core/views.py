@@ -2,13 +2,24 @@ from typing import Any
 
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 from django.views.decorators.cache import cache_control
 from django.views.decorators.http import require_GET
-from django.views.generic import TemplateView
+from django.views.generic import RedirectView, TemplateView
 
 from core.models import Faq
 from products.models import Product
+
+
+class RecipeListRedirectView(RedirectView):
+    def get_redirect_url(self, *args, **kwargs):
+        return reverse("recipe_list")
+
+
+class RecipeDetailRedirectView(RedirectView):
+    def get_redirect_url(self, *args, **kwargs):
+        return reverse("recipe_detail", kwargs={"slug": self.kwargs["slug"]})
 
 
 class HomeView(TemplateView):
