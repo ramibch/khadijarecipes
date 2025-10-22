@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: {% url 'admin:index' %}
+
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: {{ request.scheme }}://{{ request.get_host }}{% url "django.contrib.sitemaps.views.sitemap" %}

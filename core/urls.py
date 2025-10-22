@@ -1,7 +1,7 @@
 from django.contrib.sitemaps.views import sitemap
 from django.urls import path
 
-from .sitemaps import get_sitemaps
+from .sitemaps import ProductSitemap, RecipeSitemap
 from .views import (
     HomeView,
     PrivacyView,
@@ -16,7 +16,7 @@ urlpatterns = [
     path(
         "sitemap.xml",
         sitemap,
-        {"sitemaps": get_sitemaps},
+        {"sitemaps": {"recipes": RecipeSitemap(), "products": ProductSitemap()}},
         name="django.contrib.sitemaps.views.sitemap",
     ),
     # Favicon

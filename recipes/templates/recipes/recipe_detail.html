@@ -1,5 +1,54 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% block extra_meta %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": "{{ recipe.title|escapejs }}",
+    {% if recipe.main_image %}
+    "image": ["{{ recipe.main_image.url }}"],
+    {% endif %}
+    {% if recipe.introduction %}
+    "description": "{{ recipe.introduction|striptags|truncatewords:50|escapejs }}",
+    {% endif %}
+    "recipeCategory": "{{ recipe.get_category_display }}",
+    "recipeCuisine": "{{ recipe.get_category_display }}",
+    {% if recipe.prep_time %}
+    "prepTime": "PT{{ recipe.prep_time }}M",
+    {% endif %}
+    {% if recipe.cook_time %}
+    "cookTime": "PT{{ recipe.cook_time }}M",
+    {% endif %}
+    {% if recipe.total_time %}
+    "totalTime": "PT{{ recipe.total_time }}M",
+    {% endif %}
+    "recipeYield": "1 serving",
+    "recipeIngredient": [
+      {% for ingredient in recipe.ingredients.all %}
+      "{{ ingredient|escapejs }}"{% if not forloop.last %},{% endif %}
+      {% endfor %}
+    ],
+    "recipeInstructions": [
+      {% for step in recipe.steps.all %}
+      {
+        "@type": "HowToStep",
+        "position": {{ step.step_number }},
+        "text": "{{ step.instruction|striptags|escapejs }}"
+      }{% if not forloop.last %},{% endif %}
+      {% endfor %}
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "{{ brand_name|default:'Chef' }}"
+    },
+    "keywords": "{{ recipe.get_category_display }}, recipe, food",
+    "datePublished": "{{ recipe.created_at|date:'Y-m-d' }}",
+    "dateModified": "{{ recipe.updated_at|date:'Y-m-d' }}"
+  }
+  </script>
+{% endblock extra_meta %}
+
 {% block content %}
   <section class="text-center">
     <h1>{{ recipe.title }}</h1>
@@ -13,6 +62,7 @@
     </section>
   {% endif %}
   <section class="row my-5">
+    2
     <div {% if recipe.ingredients_image %} class="col-md-6" {% else %}  class="offset-md-2 col-md-8"{% endif %}>
       <h2>{% translate "Ingredients" %}</h2>
       <ul>
