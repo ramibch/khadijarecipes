@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-18 13:41+0200\n"
+"POT-Creation-Date: 2025-10-22 19:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,29 +18,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: config/settings.py:148
+#: config/settings.py:149 recipes/admin.py:51 recipes/admin.py:83
 msgid "German"
 msgstr "Alemán"
 
-#: config/settings.py:149
+#: config/settings.py:150
 msgid "English"
 msgstr "Inglés"
 
-#: config/settings.py:150
+#: config/settings.py:151
 msgid "Spanish"
 msgstr "Español"
 
-#: config/settings.py:151
+#: config/settings.py:152
 msgid "French"
 msgstr "Francés"
 
-#: config/settings.py:152
+#: config/settings.py:153
 msgid "Italian"
 msgstr "Italiano"
 
 #: core/templates/base.html:43
 msgid "Photo of Khadija"
 msgstr "Foto de Khadija"
+
+#: core/templates/error.html:10 core/templates/snippets/footer.html:6
+msgid "Home"
+msgstr "Inicio"
 
 #: core/templates/home.html:6
 msgid ""
@@ -52,19 +56,155 @@ msgstr ""
 msgid "Platters"
 msgstr "Platos"
 
-#: core/templates/home.html:35 products/templates/product_detail.html:116
+#: core/templates/home.html:37 products/templates/product_detail.html:116
 msgid "Order Product"
 msgstr "Pedir producto"
+
+#: core/templates/home.html:41
+msgid "No platters available yet"
+msgstr "Aún no hay platos disponibles"
+
+#: core/templates/privacy.html:32
+msgid "The Site and Service"
+msgstr "El Sitio y el Servicio"
+
+#: core/templates/privacy.html:34
+msgid ""
+"The current site informs you, as user or visitor of it, of its policies "
+"regarding the collection, use and disclosure of Personal Information it may "
+"receive from you."
+msgstr ""
+"El presente sitio te informa, como usuario o visitante del mismo, de sus "
+"políticas relativas a la recogida, uso y divulgación de la Información "
+"Personal que pueda recibir de ti."
+
+#: core/templates/privacy.html:37
+msgid ""
+"The gathered Information may be only for providing and improving the "
+"request.site. By using the Site, you agree to the collection and use of "
+"information in accordance with this policy."
+msgstr ""
+"La Información recopilada puede ser sólo para proporcionar y mejorar la "
+"solicitud.sitio. Al utilizar el Sitio, aceptas la recopilación y el uso de "
+"la información de acuerdo con esta política."
+
+#: core/templates/privacy.html:39
+msgid "Data Responsable"
+msgstr "Responsable de datos"
+
+#: core/templates/privacy.html:40
+msgid "Legal Name"
+msgstr "Nombre legal"
+
+#: core/templates/privacy.html:41
+msgid "Address"
+msgstr "Dirección"
+
+#: core/templates/privacy.html:42
+msgid "Information Collection and Use"
+msgstr "Recogida y uso de la información"
+
+#: core/templates/privacy.html:44
+msgid ""
+"While using our Site, you may have to provide us with certain personally "
+"identifiable information that can be used to contact you if you get in touch"
+" with us. Personally identifiable information may include but is not limited"
+" to your name and email address (Personal Information)."
+msgstr ""
+"Al utilizar nuestro Sitio, es posible que tengas que proporcionarnos cierta "
+"información personal identificable que puede utilizarse para ponernos en "
+"contacto contigo si te pones en contacto con nosotros. La información "
+"personal identificable puede incluir, entre otros, tu nombre y dirección de "
+"correo electrónico (Información Personal)."
+
+#: core/templates/privacy.html:46 products/models.py:18
+msgid "Cookies"
+msgstr "Cookies"
+
+#: core/templates/privacy.html:48
+msgid ""
+"Cookies are files with a small amount of data, which may include an "
+"anonymous unique identifier. Cookies are sent to your browser from a website"
+" and stored on your computer's hard drive."
+msgstr ""
+"Las cookies son archivos con una pequeña cantidad de datos, que pueden "
+"incluir un identificador único anónimo. Las cookies se envían a tu navegador"
+" desde un sitio web y se almacenan en el disco duro de tu ordenador."
+
+#: core/templates/privacy.html:51
+msgid ""
+"This site uses these cookies to collect information. You can adjust your "
+"browser to refuse all cookies or to indicate when a cookie is being sent. "
+"However, if you do not accept cookies, you may not be able to use some "
+"portions of the request.site."
+msgstr ""
+"Este sitio utiliza estas cookies para recopilar información. Puedes ajustar "
+"tu navegador para que rechace todas las cookies o para que te indique cuándo"
+" se envía una cookie. Sin embargo, si no aceptas las cookies, es posible que"
+" no puedas utilizar algunas partes del sitio request.site."
+
+#: core/templates/privacy.html:53
+msgid "Security"
+msgstr "Seguridad"
+
+#: core/templates/privacy.html:55
+#, python-format
+msgid ""
+"The security of your Personal Information is important to us, but remember "
+"that no method of transmission over the Internet, or method of electronic "
+"storage, is 100%% secure. While we follow the recommended and standard "
+"development guides for Web Development to protect your Personal Information,"
+" we cannot guarantee its absolute security. The Site is developed with "
+"Django (Python Web Framework), check out its security features:"
+msgstr ""
+"La seguridad de tu Información Personal es importante para nosotros, pero "
+"recuerda que ningún método de transmisión a través de Internet, o método de "
+"almacenamiento electrónico, es seguro al 100%%. Aunque seguimos las guías de "
+"desarrollo recomendadas y estándar para el Desarrollo Web con el fin de "
+"proteger tu Información Personal, no podemos garantizar su seguridad "
+"absoluta. El Sitio está desarrollado con Django (Python Web Framework), "
+"consulta sus características de seguridad:"
+
+#: core/templates/privacy.html:57
+#, fuzzy
+#| msgid "Privacy Policy"
+msgid "Changes To This Privacy Policy"
+msgstr "Política de privacidad"
+
+#: core/templates/privacy.html:58
+msgid ""
+"This site may update this Privacy Policy from time to time. We will notify "
+"you of any changes by posting the new Privacy Policy on this current page. "
+"You are advised to review this Privacy Policy periodically for changes."
+msgstr ""
+"Este sitio puede actualizar esta Política de Privacidad de vez en cuando. Te"
+" notificaremos cualquier cambio publicando la nueva Política de Privacidad "
+"en esta página actual. Te aconsejamos que revises periódicamente esta "
+"Política de Privacidad para comprobar si se han producido cambios."
+
+#: core/templates/privacy.html:59
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact Us"
+msgstr "Ponte en contacto con"
+
+#: core/templates/privacy.html:60
+msgid ""
+"If you have any questions about this Privacy Policy, please contact me:"
+msgstr ""
+"Si tienes alguna pregunta sobre esta Política de privacidad, ponte en "
+"contacto conmigo:"
+
+#: core/templates/privacy.html:63 core/templates/snippets/navbar.html:25
+#: core/templates/terms.html:51
+msgid "Contact"
+msgstr "Ponte en contacto con"
 
 #: core/templates/snippets/faqs.html:4
 msgid "FAQs"
 msgstr "Preguntas frecuentes"
 
-#: core/templates/snippets/footer.html:6
-msgid "Home"
-msgstr "Inicio"
-
-#: core/templates/snippets/footer.html:8 core/views.py:32
+#: core/templates/snippets/footer.html:8 core/views.py:43
 msgid "Privacy Policy"
 msgstr "Política de privacidad"
 
@@ -72,31 +212,96 @@ msgstr "Política de privacidad"
 msgid "Terms and Condidions"
 msgstr "Términos y condiciones"
 
-#: core/templates/snippets/navbar.html:19
+#: core/templates/snippets/navbar.html:19 recipes/models.py:166
+#: recipes/templates/recipes/recipe_list.html:5
 msgid "Recipes"
 msgstr "Recetas"
 
-#: core/templates/snippets/navbar.html:25
-msgid "Contact"
+#: core/templates/terms.html:37
+msgid "Introduction"
+msgstr "Introducción"
+
+#: core/templates/terms.html:38
+msgid "These Terms of Service govern your use of our website and services."
+msgstr ""
+"Estas Condiciones del servicio rigen el uso que hagas de nuestro sitio web y"
+" nuestros servicios."
+
+#: core/templates/terms.html:39
+msgid "Acceptance of Terms"
+msgstr "Aceptación de las condiciones"
+
+#: core/templates/terms.html:40
+msgid "By accessing or using the Site, you agree to be bound by these Terms."
+msgstr ""
+"Al acceder o utilizar el Sitio, aceptas quedar vinculado por estas "
+"Condiciones."
+
+#: core/templates/terms.html:41
+msgid "User Obligations"
+msgstr "Obligaciones del usuario"
+
+#: core/templates/terms.html:43
+msgid ""
+"You agree to use the Site only for lawful purposes and in a way that does "
+"not infringe the rights of others."
+msgstr ""
+"Te comprometes a utilizar el Sitio únicamente con fines lícitos y de forma "
+"que no infrinjas los derechos de terceros."
+
+#: core/templates/terms.html:45
+msgid "Limitations of Liability"
+msgstr "Limitaciones de responsabilidad"
+
+#: core/templates/terms.html:46
+msgid ""
+"We are not liable for damages arising from your use of the Site, except as "
+"required by law."
+msgstr ""
+"No nos hacemos responsables de los daños derivados de tu uso del Sitio, "
+"salvo en los casos en que la ley así lo exija."
+
+#: core/templates/terms.html:47
+msgid "Changes to Terms"
+msgstr "Cambios en las condiciones"
+
+#: core/templates/terms.html:49
+msgid ""
+"We may revise these Terms from time to time by updating this page. Continued"
+" use of the Site indicates acceptance of the updated Terms."
+msgstr ""
+"Podemos revisar estos Términos de vez en cuando actualizando esta página. El"
+" uso continuado del Sitio indica la aceptación de las Condiciones "
+"actualizadas."
+
+#: core/templates/terms.html:52
+msgid "If you have questions about these Terms, contact us:"
+msgstr ""
+"Si tienes preguntas sobre estas Condiciones, ponte en contacto con nosotros:"
+
+#: core/templates/terms.html:55
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact form"
 msgstr "Ponte en contacto con"
 
-#: core/views.py:20
+#: core/views.py:31
 msgid "Tasty recipes make from Bern"
 msgstr "Recetas sabrosas hechas con Berna"
 
-#: core/views.py:42
+#: core/views.py:53
 msgid "Terms and Conditions"
 msgstr "Términos y condiciones"
 
-#: core/views.py:65
+#: core/views.py:76
 msgid "Page Not found"
 msgstr "Página no encontrada"
 
-#: core/views.py:70
+#: core/views.py:81
 msgid "Request blocked"
 msgstr "Solicitud bloqueada"
 
-#: core/views.py:75
+#: core/views.py:86
 msgid "Server Error"
 msgstr "Error del servidor"
 
@@ -111,10 +316,6 @@ msgstr "Platos dulces"
 #: products/models.py:17
 msgid "Honey platters"
 msgstr "Platos de miel"
-
-#: products/models.py:18
-msgid "Cookies"
-msgstr "Cookies"
 
 #: products/models.py:49
 msgid "Hi"
@@ -168,10 +369,173 @@ msgstr "Sal"
 msgid "Values are approximate and based on 100 g of product."
 msgstr "Los valores son aproximados y se basan en 100 g de producto."
 
-#: recipes/templates/recipes/recipe_list.html:8
-msgid "Comming Soon"
-msgstr "Próximamente"
+#: recipes/admin.py:11 recipes/models.py:67 recipes/models.py:181
+msgid "Ingredient"
+msgstr "Ingrediente"
 
-#: recipes/templates/recipes/recipe_list.html:11
-msgid "Check my recipes here"
-msgstr "Consulta mis recetas aquí"
+#: recipes/admin.py:12 recipes/models.py:68
+#: recipes/templates/recipes/recipe_detail.html:65
+msgid "Ingredients"
+msgstr "Ingredientes"
+
+#: recipes/admin.py:20
+msgid "Step"
+msgstr "Paso"
+
+#: recipes/admin.py:21
+msgid "Steps"
+msgstr "Pasos"
+
+#: recipes/admin.py:53 recipes/admin.py:93 recipes/admin.py:138
+msgid "Advanced Options - Other Languages"
+msgstr "Opciones avanzadas - Otras lenguas"
+
+#: recipes/admin.py:69 recipes/admin.py:105 recipes/admin.py:150
+msgid "Timestamps"
+msgstr "Marcas de tiempo"
+
+#: recipes/admin.py:128
+msgid "Basic Information"
+msgstr "Información básica"
+
+#: recipes/admin.py:136
+msgid "Instruction (German)"
+msgstr "Instrucción (alemán)"
+
+#: recipes/admin.py:155
+msgid "Instruction Preview"
+msgstr "Instrucción previa"
+
+#: recipes/models.py:36 recipes/models.py:195
+msgid "Unit"
+msgstr "Unidad"
+
+#: recipes/models.py:37
+msgid "Units"
+msgstr "Unidades"
+
+#: recipes/models.py:72
+msgid "Easy"
+msgstr "Fácil"
+
+#: recipes/models.py:73
+msgid "Medium"
+msgstr "Medio"
+
+#: recipes/models.py:74
+msgid "Hard"
+msgstr "Duro"
+
+#: recipes/models.py:78
+msgid "Appetizer"
+msgstr "Aperitivo"
+
+#: recipes/models.py:79
+msgid "Main Course"
+msgstr "Plato principal"
+
+#: recipes/models.py:80
+msgid "Dessert"
+msgstr "Postre"
+
+#: recipes/models.py:81
+msgid "Snack"
+msgstr "Merienda"
+
+#: recipes/models.py:82
+msgid "Beverage"
+msgstr "Bebida"
+
+#: recipes/models.py:83
+msgid "Bread"
+msgstr "Pan"
+
+#: recipes/models.py:100
+msgid "Difficulty Level"
+msgstr "Nivel de dificultad"
+
+#: recipes/models.py:106
+msgid "Category"
+msgstr "Categoría"
+
+#: recipes/models.py:111
+msgid "Preparation time in minutes"
+msgstr "Tiempo de preparación en minutos"
+
+#: recipes/models.py:114
+msgid "Preparation Time"
+msgstr "Tiempo de preparación"
+
+#: recipes/models.py:117
+msgid "Cooking time in minutes"
+msgstr "Tiempo de cocción en minutos"
+
+#: recipes/models.py:120
+#, fuzzy
+#| msgid "Cookies"
+msgid "Cooking Time"
+msgstr "Cookies"
+
+#: recipes/models.py:128
+msgid "Main Image"
+msgstr "Imagen principal"
+
+#: recipes/models.py:134
+msgid "Ingredients Image"
+msgstr "Ingredientes Imagen"
+
+#: recipes/models.py:140
+msgid "Preparation Image"
+msgstr "Preparación Imagen"
+
+#: recipes/models.py:165 recipes/models.py:176
+#, fuzzy
+#| msgid "Recipes"
+msgid "Recipe"
+msgstr "Recetas"
+
+#: recipes/models.py:188
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: recipes/models.py:236
+msgid "Recipe Ingredient"
+msgstr "Receta Ingrediente"
+
+#: recipes/models.py:237
+msgid "Recipe Ingredients"
+msgstr "Ingredientes de la receta"
+
+#: recipes/models.py:244
+msgid "Step Number"
+msgstr "Número de paso"
+
+#: recipes/models.py:261
+#, fuzzy
+#| msgid "Recipes"
+msgid "Recipe Step"
+msgstr "Recetas"
+
+#: recipes/models.py:262
+#, fuzzy
+#| msgid "Recipes"
+msgid "Recipe Steps"
+msgstr "Recetas"
+
+#: recipes/templates/recipes/recipe_detail.html:74
+msgid "Recipe ingredients"
+msgstr "Ingredientes de la receta"
+
+#: recipes/templates/recipes/recipe_detail.html:83
+msgid "Recipe Preparation"
+msgstr "Preparación de la receta"
+
+#: recipes/templates/recipes/recipe_detail.html:87
+msgid "Preparation"
+msgstr "Preparación"
+
+#~ msgid "Comming Soon"
+#~ msgstr "Próximamente"
+
+#~ msgid "Check my recipes here"
+#~ msgstr "Consulta mis recetas aquí"
