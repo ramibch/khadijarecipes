@@ -109,6 +109,21 @@ td.indent {
     <div class="col-md-6">
       <h1 class="text-center">{{ page_title }}</h1>
       <p>{{ product.description|linebreaks }}</p>
+      {% if product.price_per_unit %}
+        <p>
+          <span class="text-bold">{% translate "Price per Unit" %}</span>: {{ product.price_per_unit }} CHF
+        </p>
+      {% endif %}
+      {% if product.price_500g %}
+        <p>
+          <span class="text-bold">{% translate "Price 500g" %}</span>: {{ product.price_500g }} CHF
+        </p>
+      {% endif %}
+      {% if product.price_1kg %}
+        <p>
+          <span class="text-bold">{% translate "Price 1kg" %}</span>: {{ product.price_1kg }} CHF
+        </p>
+      {% endif %}
       <center>
         <a href="{{ product.whatsapp_order_url }}"
            role="button"
@@ -117,7 +132,7 @@ td.indent {
       </center>
     </div>
   </section>
-  {% if recipe.nutrition_info_available %}
+  {% if product.nutrition_info_available %}
     <section class="my-5">
       <h2>{% translate "Nutrition Table" %}</h2>
       <table>

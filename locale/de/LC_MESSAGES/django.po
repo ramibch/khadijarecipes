@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-23 20:12+0200\n"
+"POT-Creation-Date: 2025-10-23 20:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgstr ""
 msgid "Platters"
 msgstr "Servierplatten"
 
-#: core/templates/home.html:37 products/templates/product_detail.html:115
+#: core/templates/home.html:37 products/templates/product_detail.html:130
 msgid "Order Product"
 msgstr "Produkt bestellen"
 
@@ -81,9 +81,9 @@ msgstr ""
 
 #: core/templates/privacy.html:37
 msgid ""
-"The gathered Information may be only for providing and improving the "
-"request.site. By using the Site, you agree to the collection and use of "
-"information in accordance with this policy."
+"The gathered Information may be only for providing and improving the request."
+"site. By using the Site, you agree to the collection and use of information "
+"in accordance with this policy."
 msgstr ""
 "Die gesammelten Informationen dürfen nur für die Bereitstellung und "
 "Verbesserung der request.site verwendet werden. Durch die Nutzung der "
@@ -109,9 +109,9 @@ msgstr "Sammlung und Verwendung von Informationen"
 #: core/templates/privacy.html:44
 msgid ""
 "While using our Site, you may have to provide us with certain personally "
-"identifiable information that can be used to contact you if you get in touch"
-" with us. Personally identifiable information may include but is not limited"
-" to your name and email address (Personal Information)."
+"identifiable information that can be used to contact you if you get in touch "
+"with us. Personally identifiable information may include but is not limited "
+"to your name and email address (Personal Information)."
 msgstr ""
 "Bei der Nutzung unserer Website musst du uns möglicherweise bestimmte "
 "personenbezogene Daten zur Verfügung stellen, die wir verwenden können, um "
@@ -126,11 +126,11 @@ msgstr "Cookies"
 #: core/templates/privacy.html:48
 msgid ""
 "Cookies are files with a small amount of data, which may include an "
-"anonymous unique identifier. Cookies are sent to your browser from a website"
-" and stored on your computer's hard drive."
+"anonymous unique identifier. Cookies are sent to your browser from a website "
+"and stored on your computer's hard drive."
 msgstr ""
-"Cookies sind Dateien mit einer kleinen Menge an Daten, die auch eine anonyme"
-" eindeutige Kennung enthalten können. Cookies werden von einer Website an "
+"Cookies sind Dateien mit einer kleinen Menge an Daten, die auch eine anonyme "
+"eindeutige Kennung enthalten können. Cookies werden von einer Website an "
 "deinen Browser gesendet und auf der Festplatte deines Computers gespeichert."
 
 #: core/templates/privacy.html:51
@@ -155,17 +155,17 @@ msgid ""
 "The security of your Personal Information is important to us, but remember "
 "that no method of transmission over the Internet, or method of electronic "
 "storage, is 100%% secure. While we follow the recommended and standard "
-"development guides for Web Development to protect your Personal Information,"
-" we cannot guarantee its absolute security. The Site is developed with "
-"Django (Python Web Framework), check out its security features:"
+"development guides for Web Development to protect your Personal Information, "
+"we cannot guarantee its absolute security. The Site is developed with Django "
+"(Python Web Framework), check out its security features:"
 msgstr ""
-"Die Sicherheit deiner persönlichen Daten ist uns wichtig, aber bedenke, dass"
-" keine Methode der Übertragung über das Internet und keine Methode der "
+"Die Sicherheit deiner persönlichen Daten ist uns wichtig, aber bedenke, dass "
+"keine Methode der Übertragung über das Internet und keine Methode der "
 "elektronischen Speicherung zu 100%% sicher ist. Wir halten uns an die "
 "empfohlenen und üblichen Entwicklungsrichtlinien für die Webentwicklung, um "
 "deine persönlichen Daten zu schützen, können aber keine absolute Sicherheit "
-"garantieren. Die Website wurde mit Django (Python Web Framework) entwickelt,"
-" sieh dir seine Sicherheitsfunktionen an:"
+"garantieren. Die Website wurde mit Django (Python Web Framework) entwickelt, "
+"sieh dir seine Sicherheitsfunktionen an:"
 
 #: core/templates/privacy.html:57
 #, fuzzy
@@ -179,8 +179,8 @@ msgid ""
 "you of any changes by posting the new Privacy Policy on this current page. "
 "You are advised to review this Privacy Policy periodically for changes."
 msgstr ""
-"Diese Seite kann diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren."
-" Wir werden dich über alle Änderungen informieren, indem wir die neue "
+"Diese Seite kann diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. "
+"Wir werden dich über alle Änderungen informieren, indem wir die neue "
 "Datenschutzrichtlinie auf dieser Seite veröffentlichen. Wir empfehlen dir, "
 "diese Datenschutzrichtlinie regelmäßig auf Änderungen zu überprüfen."
 
@@ -191,8 +191,7 @@ msgid "Contact Us"
 msgstr "Kontakt"
 
 #: core/templates/privacy.html:60
-msgid ""
-"If you have any questions about this Privacy Policy, please contact me:"
+msgid "If you have any questions about this Privacy Policy, please contact me:"
 msgstr ""
 "Wenn du Fragen zu dieser Datenschutzrichtlinie hast, kontaktiere mich bitte:"
 
@@ -246,8 +245,8 @@ msgid ""
 "You agree to use the Site only for lawful purposes and in a way that does "
 "not infringe the rights of others."
 msgstr ""
-"Du erklärst dich damit einverstanden, die Website nur für rechtmäßige Zwecke"
-" und auf eine Weise zu nutzen, die die Rechte anderer nicht verletzt."
+"Du erklärst dich damit einverstanden, die Website nur für rechtmäßige Zwecke "
+"und auf eine Weise zu nutzen, die die Rechte anderer nicht verletzt."
 
 #: core/templates/terms.html:45
 msgid "Limitations of Liability"
@@ -258,8 +257,8 @@ msgid ""
 "We are not liable for damages arising from your use of the Site, except as "
 "required by law."
 msgstr ""
-"Wir haften nicht für Schäden, die durch deine Nutzung der Website entstehen,"
-" es sei denn, dies ist gesetzlich vorgeschrieben."
+"Wir haften nicht für Schäden, die durch deine Nutzung der Website entstehen, "
+"es sei denn, dies ist gesetzlich vorgeschrieben."
 
 #: core/templates/terms.html:47
 msgid "Changes to Terms"
@@ -267,8 +266,8 @@ msgstr "Änderungen der Bedingungen"
 
 #: core/templates/terms.html:49
 msgid ""
-"We may revise these Terms from time to time by updating this page. Continued"
-" use of the Site indicates acceptance of the updated Terms."
+"We may revise these Terms from time to time by updating this page. Continued "
+"use of the Site indicates acceptance of the updated Terms."
 msgstr ""
 "Wir können diese Bedingungen von Zeit zu Zeit ändern, indem wir diese Seite "
 "aktualisieren. Die fortgesetzte Nutzung der Website bedeutet, dass du die "
@@ -316,67 +315,67 @@ msgstr "Süße Platten"
 msgid "Honey platters"
 msgstr "Honigplättchen"
 
-#: products/models.py:72
+#: products/models.py:72 products/templates/product_detail.html:118
 msgid "Price 500g"
 msgstr "Preis 500g"
 
-#: products/models.py:79
+#: products/models.py:79 products/templates/product_detail.html:123
 msgid "Price 1kg"
 msgstr "Preis 1kg"
 
-#: products/models.py:86
+#: products/models.py:86 products/templates/product_detail.html:113
 msgid "Price per Unit"
 msgstr "Preis pro Einheit"
 
-#: products/models.py:111
+#: products/models.py:114
 msgid "Hi"
 msgstr "Hallo"
 
-#: products/models.py:112
+#: products/models.py:115
 msgid "I am interested in this product"
 msgstr "Ich bin an diesem Produkt interessiert"
 
-#: products/templates/product_detail.html:121
+#: products/templates/product_detail.html:136
 msgid "Nutrition Table"
 msgstr "Ernährungstabelle"
 
-#: products/templates/product_detail.html:125
+#: products/templates/product_detail.html:140
 msgid "Nutrient"
 msgstr "Nährstoff"
 
-#: products/templates/product_detail.html:126
+#: products/templates/product_detail.html:141
 msgid "Per 100g"
 msgstr "Pro 100g"
 
-#: products/templates/product_detail.html:131
+#: products/templates/product_detail.html:146
 msgid "Energy"
 msgstr "Energie"
 
-#: products/templates/product_detail.html:135
+#: products/templates/product_detail.html:150
 msgid "Total Fat"
 msgstr "Fett gesamt"
 
-#: products/templates/product_detail.html:139
+#: products/templates/product_detail.html:154
 msgid "Saturated Fat"
 msgstr "Gesättigtes Fett"
 
-#: products/templates/product_detail.html:143
+#: products/templates/product_detail.html:158
 msgid "Carbohydrates"
 msgstr "Kohlenhydrate"
 
-#: products/templates/product_detail.html:147
+#: products/templates/product_detail.html:162
 msgid "Sugars"
 msgstr "Zucker"
 
-#: products/templates/product_detail.html:151
+#: products/templates/product_detail.html:166
 msgid "Protein"
 msgstr "Protein"
 
-#: products/templates/product_detail.html:155
+#: products/templates/product_detail.html:170
 msgid "Salt"
 msgstr "Salz"
 
-#: products/templates/product_detail.html:160
+#: products/templates/product_detail.html:175
 msgid "Values are approximate and based on 100 g of product."
 msgstr "Die Werte sind ungefähre Angaben und basieren auf 100 g des Produkts."
 

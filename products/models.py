@@ -71,21 +71,21 @@ class Product(PageModel):
     price_500g = models.DecimalField(
         verbose_name=_("Price 500g"),
         max_digits=4,
-        decimal_places=1,
+        decimal_places=2,
         blank=True,
         null=True,
     )
     price_1kg = models.DecimalField(
         verbose_name=_("Price 1kg"),
         max_digits=4,
-        decimal_places=1,
+        decimal_places=2,
         blank=True,
         null=True,
     )
     price_per_unit = models.DecimalField(
         verbose_name=_("Price per Unit"),
         max_digits=4,
-        decimal_places=1,
+        decimal_places=2,
         blank=True,
         null=True,
     )
