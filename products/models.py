@@ -24,17 +24,82 @@ class Product(PageModel):
     description_fr = models.TextField(null=True, blank=True)
     description_es = models.TextField(null=True, blank=True)
     description_it = models.TextField(null=True, blank=True)
-    calories = models.DecimalField(max_digits=4, decimal_places=1)
-    total_fat = models.DecimalField(max_digits=3, decimal_places=1)
-    saturated_fat = models.DecimalField(max_digits=3, decimal_places=1)
-    total_carbo = models.DecimalField(max_digits=3, decimal_places=1)
-    sugar = models.DecimalField(max_digits=3, decimal_places=1)
-    protein = models.DecimalField(max_digits=3, decimal_places=1)
-    salt = models.DecimalField(max_digits=3, decimal_places=2)
     product_type = models.CharField(max_length=32, choices=ProductType)
+    calories = models.DecimalField(
+        max_digits=4,
+        decimal_places=1,
+        blank=True,
+        null=True,
+    )
+    total_fat = models.DecimalField(
+        max_digits=3,
+        decimal_places=1,
+        blank=True,
+        null=True,
+    )
+    saturated_fat = models.DecimalField(
+        max_digits=3,
+        decimal_places=1,
+        blank=True,
+        null=True,
+    )
+    total_carbo = models.DecimalField(
+        max_digits=3,
+        decimal_places=1,
+        blank=True,
+        null=True,
+    )
+    sugar = models.DecimalField(
+        max_digits=3,
+        decimal_places=1,
+        blank=True,
+        null=True,
+    )
+    protein = models.DecimalField(
+        max_digits=3,
+        decimal_places=1,
+        blank=True,
+        null=True,
+    )
+    salt = models.DecimalField(
+        max_digits=3,
+        decimal_places=2,
+        blank=True,
+        null=True,
+    )
+
+    price_500g = models.DecimalField(
+        verbose_name=_("Price 500g"),
+        max_digits=4,
+        decimal_places=1,
+        blank=True,
+        null=True,
+    )
+    price_1kg = models.DecimalField(
+        verbose_name=_("Price 1kg"),
+        max_digits=4,
+        decimal_places=1,
+        blank=True,
+        null=True,
+    )
+    price_per_unit = models.DecimalField(
+        verbose_name=_("Price per Unit"),
+        max_digits=4,
+        decimal_places=1,
+        blank=True,
+        null=True,
+    )
+
+    def __str__(self):
+        return self.title
+
+    @property
+    def nutrition_info_available(self):
+        return bool(self.total_fat and self.total_carbo and self.protein)
 
     def save(self, *args, **kwargs):
-        self.calories = 9 * self.total_fat + 4 * (self.total_carbo + self.protein)
+        if self.nutrition_info_available:
+            self.calories = 9 * self.total_fat + 4 * (self.total_carbo + self.protein)
         return super().save(*args, **kwargs)
 
     def get_absolute_url(self):

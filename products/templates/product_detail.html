@@ -117,47 +117,49 @@ td.indent {
       </center>
     </div>
   </section>
-  <section class="my-5">
-    <h2>{% translate "Nutrition Table" %}</h2>
-    <table>
-      <thead>
-        <tr>
-          <th scope="col">{% translate "Nutrient" %}</th>
-          <th scope="col">{% translate "Per 100g" %}</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{% translate "Energy" %}</td>
-          <td>{{ product.calories|floatformat:1 }} kcal</td>
-        </tr>
-        <tr>
-          <td>{% translate "Total Fat" %}</td>
-          <td>{{ product.total_fat|floatformat:1 }} g</td>
-        </tr>
-        <tr>
-          <td class="indent">{% translate "Saturated Fat" %}</td>
-          <td>{{ product.saturated_fat|floatformat:1 }} g</td>
-        </tr>
-        <tr>
-          <td>{% translate "Carbohydrates" %}</td>
-          <td>{{ product.total_carbo|floatformat:1 }} g</td>
-        </tr>
-        <tr>
-          <td class="indent">{% translate "Sugars" %}</td>
-          <td>{{ product.sugar|floatformat:1 }} g</td>
-        </tr>
-        <tr>
-          <td>{% translate "Protein" %}</td>
-          <td>{{ product.protein|floatformat:1 }} g</td>
-        </tr>
-        <tr>
-          <td>{% translate "Salt" %}</td>
-          <td>{{ product.salt|floatformat:2 }} g</td>
-        </tr>
-      </tbody>
-    </table>
-    <small class="text-muted">{% translate "Values are approximate and based on 100 g of product." %}</small>
-  </section>
+  {% if recipe.nutrition_info_available %}
+    <section class="my-5">
+      <h2>{% translate "Nutrition Table" %}</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">{% translate "Nutrient" %}</th>
+            <th scope="col">{% translate "Per 100g" %}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{% translate "Energy" %}</td>
+            <td>{{ product.calories|floatformat:1 }} kcal</td>
+          </tr>
+          <tr>
+            <td>{% translate "Total Fat" %}</td>
+            <td>{{ product.total_fat|floatformat:1 }} g</td>
+          </tr>
+          <tr>
+            <td class="indent">{% translate "Saturated Fat" %}</td>
+            <td>{{ product.saturated_fat|floatformat:1 }} g</td>
+          </tr>
+          <tr>
+            <td>{% translate "Carbohydrates" %}</td>
+            <td>{{ product.total_carbo|floatformat:1 }} g</td>
+          </tr>
+          <tr>
+            <td class="indent">{% translate "Sugars" %}</td>
+            <td>{{ product.sugar|floatformat:1 }} g</td>
+          </tr>
+          <tr>
+            <td>{% translate "Protein" %}</td>
+            <td>{{ product.protein|floatformat:1 }} g</td>
+          </tr>
+          <tr>
+            <td>{% translate "Salt" %}</td>
+            <td>{{ product.salt|floatformat:2 }} g</td>
+          </tr>
+        </tbody>
+      </table>
+      <small class="text-muted">{% translate "Values are approximate and based on 100 g of product." %}</small>
+    </section>
+  {% endif %}
   {% include "snippets/faqs.html" %}
 {% endblock content %}

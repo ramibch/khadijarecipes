@@ -17,11 +17,9 @@ class ProductAdmin(admin.ModelAdmin):
     fields = (
         "title_de",
         "description_de",
-        "total_fat",
-        "saturated_fat",
-        "total_carbo",
-        "sugar",
-        "protein",
-        "salt",
+        "product_type",
+        "price_500g",
+        "price_1kg",
+        "price_per_unit",
     )
     inlines = (ProductImageInline,)

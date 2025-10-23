@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-22 19:52+0200\n"
+"POT-Creation-Date: 2025-10-23 20:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,7 +56,7 @@ msgstr ""
 msgid "Platters"
 msgstr "Platos"
 
-#: core/templates/home.html:37 products/templates/product_detail.html:116
+#: core/templates/home.html:37 products/templates/product_detail.html:115
 msgid "Order Product"
 msgstr "Pedir producto"
 
@@ -159,8 +159,8 @@ msgid ""
 msgstr ""
 "La seguridad de tu Información Personal es importante para nosotros, pero "
 "recuerda que ningún método de transmisión a través de Internet, o método de "
-"almacenamiento electrónico, es seguro al 100%%. Aunque seguimos las guías de "
-"desarrollo recomendadas y estándar para el Desarrollo Web con el fin de "
+"almacenamiento electrónico, es seguro al 100%%. Aunque seguimos las guías de"
+" desarrollo recomendadas y estándar para el Desarrollo Web con el fin de "
 "proteger tu Información Personal, no podemos garantizar su seguridad "
 "absoluta. El Sitio está desarrollado con Django (Python Web Framework), "
 "consulta sus características de seguridad:"
@@ -317,11 +317,23 @@ msgstr "Platos dulces"
 msgid "Honey platters"
 msgstr "Platos de miel"
 
-#: products/models.py:49
+#: products/models.py:72
+msgid "Price 500g"
+msgstr "Precio 500 g"
+
+#: products/models.py:79
+msgid "Price 1kg"
+msgstr "Precio 1kg"
+
+#: products/models.py:86
+msgid "Price per Unit"
+msgstr "Precio por unidad"
+
+#: products/models.py:111
 msgid "Hi"
 msgstr "Hola"
 
-#: products/models.py:50
+#: products/models.py:112
 msgid "I am interested in this product"
 msgstr "Me interesa este producto"
 
@@ -374,7 +386,7 @@ msgid "Ingredient"
 msgstr "Ingrediente"
 
 #: recipes/admin.py:12 recipes/models.py:68
-#: recipes/templates/recipes/recipe_detail.html:65
+#: recipes/templates/recipes/recipe_detail.html:66
 msgid "Ingredients"
 msgstr "Ingredientes"
 
@@ -522,15 +534,15 @@ msgstr "Recetas"
 msgid "Recipe Steps"
 msgstr "Recetas"
 
-#: recipes/templates/recipes/recipe_detail.html:74
+#: recipes/templates/recipes/recipe_detail.html:75
 msgid "Recipe ingredients"
 msgstr "Ingredientes de la receta"
 
-#: recipes/templates/recipes/recipe_detail.html:83
+#: recipes/templates/recipes/recipe_detail.html:84
 msgid "Recipe Preparation"
 msgstr "Preparación de la receta"
 
-#: recipes/templates/recipes/recipe_detail.html:87
+#: recipes/templates/recipes/recipe_detail.html:88
 msgid "Preparation"
 msgstr "Preparación"
 

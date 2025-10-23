@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-22 19:52+0200\n"
+"POT-Creation-Date: 2025-10-23 20:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgstr ""
 msgid "Platters"
 msgstr "Plateaux"
 
-#: core/templates/home.html:37 products/templates/product_detail.html:116
+#: core/templates/home.html:37 products/templates/product_detail.html:115
 msgid "Order Product"
 msgstr "Commander un produit"
 
@@ -319,11 +319,23 @@ msgstr "Plateaux sucrés"
 msgid "Honey platters"
 msgstr "Plateaux de miel"
 
-#: products/models.py:49
+#: products/models.py:72
+msgid "Price 500g"
+msgstr "Prix 500g"
+
+#: products/models.py:79
+msgid "Price 1kg"
+msgstr "Prix 1kg"
+
+#: products/models.py:86
+msgid "Price per Unit"
+msgstr "Prix par unité"
+
+#: products/models.py:111
 msgid "Hi"
 msgstr "Bonjour"
 
-#: products/models.py:50
+#: products/models.py:112
 msgid "I am interested in this product"
 msgstr "Ce produit m'intéresse"
 
@@ -376,7 +388,7 @@ msgid "Ingredient"
 msgstr "Ingrédient"
 
 #: recipes/admin.py:12 recipes/models.py:68
-#: recipes/templates/recipes/recipe_detail.html:65
+#: recipes/templates/recipes/recipe_detail.html:66
 msgid "Ingredients"
 msgstr "Ingrédients"
 
@@ -524,15 +536,15 @@ msgstr "Recettes"
 msgid "Recipe Steps"
 msgstr "Recettes"
 
-#: recipes/templates/recipes/recipe_detail.html:74
+#: recipes/templates/recipes/recipe_detail.html:75
 msgid "Recipe ingredients"
 msgstr "Ingrédients de la recette"
 
-#: recipes/templates/recipes/recipe_detail.html:83
+#: recipes/templates/recipes/recipe_detail.html:84
 msgid "Recipe Preparation"
 msgstr "Préparation de la recette"
 
-#: recipes/templates/recipes/recipe_detail.html:87
+#: recipes/templates/recipes/recipe_detail.html:88
 msgid "Preparation"
 msgstr "Préparation"
 
