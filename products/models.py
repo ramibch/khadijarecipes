@@ -166,7 +166,4 @@ class ProductImage(CustomModel):
                     filename, ContentFile(buffer.read()), save=False
                 )
 
-            # Important: close file handle
-            self.image.close()
-
         super().save(*args, **kwargs)
