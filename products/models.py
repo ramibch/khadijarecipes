@@ -15,7 +15,9 @@ class ProductType(models.TextChoices):
     MIXED_PLATTERS = "mixed_pastries", _("Mixed platters")
     SWEET_PLATTERS = "sweet_pastries", _("Sweet platters")
     HONEY_PLATTERS = "honey_pastries", _("Honey platters")
+    DOUGH_PRODUCTS = "dough_products", _("Dough products")
     COOKIES = "cookies", _("Cookies")
+    OTHER = "other", _("Other products")
 
 
 class Product(PageModel):

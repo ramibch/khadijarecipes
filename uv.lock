@@ -265,6 +265,20 @@ wheels = [
 ]
 
 [[package]]
+name = "django-rosetta"
+version = "0.10.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+    { name = "polib" },
+    { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ff/d0/7c5de2e1479f9a97af8d86a6173ea635ec819b3848f5c4ea852b3f22b173/django_rosetta-0.10.2.tar.gz", hash = "sha256:7e02427fe43b578dc12e02d6ce2cb4d045cc751a91b6e7f2c5ef4f706e1fb3d0", size = 262724, upload-time = "2025-04-03T13:05:36.432Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0f/0b/0a0088fa3721c0bddbd52177b072b0e8065be9ced68f9b579c55bd01d706/django_rosetta-0.10.2-py3-none-any.whl", hash = "sha256:44bd2b9ff2b88322d1a1f0cae62d8dfd4996b465f4a22a31f016cfd64d022352", size = 122592, upload-time = "2025-04-03T13:05:34.914Z" },
+]
+
+[[package]]
 name = "django-storages"
 version = "1.14.6"
 source = { registry = "https://pypi.org/simple" }
@@ -483,6 +497,7 @@ dependencies = [
     { name = "django" },
     { name = "django-browser-reload" },
     { name = "django-debug-toolbar" },
+    { name = "django-rosetta" },
     { name = "django-storages" },
     { name = "django-watchfiles" },
     { name = "djlint" },
@@ -504,6 +519,7 @@ requires-dist = [
     { name = "django", specifier = ">=6.0a1" },
     { name = "django-browser-reload", specifier = ">=1.21.0" },
     { name = "django-debug-toolbar", specifier = ">=6.0.0" },
+    { name = "django-rosetta", specifier = ">=0.10.2" },
     { name = "django-storages", specifier = ">=1.14.6" },
     { name = "django-watchfiles", specifier = ">=1.4.0" },
     { name = "djlint", specifier = ">=1.36.4" },

@@ -38,7 +38,7 @@ class Command(BaseCommand):
             po = polib.pofile(po_path)
             updated = False
 
-            for entry in po.untranslated_entries():
+            for entry in po.untranslated_entries() + po.fuzzy_entries():
                 if not entry.msgid.strip():
                     continue
 
@@ -59,6 +59,7 @@ class Command(BaseCommand):
                     )
                     if translated:
                         entry.msgstr = str(translated)
+                        entry.fuzzy = False
                         updated = True
                         self.stdout.write(f"[{lang}] {entry.msgid} → {entry.msgstr}")
 
@@ -81,6 +82,7 @@ class Command(BaseCommand):
                         )
                         if translated:
                             entry.msgstr_plural[idx] = str(translated)
+                            entry.fuzzy = False
                             updated = True
                             self.stdout.write(
                                 f"[{lang}] (plural {idx}) {msgid} → {translated}"

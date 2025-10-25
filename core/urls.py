@@ -10,6 +10,8 @@ from .views import (
     RobotTxtView,
     TermsView,
     favicon_view,
+    product_feed_pins,
+    recipe_feed_pins,
 )
 
 urlpatterns = [
@@ -28,6 +30,9 @@ urlpatterns = [
     path("~/t", TermsView.as_view(), name="terms"),
     # Home
     path("", HomeView.as_view(), name="home"),
+    # Pins
+    path("pins/products/<str:lang>", product_feed_pins),
+    path("pins/recipes/<str:lang>", recipe_feed_pins),
     # Redirects (previous site)
     path("<str:lang>/blog/", RecipeListRedirectView.as_view()),
     path("<str:lang>/blog/<slug:slug>/", RecipeDetailRedirectView.as_view()),

@@ -1,8 +1,9 @@
 from typing import Any
 
-from django.http import HttpResponse
+from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
 from django.urls import reverse
+from django.utils import translation
 from django.utils.translation import gettext_lazy as _
 from django.views.decorators.cache import cache_control
 from django.views.decorators.http import require_GET
@@ -10,6 +11,8 @@ from django.views.generic import RedirectView, TemplateView
 
 from core.models import Faq
 from products.models import Product
+
+from .feeds import ProductPinFeed, RecipePinFeed
 
 
 class RecipeListRedirectView(RedirectView):
@@ -85,3 +88,13 @@ def error_403(request, exception):
 def error_500(request):
     cxt = {"page_title": _("Server Error")}
     return render(request, "error.html", cxt, status=500)
+
+
+def product_feed_pins(request: HttpRequest, lang: str):
+    with translation.override(lang):
+        return ProductPinFeed()(request)
+
+
+def recipe_feed_pins(request: HttpRequest, lang: str):
+    with translation.override(lang):
+        return RecipePinFeed()(request)

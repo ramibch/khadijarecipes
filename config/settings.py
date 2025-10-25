@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django.contrib.sitemaps",
     # third party
+    "rosetta",
     "debug_toolbar",
     "django_watchfiles",
     "django_browser_reload",
@@ -245,3 +246,10 @@ WEBSITE_URL = env("WEBSITE_URL")
 WHATSAPP_URL = "https://wa.me/+41772363205"
 TELEGRAM_URL = "https://t.me/khadijarecipes"
 INSTAGRAM_URL = "https://www.instagram.com/khadijarecipes/"
+
+
+# Rosetta
+# https://django-rosetta.readthedocs.io/settings.html
+ROSETTA_MESSAGES_PER_PAGE = 50
+ROSETTA_ENABLE_TRANSLATION_SUGGESTIONS = True
+ROSETTA_WSGI_AUTO_RELOAD = True
