@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n static %}
+{% load i18n imagekit static %}
 {% block content %}
   <section class="text-center my-5">
     <h1 class="text-center fs-3 my-5">
@@ -10,36 +10,37 @@
   <section class="row">
     <h2 class="text-center">{% translate "Platters" %}</h2>
     {% for product in products %}
-      <article class="col-xl-3 col-lg-4 col-md-6">
-        <header>
-          <h3 class="text-center">{{ product.title }}</h3>
-        </header>
-        <center>
-          {% with pi=product.productimage_set.first %}
-            {% if pi %}
-              <a href="{{ product.url }}">
-                <img loading="lazy"
-                     x-data="{ isHovered: false }"
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <article>
+          <header>
+            <h3 class="text-center fs-1">{{ product.title }}</h3>
+          </header>
+          <center>
+            {% with pi=product.productimage_set.first %}
+              {% if pi %}
+                <div x-data="{ isHovered: false }"
                      x-bind:class="isHovered ? 'w-100 animate__animated animate__pulse' : 'w-100 ' "
                      x-on:mouseenter="isHovered = true;"
-                     x-on:mouseleave="isHovered = false;"
-                     height="{{ pi.image_400.height }}"
-                     width="{{ pi.image_400.width }}"
-                     src="{{ pi.image_400.url }}"
-                     alt="{{ pi.alt }}">
-              </a>
-            {% endif %}
-          {% endwith %}
-          <a href="{{ product.whatsapp_order_url }}"
-             class="w-100 "
-             role="button"
-             rel="nofollow"
-             target="_blank"><i class="bi bi-whatsapp"></i> {% translate "Order Product" %}</a>
-        </center>
-      </article>
-    {% empty %}
-      <p class="text-center">{% translate "No platters available yet" %}</p>
-    {% endfor %}
-  </section>
-  {% include "snippets/faqs.html" %}
-{% endblock content %}
+                     x-on:mouseleave="isHovered = false;">
+                  <a href="{{ product.url }}">
+                    {% thumbnail '300x300' pi.image format='WEBP' -- alt=pi.alt loading="lazy" class="my-2" %}
+                    </a>
+                  </div>
+                {% else %}
+                  <a href="{{ product.url }}">{% translate "More about" %}</a>
+                {% endif %}
+              {% endwith %}
+              <a href="{{ product.whatsapp_order_url }}"
+                 class="w-100 "
+                 role="button"
+                 rel="nofollow"
+                 target="_blank"><i class="bi bi-whatsapp"></i> {% translate "Order Product" %}</a>
+            </center>
+          </article>
+        </div>
+      {% empty %}
+        <p class="text-center">{% translate "No platters available yet" %}</p>
+      {% endfor %}
+    </section>
+    {% include "snippets/faqs.html" %}
+  {% endblock content %}

@@ -127,6 +127,7 @@ class Recipe(PageModel):
         blank=True,
         verbose_name=_("Main Image"),
     )
+
     ingredients_image = models.ImageField(
         upload_to="recipes/ingredients/",
         null=True,

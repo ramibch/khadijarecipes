@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django.contrib.sitemaps",
     # third party
+    "imagekit",
     "rosetta",
     "debug_toolbar",
     "django_watchfiles",

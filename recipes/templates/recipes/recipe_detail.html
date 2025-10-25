@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n %}
+{% load i18n imagekit %}
 {% block extra_meta %}
   <script type="application/ld+json">
   {
@@ -56,39 +56,33 @@
   </section>
   {% if recipe.main_image %}
     <section class="row">
-      <img class="offset-md-4 col-md-4"
-           src="{{ recipe.main_image.url }}"
-           alt="{{ recipe.title }}">
-    </section>
-  {% endif %}
-  <section class="row my-5">
-    <div {% if recipe.ingredients_image %} class="col-md-6" {% else %}  class="offset-md-2 col-md-8"{% endif %}>
-      <h2>{% translate "Ingredients" %}</h2>
-      <ul>
-        {% for ingredient in recipe.ingredients.all %}<li>{{ ingredient }}</li>{% endfor %}
-      </ul>
-    </div>
-    {% if recipe.ingredients_image %}
-      <div class="col-md-6">
-        <img src="{{ recipe.ingredients_image.url }}"
-             class="w-100"
-             alt="{% translate 'Recipe ingredients' %} | {{ recipe.title }}">
-      </div>
+      {% thumbnail '500x500' recipe.main_image format='WEBP' -- alt=recipe.title loading="lazy" class="offset-md-3 col-md-6" %}
+      </section>
     {% endif %}
-  </section>
-  <section class="row my-5">
-    {% if recipe.prep_image %}
-      <div class="col-md-6">
-        <img src="{{ recipe.prep_image.url }}"
-             class="w-100"
-             alt="{% translate 'Recipe Preparation' %} | {{ recipe.title }}">
+    <section class="row my-5">
+      <div {% if recipe.ingredients_image %} class="col-md-6" {% else %}  class="offset-md-2 col-md-8"{% endif %}>
+        <h2>{% translate "Ingredients" %}</h2>
+        <ul>
+          {% for ingredient in recipe.ingredients.all %}<li>{{ ingredient }}</li>{% endfor %}
+        </ul>
       </div>
-    {% endif %}
-    <div {% if recipe.prep_image %} class="col-md-6" {% else %}  class="offset-md-2 col-md-8"{% endif %}>
-      <h2>{% translate "Preparation" %}</h2>
-      <ol>
-        {% for step in recipe.steps.all %}<li>{{ step.instruction }}</li>{% endfor %}
-      </ol>
-    </div>
-  </section>
-{% endblock content %}
+      {% if recipe.ingredients_image %}
+        <div class="col-md-6">
+          {% thumbnail '500x500' recipe.ingredients_image format='WEBP' -- alt=recipe.title loading="lazy" class="w-100" %}
+          </div>
+        {% endif %}
+      </section>
+      <section class="row my-5">
+        {% if recipe.prep_image %}
+          <div class="col-md-6">
+            {% thumbnail '500x500' recipe.prep_image format='WEBP' -- alt=recipe.title loading="lazy" class="w-100" %}
+            </div>
+          {% endif %}
+          <div {% if recipe.prep_image %} class="col-md-6" {% else %}  class="offset-md-2 col-md-8"{% endif %}>
+            <h2>{% translate "Preparation" %}</h2>
+            <ol>
+              {% for step in recipe.steps.all %}<li>{{ step.instruction }}</li>{% endfor %}
+            </ol>
+          </div>
+        </section>
+      {% endblock content %}

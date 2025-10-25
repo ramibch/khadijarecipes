@@ -32,7 +32,7 @@ class HomeView(TemplateView):
     def get_context_data(self, **kwargs) -> dict[str, Any]:
         cxt = super().get_context_data(**kwargs)
         cxt["page_title"] = _("Tasty recipes make from Bern")
-        cxt["products"] = Product.objects.all()
+        cxt["products"] = Product.objects.filter().exclude(productimage__isnull=True)
         cxt["faqs"] = Faq.objects.filter(is_active=True)
         return cxt
 

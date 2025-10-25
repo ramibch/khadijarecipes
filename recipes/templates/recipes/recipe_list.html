@@ -1,29 +1,26 @@
 {% extends "base.html" %}
-{% load i18n %}
+{% load i18n imagekit %}
 {% block content %}
   <section class="row">
     <h1 class="text-center">{% translate "Recipes" %}</h1>
     {% for recipe in recipes %}
-      <article class="col-xl-3 col-lg-4 col-md-6">
-        <header>
-          <h3 class="text-center">{{ recipe.title }}</h3>
-        </header>
-        {% if recipe.main_image %}
-          <center>
-            <a href="{{ recipe.url }}">
-              <img loading="lazy"
-                   x-data="{ isHovered: false }"
-                   x-bind:class="isHovered ? 'w-100 animate__animated animate__pulse' : 'w-100 ' "
-                   x-on:mouseenter="isHovered = true;"
-                   x-on:mouseleave="isHovered = false;"
-                   height="{{ recipepi.main_image.height }}"
-                   width="{{ recipe.main_image.width }}"
-                   src="{{ recipe.main_image.url }}"
-                   alt="{{ recipe.title }}">
-            </a>
-          </center>
-        {% endif %}
-      </article>
-    {% endfor %}
-  </section>
-{% endblock content %}
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <article>
+          <header>
+            <h3 class="text-center fs-1">{{ recipe.title }}</h3>
+          </header>
+          {% if recipe.main_image %}
+            <center x-data="{ isHovered: false }"
+                    x-bind:class="isHovered ? 'w-100 animate__animated animate__pulse' : 'w-100 ' "
+                    x-on:mouseenter="isHovered = true;"
+                    x-on:mouseleave="isHovered = false;">
+              <a href="{{ recipe.url }}">
+                {% thumbnail '300x300' recipe.main_image format='WEBP' -- alt=recipe.title loading="lazy" %}
+                </a>
+              </center>
+            {% endif %}
+          </article>
+        </div>
+      {% endfor %}
+    </section>
+  {% endblock content %}
