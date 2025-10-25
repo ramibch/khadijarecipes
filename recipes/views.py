@@ -4,12 +4,15 @@ from operator import or_
 from django.conf import settings
 from django.db.models import Q
 from django.http import Http404
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import cache_page
 from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
 
 from .models import Recipe
 
 
+@method_decorator(cache_page(60 * 60), name="dispatch")
 class RecipeListView(ListView):
     template_name = "recipes/recipe_list.html"
     model = Recipe
@@ -19,6 +22,7 @@ class RecipeListView(ListView):
         return super().get_queryset().exclude(main_image="")
 
 
+@method_decorator(cache_page(60 * 60), name="dispatch")
 class RecipeDetailView(DetailView):
     template_name = "recipes/recipe_detail.html"
     model = Recipe

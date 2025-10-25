@@ -4,8 +4,9 @@ from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
 from django.urls import reverse
 from django.utils import translation
+from django.utils.decorators import method_decorator
 from django.utils.translation import gettext_lazy as _
-from django.views.decorators.cache import cache_control
+from django.views.decorators.cache import cache_control, cache_page
 from django.views.decorators.http import require_GET
 from django.views.generic import RedirectView, TemplateView
 
@@ -25,6 +26,7 @@ class RecipeDetailRedirectView(RedirectView):
         return reverse("recipe_detail", kwargs={"slug": self.kwargs["slug"]})
 
 
+@method_decorator(cache_page(60 * 60), name="dispatch")
 class HomeView(TemplateView):
     http_method_names = ["get"]
     template_name = "home.html"
@@ -37,6 +39,7 @@ class HomeView(TemplateView):
         return cxt
 
 
+@method_decorator(cache_page(60 * 60 * 24), name="dispatch")
 class PrivacyView(TemplateView):
     http_method_names = ["get"]
     template_name = "privacy.html"
@@ -47,6 +50,7 @@ class PrivacyView(TemplateView):
         return cxt
 
 
+@method_decorator(cache_page(60 * 60 * 24), name="dispatch")
 class TermsView(TemplateView):
     http_method_names = ["get"]
     template_name = "terms.html"
@@ -57,6 +61,7 @@ class TermsView(TemplateView):
         return cxt
 
 
+@method_decorator(cache_page(60 * 60 * 24), name="dispatch")
 class RobotTxtView(TemplateView):
     http_method_names = ["get"]
     content_type = "text/plain"
