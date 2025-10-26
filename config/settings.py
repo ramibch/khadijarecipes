@@ -15,8 +15,7 @@ from pathlib import Path
 
 from django.utils.translation import gettext_lazy as _
 from environs import Env
-
-# Read .env file
+from redis import ConnectionPool as RedisConnectionPool
 
 env = Env()
 env.read_env()
@@ -35,6 +34,7 @@ SECRET_KEY = env("SECRET_KEY")
 DEBUG = env.bool("DEBUG")
 
 HTTPS = env.bool("HTTPS")
+
 
 ALLOWED_HOSTS = [
     "next.khadijarecipes.com",
@@ -63,7 +63,9 @@ INSTALLED_APPS = [
     "rosetta",
     "debug_toolbar",
     "django_watchfiles",
+    "huey.contrib.djhuey",
     "django_browser_reload",
+    "django_cleanup.apps.CleanupConfig",
     # own apps
     "core",
     "recipes",
@@ -241,6 +243,44 @@ STORAGES = {
 
 WHITENOISE_MAX_AGE = 0 if DEBUG else 31_536_000
 
+# redis
+
+REDIS_URL = env("REDIS_URL")
+REDIS_CONNECTION_POOL = RedisConnectionPool.from_url(url=REDIS_URL)
+
+# Caching
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.redis.RedisCache",
+        "LOCATION": REDIS_URL,
+    }
+}
+
+
+# huey
+HUEY_IMMEDIATE = env.bool("HUEY_IMMEDIATE")
+
+HUEY = {
+    "huey_class": "huey.RedisHuey",  # Huey implementation to use.
+    "name": DATABASES["default"]["NAME"],  # Use db name for huey.
+    "results": True,  # Store return values of tasks.
+    "store_none": False,  # If a task returns None, do not save to results.
+    "immediate": HUEY_IMMEDIATE,  # run synchronously.
+    "utc": True,  # Use UTC for all times internally.
+    "blocking": True,  # Perform blocking pop rather than poll Redis.
+    "connection": {"connection_pool": REDIS_CONNECTION_POOL},
+    "consumer": {
+        "workers": 4,
+        "worker_type": "thread",
+        "initial_delay": 0.1,  # Smallest polling interval, same as -d.
+        "backoff": 1.15,  # Exponential backoff using this rate, -b.
+        "max_delay": 10.0,  # Max possible polling interval, -m.
+        "scheduler_interval": 1,  # Check schedule every second, -s.
+        "periodic": True,  # Enable crontab feature.
+        "check_worker_health": True,  # Enable worker health checks.
+        "health_check_interval": 5,  # Check worker health every second.
+    },
+}
 
 # Links
 WEBSITE_URL = env("WEBSITE_URL")

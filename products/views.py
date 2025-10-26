@@ -4,12 +4,15 @@ from operator import or_
 from django.conf import settings
 from django.db.models import Q
 from django.http import Http404
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import cache_page
 from django.views.generic.detail import DetailView
 
 from core.models import Faq
 from products.models import Product
 
 
+@method_decorator(cache_page(60 * 10), name="dispatch")
 class ProductDetailView(DetailView):
     template_name = "product_detail.html"
     model = Product

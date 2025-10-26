@@ -1,6 +1,8 @@
 from django.db import models
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy as _
+from imagekit.models import ImageSpecField
+from imagekit.processors import ResizeToFill
 
 from config.db import CustomModel, PageModel
 
@@ -127,6 +129,18 @@ class Recipe(PageModel):
         blank=True,
         verbose_name=_("Main Image"),
     )
+    main_image_500x500 = ImageSpecField(
+        source="main_image",
+        processors=[ResizeToFill(500, 500)],
+        format="WEBP",
+        options={"quality": 90},
+    )
+    main_image_300x300 = ImageSpecField(
+        source="main_image",
+        processors=[ResizeToFill(300, 300)],
+        format="WEBP",
+        options={"quality": 90},
+    )
 
     ingredients_image = models.ImageField(
         upload_to="recipes/ingredients/",
@@ -134,11 +148,23 @@ class Recipe(PageModel):
         blank=True,
         verbose_name=_("Ingredients Image"),
     )
+    ingredients_image_500x500 = ImageSpecField(
+        source="ingredients_image",
+        processors=[ResizeToFill(500, 500)],
+        format="WEBP",
+        options={"quality": 90},
+    )
     prep_image = models.ImageField(
         upload_to="recipes/preparation/",
         null=True,
         blank=True,
         verbose_name=_("Preparation Image"),
+    )
+    prep_image_500x500 = ImageSpecField(
+        source="prep_image",
+        processors=[ResizeToFill(500, 500)],
+        format="WEBP",
+        options={"quality": 90},
     )
 
     @property

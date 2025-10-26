@@ -5,6 +5,7 @@ from django.conf import settings
 from django.db.models import Q
 from django.http import Http404
 from django.utils.decorators import method_decorator
+from django.utils.translation import gettext_lazy as _
 from django.views.decorators.cache import cache_page
 from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
@@ -12,7 +13,7 @@ from django.views.generic.list import ListView
 from .models import Recipe
 
 
-@method_decorator(cache_page(60 * 60), name="dispatch")
+@method_decorator(cache_page(60 * 20), name="dispatch")
 class RecipeListView(ListView):
     template_name = "recipes/recipe_list.html"
     model = Recipe
@@ -21,8 +22,13 @@ class RecipeListView(ListView):
     def get_queryset(self):
         return super().get_queryset().exclude(main_image="")
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["page_title"] = _("Recipes")
+        return context
 
-@method_decorator(cache_page(60 * 60), name="dispatch")
+
+@method_decorator(cache_page(60 * 10), name="dispatch")
 class RecipeDetailView(DetailView):
     template_name = "recipes/recipe_detail.html"
     model = Recipe

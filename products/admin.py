@@ -8,7 +8,7 @@ from products.models import Product, ProductImage
 class ProductImageInline(admin.TabularInline):
     model = ProductImage
     extra = 1
-    fields = ("image", "alt_de")
+    fields = ("image", "alt_text_de")
 
 
 @admin.register(Product)

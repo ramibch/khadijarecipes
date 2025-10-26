@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n imagekit %}
+{% load i18n %}
 {% block extra_css %}
   <style>
 /* Carousel container */
@@ -40,7 +40,7 @@
   object-fit: contain; /* show entire image */
 }
 
-/* Thumbnails */
+
 .carousel-thumbs {
   display: flex;
   justify-content: center;
@@ -93,88 +93,96 @@ td.indent {
           {% for img in product.productimage_set.all %}
             <div class="carousel-image"
                  :class="{ 'active': active === {{ forloop.counter0 }} }">
-              {% thumbnail '500x500' img.image format='WEBP' -- alt=pi.alt_text loading="lazy" %}
-              </div>
-            {% endfor %}
-          </div>
-          <div class="carousel-thumbs">
-            {% for img in product.productimage_set.all %}
-              <button @click="active = {{ forloop.counter0 }}">
-                {% thumbnail '100x100' img.image format='WEBP' -- alt=pi.alt_text loading="lazy" %}
-                </button>
-              {% endfor %}
+              <img src="{{ img.image_500x500.url }}"
+                   alt="{{ img.alt_text }}"
+                   loading="lazy"
+                   height="500"
+                   width="500">
             </div>
-          </div>
+          {% endfor %}
         </div>
-        <div class="col-md-6">
-          <h1 class="text-center">{{ page_title }}</h1>
-          <p>{{ product.description|linebreaks }}</p>
-          {% if product.price_per_unit %}
-            <p>
-              <span class="text-bold">{% translate "Price per Unit" %}</span>: {{ product.price_per_unit }} CHF
-            </p>
-          {% endif %}
-          {% if product.price_500g %}
-            <p>
-              <span class="text-bold">{% translate "Price 500g" %}</span>: {{ product.price_500g }} CHF
-            </p>
-          {% endif %}
-          {% if product.price_1kg %}
-            <p>
-              <span class="text-bold">{% translate "Price 1kg" %}</span>: {{ product.price_1kg }} CHF
-            </p>
-          {% endif %}
-          <center>
-            <a href="{{ product.whatsapp_order_url }}"
-               role="button"
-               rel="nofollow"
-               target="_blank"><i class="bi bi-whatsapp"></i> {% translate "Order Product" %}</a>
-          </center>
+        <div class="carousel-thumbs">
+          {% for img in product.productimage_set.all %}
+            <button @click="active = {{ forloop.counter0 }}">
+              <img src="{{ img.image_100x100.url }}"
+                   alt="{{ img.alt_text }}"
+                   loading="lazy"
+                   height="100"
+                   width="100">
+            </button>
+          {% endfor %}
         </div>
-      </section>
-      {% if product.nutrition_info_available %}
-        <section class="my-5">
-          <h2>{% translate "Nutrition Table" %}</h2>
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">{% translate "Nutrient" %}</th>
-                <th scope="col">{% translate "Per 100g" %}</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>{% translate "Energy" %}</td>
-                <td>{{ product.calories|floatformat:1 }} kcal</td>
-              </tr>
-              <tr>
-                <td>{% translate "Total Fat" %}</td>
-                <td>{{ product.total_fat|floatformat:1 }} g</td>
-              </tr>
-              <tr>
-                <td class="indent">{% translate "Saturated Fat" %}</td>
-                <td>{{ product.saturated_fat|floatformat:1 }} g</td>
-              </tr>
-              <tr>
-                <td>{% translate "Carbohydrates" %}</td>
-                <td>{{ product.total_carbo|floatformat:1 }} g</td>
-              </tr>
-              <tr>
-                <td class="indent">{% translate "Sugars" %}</td>
-                <td>{{ product.sugar|floatformat:1 }} g</td>
-              </tr>
-              <tr>
-                <td>{% translate "Protein" %}</td>
-                <td>{{ product.protein|floatformat:1 }} g</td>
-              </tr>
-              <tr>
-                <td>{% translate "Salt" %}</td>
-                <td>{{ product.salt|floatformat:2 }} g</td>
-              </tr>
-            </tbody>
-          </table>
-          <small class="text-muted">{% translate "Values are approximate and based on 100 g of product." %}</small>
-        </section>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h1 class="text-center">{{ page_title }}</h1>
+      <p>{{ product.description|linebreaks }}</p>
+      {% if product.price_per_unit %}
+        <p>
+          <span class="text-bold">{% translate "Price per Unit" %}</span>: {{ product.price_per_unit }} CHF
+        </p>
       {% endif %}
-      {% include "snippets/faqs.html" %}
-    {% endblock content %}
+      {% if product.price_500g %}
+        <p>
+          <span class="text-bold">{% translate "Price 500g" %}</span>: {{ product.price_500g }} CHF
+        </p>
+      {% endif %}
+      {% if product.price_1kg %}
+        <p>
+          <span class="text-bold">{% translate "Price 1kg" %}</span>: {{ product.price_1kg }} CHF
+        </p>
+      {% endif %}
+      <center>
+        <a href="{{ product.whatsapp_order_url }}"
+           role="button"
+           rel="nofollow"
+           target="_blank"><i class="bi bi-whatsapp"></i> {% translate "Order Product" %}</a>
+      </center>
+    </div>
+  </section>
+  {% if product.nutrition_info_available %}
+    <section class="my-5">
+      <h2>{% translate "Nutrition Table" %}</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">{% translate "Nutrient" %}</th>
+            <th scope="col">{% translate "Per 100g" %}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{% translate "Energy" %}</td>
+            <td>{{ product.calories|floatformat:1 }} kcal</td>
+          </tr>
+          <tr>
+            <td>{% translate "Total Fat" %}</td>
+            <td>{{ product.total_fat|floatformat:1 }} g</td>
+          </tr>
+          <tr>
+            <td class="indent">{% translate "Saturated Fat" %}</td>
+            <td>{{ product.saturated_fat|floatformat:1 }} g</td>
+          </tr>
+          <tr>
+            <td>{% translate "Carbohydrates" %}</td>
+            <td>{{ product.total_carbo|floatformat:1 }} g</td>
+          </tr>
+          <tr>
+            <td class="indent">{% translate "Sugars" %}</td>
+            <td>{{ product.sugar|floatformat:1 }} g</td>
+          </tr>
+          <tr>
+            <td>{% translate "Protein" %}</td>
+            <td>{{ product.protein|floatformat:1 }} g</td>
+          </tr>
+          <tr>
+            <td>{% translate "Salt" %}</td>
+            <td>{{ product.salt|floatformat:2 }} g</td>
+          </tr>
+        </tbody>
+      </table>
+      <small class="text-muted">{% translate "Values are approximate and based on 100 g of product." %}</small>
+    </section>
+  {% endif %}
+  {% include "snippets/faqs.html" %}
+{% endblock content %}

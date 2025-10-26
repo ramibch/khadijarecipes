@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n imagekit %}
+{% load i18n %}
 {% block content %}
   <section class="row">
     <h1 class="text-center">{% translate "Recipes" %}</h1>
@@ -15,12 +15,16 @@
                     x-on:mouseenter="isHovered = true;"
                     x-on:mouseleave="isHovered = false;">
               <a href="{{ recipe.url }}">
-                {% thumbnail '300x300' recipe.main_image format='WEBP' -- alt=recipe.title loading="lazy" %}
-                </a>
-              </center>
-            {% endif %}
-          </article>
-        </div>
-      {% endfor %}
-    </section>
-  {% endblock content %}
+                <img src="{{ recipe.main_image_300x300.url }}"
+                     alt="{{ recipe.title }}"
+                     loading="lazy"
+                     width="300"
+                     height="300">
+              </a>
+            </center>
+          {% endif %}
+        </article>
+      </div>
+    {% endfor %}
+  </section>
+{% endblock content %}

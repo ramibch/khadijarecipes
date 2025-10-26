@@ -1,12 +1,11 @@
 import urllib
-from io import BytesIO
 
 from django.conf import settings
-from django.core.files.base import ContentFile
 from django.db import models
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy as _
-from PIL import Image
+from imagekit.models import ImageSpecField
+from imagekit.processors import ResizeToFill
 
 from config.db import CustomModel, PageModel
 
@@ -122,50 +121,34 @@ class Product(PageModel):
 class ProductImage(CustomModel):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     image = models.ImageField(upload_to="product-images/")
-    image_800 = models.ImageField(upload_to="product-images/", null=True, blank=True)
-    image_600 = models.ImageField(upload_to="product-images/", null=True, blank=True)
-    image_400 = models.ImageField(upload_to="product-images/", null=True, blank=True)
-    image_200 = models.ImageField(upload_to="product-images/", null=True, blank=True)
-    alt_de = models.CharField(max_length=256)
-    alt_en = models.CharField(max_length=256, null=True, blank=True)
-    alt_fr = models.CharField(max_length=256, null=True, blank=True)
-    alt_es = models.CharField(max_length=256, null=True, blank=True)
-    alt_it = models.CharField(max_length=256, null=True, blank=True)
 
-    def description(self):
+    image_100x100 = ImageSpecField(
+        source="image",
+        processors=[ResizeToFill(100, 100)],
+        format="WEBP",
+        options={"quality": 60},
+    )
+
+    image_500x500 = ImageSpecField(
+        source="image",
+        processors=[ResizeToFill(500, 500)],
+        format="WEBP",
+        options={"quality": 90},
+    )
+
+    image_300x300 = ImageSpecField(
+        source="image",
+        processors=[ResizeToFill(300, 300)],
+        format="WEBP",
+        options={"quality": 90},
+    )
+
+    alt_text_de = models.CharField(max_length=256)
+    alt_text_en = models.CharField(max_length=256, null=True, blank=True)
+    alt_text_fr = models.CharField(max_length=256, null=True, blank=True)
+    alt_text_es = models.CharField(max_length=256, null=True, blank=True)
+    alt_text_it = models.CharField(max_length=256, null=True, blank=True)
+
+    @property
+    def alt_text(self):
         return self.get_localized_value("alt") or self.alt_de
-
-    def save(self, *args, **kwargs):
-        # Save initially so we have self.image stored
-        if not self.pk or not self.image:
-            super().save(*args, **kwargs)
-
-        if self.image:
-            # Open image safely (works on S3 and local)
-            self.image.open()
-            img = Image.open(self.image)
-            img = img.convert("RGB")
-
-            sizes = [800, 600, 400, 200]
-
-            for width in sizes:
-                field = getattr(self, f"image_{width}")
-                if field and field.name:
-                    continue
-
-                aspect_ratio = img.height / img.width
-                height = int(width * aspect_ratio)
-                resized = img.resize((width, height), Image.LANCZOS)
-
-                buffer = BytesIO()
-                resized.save(buffer, format="WEBP", optimize=True, quality=85)
-                buffer.seek(0)
-
-                base_name = self.image.name.rsplit(".", 1)[0]
-                filename = f"{base_name}_{width}.webp"
-
-                getattr(self, f"image_{width}").save(
-                    filename, ContentFile(buffer.read()), save=False
-                )
-
-        super().save(*args, **kwargs)

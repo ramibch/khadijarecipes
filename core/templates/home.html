@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n imagekit static %}
+{% load i18n %}
 {% block content %}
   <section class="text-center my-5">
     <h1 class="text-center fs-3 my-5">
@@ -23,24 +23,29 @@
                      x-on:mouseenter="isHovered = true;"
                      x-on:mouseleave="isHovered = false;">
                   <a href="{{ product.url }}">
-                    {% thumbnail '300x300' pi.image format='WEBP' -- alt=pi.alt loading="lazy" class="my-2" %}
-                    </a>
-                  </div>
-                {% else %}
-                  <a href="{{ product.url }}">{% translate "More about" %}</a>
-                {% endif %}
-              {% endwith %}
-              <a href="{{ product.whatsapp_order_url }}"
-                 class="w-100 "
-                 role="button"
-                 rel="nofollow"
-                 target="_blank"><i class="bi bi-whatsapp"></i> {% translate "Order Product" %}</a>
-            </center>
-          </article>
-        </div>
-      {% empty %}
-        <p class="text-center">{% translate "No platters available yet" %}</p>
-      {% endfor %}
-    </section>
-    {% include "snippets/faqs.html" %}
-  {% endblock content %}
+                    <img src="{{ pi.image_300x300.url }}"
+                         alt="{{ pi.alt_text }}"
+                         width="300"
+                         height="300"
+                         loading="lazy"
+                         class="my-2">
+                  </a>
+                </div>
+              {% else %}
+                <a href="{{ product.url }}">{% translate "More about" %}</a>
+              {% endif %}
+            {% endwith %}
+            <a href="{{ product.whatsapp_order_url }}"
+               class="w-100 "
+               role="button"
+               rel="nofollow"
+               target="_blank"><i class="bi bi-whatsapp"></i> {% translate "Order Product" %}</a>
+          </center>
+        </article>
+      </div>
+    {% empty %}
+      <p class="text-center">{% translate "No platters available yet" %}</p>
+    {% endfor %}
+  </section>
+  {% include "snippets/faqs.html" %}
+{% endblock content %}
