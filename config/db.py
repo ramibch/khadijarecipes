@@ -1,8 +1,11 @@
 from typing import Any
 
 from django.conf import settings
+from django.contrib.redirects.models import Redirect
+from django.contrib.sites.models import Site
 from django.db import models
 from django.urls import reverse
+from django.utils import translation
 from django.utils.text import slugify
 from django.utils.translation import get_language
 
@@ -61,6 +64,14 @@ class PageModel(CustomModel):
         raise NotImplementedError
 
     def save(self, *args, **kwargs):
+        is_new = self._state.adding
+        old_instance = None
+
+        if not is_new and self.pk:
+            # Load old instance for comparison
+            old_instance = self.__class__.objects.filter(pk=self.pk).first()
+
+        # Auto slugify
         for lang in settings.LANGUAGE_CODES:
             if not hasattr(self, f"title_{lang}") or not hasattr(self, f"slug_{lang}"):
                 continue
@@ -68,4 +79,19 @@ class PageModel(CustomModel):
             if title_value is None:
                 continue
             setattr(self, f"slug_{lang}", slugify(title_value))
+
         super().save(*args, **kwargs)
+
+        # --- Create redirects if slugs changed ---
+        if old_instance:
+            site = Site.objects.get_current()
+            for lang in settings.LANGUAGE_CODES:
+                with translation.override(lang):
+                    old_path = old_instance.url
+                    new_path = self.url
+                    if old_path != new_path:
+                        Redirect.objects.update_or_create(
+                            site=site,
+                            old_path=old_path,
+                            defaults={"new_path": new_path},
+                        )

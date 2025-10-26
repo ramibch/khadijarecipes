@@ -35,6 +35,7 @@ DEBUG = env.bool("DEBUG")
 
 HTTPS = env.bool("HTTPS")
 
+SITE_ID = 1
 
 ALLOWED_HOSTS = [
     "next.khadijarecipes.com",
@@ -57,7 +58,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "django.contrib.sitemaps",
+    "django.contrib.sites",
+    "django.contrib.redirects",
     # third party
     "imagekit",
     "rosetta",
@@ -79,6 +81,7 @@ MIDDLEWARE = [
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
+    "django.contrib.redirects.middleware.RedirectFallbackMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
