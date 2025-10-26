@@ -151,4 +151,4 @@ class ProductImage(CustomModel):
 
     @property
     def alt_text(self):
-        return self.get_localized_value("alt") or self.alt_de
+        return self.get_localized_value("alt_text") or self.alt_text_de
