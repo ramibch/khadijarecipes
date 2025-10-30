@@ -4,33 +4,6 @@
   <meta name="robots" content="noindex">
 {% endblock meta_robots %}
 
-{% block extra_meta %}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TermsOfService",
-    "name": "{{ page_title|escapejs }}",
-    "url": "{{ request.build_absolute_uri }}",
-    "inLanguage": "{{ request.LANGUAGE_CODE }}",
-    "mainEntityOfPage": {
-      "@type": "WebSite",
-      "url": "{{ request.site.url }}",
-      "name": "{{ request.site.display_brand|escapejs }}"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "{{ brand_name }}",
-      "url": "{{ website_url }}",
-      "email": "{{ request.site.brand_email_sender.address|default:'' }}",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "{% if request.site.home_screenshot %}{{ request.site.home_screenshot.url }}{% endif %}"
-      }
-    }
-  }
-  </script>
-{% endblock extra_meta %}
-
 {% block content %}
   <main>
     <h1 class="text-center">{{ page_title }}</h1>

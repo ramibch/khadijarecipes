@@ -1,3 +1,5 @@
+import json
+
 from django.db import models
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy as _
@@ -186,6 +188,55 @@ class Recipe(PageModel):
 
     def __str__(self):
         return self.title
+
+    @property
+    def json_schema(self):
+        """Return structured data for Recipe (JSON-LD)."""
+        ingredients_list = [str(ri) for ri in self.ingredients.all()]
+
+        steps_list = [
+            {
+                "@type": "HowToStep",
+                "position": step.step_number,
+                "text": str(step.instruction),
+            }
+            for step in self.steps.all()
+        ]
+
+        schema = {
+            "@context": "https://schema.org/",
+            "@type": "Recipe",
+            "name": str(self.title),
+            "description": str(self.introduction)[:300] if self.introduction else "",
+            "recipeCategory": str(self.get_category_display()),
+            "recipeCuisine": str(self.get_category_display()),
+            "prepTime": f"PT{self.prep_time}M" if self.prep_time else None,
+            "cookTime": f"PT{self.cook_time}M" if self.cook_time else None,
+            "totalTime": f"PT{self.total_time}M" if self.total_time else None,
+            "recipeYield": "1 serving",
+            "recipeIngredient": ingredients_list,
+            "recipeInstructions": steps_list,
+            "author": {
+                "@type": "Person",
+                "name": "Chef",  # or use dynamic brand_name if available
+            },
+            "keywords": f"{self.get_category_display()}, recipe, food",
+            "datePublished": (
+                self.created_at.strftime("%Y-%m-%d") if self.created_at else None
+            ),
+            "dateModified": (
+                self.updated_at.strftime("%Y-%m-%d") if self.updated_at else None
+            ),
+        }
+
+        # Add main image if present
+        if self.main_image:
+            schema["image"] = [self.main_image.url]
+
+        # Remove None values for JSON-LD validity
+        schema = {k: v for k, v in schema.items() if v is not None}
+
+        return json.dumps(schema, ensure_ascii=False)
 
     class Meta:
         ordering = ["-created_at"]

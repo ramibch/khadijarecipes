@@ -1,13 +1,32 @@
+import json
+
 from django.conf import settings
 from django.utils.translation import get_language
+from django.utils.translation import gettext as _
 
 
 def brand(request):
+    emoji = "🍳"
+    name = "Khadija Recipes"
+    description = _(
+        "homemade Moroccan specialties and creative recipes from Bern. "
+        "Discover traditional sweets or try new recipes at home."
+    )
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": request.build_absolute_uri(),
+        "name": name,
+        "description": description,
+        "inLanguage": request.LANGUAGE_CODE,
+        "publisher": {"@type": "Person", "name": "Khadija El Azzouzi"},
+    }
     return {
         "request": request,
-        "brand_name": "Khadija Recipes",
-        "brand_name_short": "Khadija",
-        "brand_emoji": "🍳",
+        "brand_name": name,
+        "brand_emoji": emoji,
+        "page_description": description,  # will be overriden on views (hopefully)
+        "website_schema": json.dumps(schema, ensure_ascii=True),
     }
 
 

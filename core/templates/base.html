@@ -48,20 +48,7 @@
     <meta name="twitter:description" content="{{ page_description }}" />
     <meta name="twitter:url" content="{{ request.build_absolute_uri }}" />
     <!-- Global Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "url": "{{ request.build_absolute_uri }}",
-      "name": "{{ brand_name }}",
-      "description": "{{ page_description }}",
-      "inLanguage": "{{ LANG_CODE }}",
-      "publisher": {
-        "@type": "Organization",
-        "name": "{{ brand_name }}"
-      }
-    }
-    </script>
+    <script type="application/ld+json">{{ website_schema|safe }}</script>
     {% block extra_meta %}
     {% endblock extra_meta %}
     <!-- css -->

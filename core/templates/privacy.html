@@ -4,28 +4,6 @@
   <meta name="robots" content="noindex">
 {% endblock meta_robots %}
 
-{% block extra_meta %}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "PrivacyPolicy",
-    "name": "{{ page_title }}",
-    "url": "{{ request.build_absolute_uri }}",
-    "mainEntityOfPage": {
-      "@type": "WebSite",
-      "url": "{{ website_url }}",
-      "name": "{{ brand_name }}",
-      "inLanguage": "{{ request.LANGUAGE_CODE }}"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "{{ brand_name }}",
-      "url": "{{ website_url }}"
-    }
-  }
-  </script>
-{% endblock extra_meta %}
-
 {% block content %}
   <main>
     <h1 class="text-center">{{ page_title }}</h1>

@@ -26,7 +26,7 @@ class RecipeDetailRedirectView(RedirectView):
         return reverse("recipe_detail", kwargs={"slug": self.kwargs["slug"]})
 
 
-@method_decorator(cache_page(60 * 10), name="dispatch")
+# @method_decorator(cache_page(60 * 10), name="dispatch")
 class HomeView(TemplateView):
     http_method_names = ["get"]
     template_name = "home.html"
