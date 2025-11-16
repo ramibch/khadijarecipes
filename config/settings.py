@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 from copy import copy
 from pathlib import Path
 
+import sentry_sdk
 from django.utils.translation import gettext_lazy as _
 from environs import Env
 from redis import ConnectionPool as RedisConnectionPool
@@ -298,3 +299,11 @@ INSTAGRAM_URL = "https://www.instagram.com/khadijarecipes/"
 ROSETTA_MESSAGES_PER_PAGE = 50
 ROSETTA_ENABLE_TRANSLATION_SUGGESTIONS = True
 ROSETTA_WSGI_AUTO_RELOAD = True
+
+
+# Sentry
+
+SENTRY_DSN = env("SENTRY_DSN", None)
+
+if SENTRY_DSN:
+    sentry_sdk.init(dsn=SENTRY_DSN, send_default_pii=True)
