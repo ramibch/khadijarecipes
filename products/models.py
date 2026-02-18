@@ -5,7 +5,7 @@ from django.db import models
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy as _
 from imagekit.models import ImageSpecField
-from imagekit.processors import ResizeToFill
+from imagekit.processors import ResizeToFill, Transpose
 
 from config.db import CustomModel, PageModel
 
@@ -124,21 +124,21 @@ class ProductImage(CustomModel):
 
     image_100x100 = ImageSpecField(
         source="image",
-        processors=[ResizeToFill(100, 100)],
+        processors=[Transpose(), ResizeToFill(100, 100)],
         format="WEBP",
         options={"quality": 60},
     )
 
     image_500x500 = ImageSpecField(
         source="image",
-        processors=[ResizeToFill(500, 500)],
+        processors=[Transpose(), ResizeToFill(500, 500)],
         format="WEBP",
         options={"quality": 90},
     )
 
     image_300x300 = ImageSpecField(
         source="image",
-        processors=[ResizeToFill(300, 300)],
+        processors=[Transpose(), ResizeToFill(300, 300)],
         format="WEBP",
         options={"quality": 90},
     )
